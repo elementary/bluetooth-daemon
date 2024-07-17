@@ -1,0 +1,11 @@
+src/Application.vala
+src/Dialog/BtReceiver.vala
+src/Dialog/BtScan.vala
+src/Dialog/BtSender.vala
+src/Dialog/DeviceRow.vala
+src/Services/Adapter.vala
+src/Services/Device.vala
+src/Services/Manager.vala
+src/Services/ObexAgent.vala
+src/Services/Session.vala
+src/Services/Transfer.vala
