@@ -1,0 +1,61 @@
+# Hebrew translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2024-07-15 07:16+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-bluetooth-extra/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.6.2\n"
+
+#: data/bluetooth.desktop:3
+#, fuzzy
+msgid "Bluetooth"
+msgstr "מחוון Bluetooth"
+
+#: data/bluetooth.desktop:4
+#, fuzzy
+msgid "Bluetooth obex"
+msgstr "מחוון Bluetooth"
+
+#~ msgid "Connect and disconnect paired Bluetooth devices"
+#~ msgstr "חיבור וניתוק התקני Bluetooth מצומדים"
+
+#~ msgid "Minor updates:"
+#~ msgstr "עדכונים משניים:"
+
+#~ msgid "Updated translations"
+#~ msgstr "תרגומים עודכנו"
+
+#~ msgid ""
+#~ "Improve restoring Bluetooth state on restart and resuming from suspend"
+#~ msgstr "שיפור שחזור מצב ה־Bluetooth עם הפעלה מחדש וחזרה מהשהיה"
+
+#~ msgid "Add tooltip on hover"
+#~ msgstr "נוספה חלונית עצה בעת מעבר עם העכבר"
+
+#~ msgid "Add a fallback device name for headphones"
+#~ msgstr "הוספת שם מכשיר כגיבוי לאוזניות"
+
+#~ msgid "Prevent showing duplicate devices"
+#~ msgstr "נמנעה הצגת התקנים פעמיים"
+
+#~ msgid "Fix animated icon when disabling Bluetooth"
+#~ msgstr "תוקן הסמל המונפש בעת השבתת Bluetooth"
+
+#~ msgid "Use device type as fallback instead of \"(null)\""
+#~ msgstr "להשתמש בסוג ההתקן אם לא זוהה במקום ב־„(ריק)”"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary בע״מ"

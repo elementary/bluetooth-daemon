@@ -1,0 +1,64 @@
+# Ukrainian translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2021-08-26 05:14+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-bluetooth-extra/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: data/bluetooth.desktop:3
+#, fuzzy
+msgid "Bluetooth"
+msgstr "Індикатор Bluetooth"
+
+#: data/bluetooth.desktop:4
+#, fuzzy
+msgid "Bluetooth obex"
+msgstr "Індикатор Bluetooth"
+
+#~ msgid "Connect and disconnect paired Bluetooth devices"
+#~ msgstr "Підʼєднайте та від'єднайте сполучені пристрої Bluetooth"
+
+#~ msgid "Minor updates:"
+#~ msgstr "Незначні оновлення:"
+
+#~ msgid "Updated translations"
+#~ msgstr "Оновлено переклади"
+
+#~ msgid ""
+#~ "Improve restoring Bluetooth state on restart and resuming from suspend"
+#~ msgstr ""
+#~ "Поліпшено відновлення стану Bluetooth під час перезапуску та відновлення "
+#~ "після призупинення"
+
+#~ msgid "Add tooltip on hover"
+#~ msgstr "Додано підказку під час наведення"
+
+#~ msgid "Add a fallback device name for headphones"
+#~ msgstr "Додано назву показ назви пристрою для навушників"
+
+#~ msgid "Prevent showing duplicate devices"
+#~ msgstr "Запобігання повторюваному показу пристроїв"
+
+#~ msgid "Fix animated icon when disabling Bluetooth"
+#~ msgstr "Виправлено анімацію піктограми вимкнення Bluetooth"
+
+#~ msgid "Use device type as fallback instead of \"(null)\""
+#~ msgstr "Застосовувати тип пристрою запасним замість «(null)»"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

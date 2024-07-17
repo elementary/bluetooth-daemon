@@ -1,0 +1,351 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2022-10-27 19:48+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.4.2\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr "שליחת קבצים דרך בלוטות׳"
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr "שליחת קבצים להתקן…"
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr "קובץ נדחה"
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr "<b>קובץ:</b> %s <b>בגודל: </b>%s כבר קיים"
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr "קובץ נכנס"
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr "הסתיימו ההכנות לשליחת הקובץ על ידי <b>%s</b>:‏ %s גודל: %s"
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr "לקבל"
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr "לסרב"
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr "מתקבל קובץ"
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr "נשלח קובץ על ידי %s:‏ %s גודל: %s"
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr "רמקול"
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr "בקר"
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr "מקלדת"
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr "עכבר"
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr "מחשב לוח"
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr "משטח מגע"
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr "טלפון"
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr "<b>קצב העברה:</b>"
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr "סגירה"
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr "דחייה"
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr "<b>מאת</b>:‏ %s"
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr "<b>אל</b>:‏ %s"
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr "<b>שם קובץ</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr "העברת הקובץ נכשלה"
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr "%s <b>הקובץ:</b> %s לא התקבל"
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr "הקובץ הועבר בהצלחה"
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr "%s <b>שמירה אל:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr "מתקבל…  %s מתוך %s"
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr "<b>קצב העברה:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr "%s מתוך %s התקבלו, נותרו %s"
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "שנייה"
+msgstr[1] "%d שניות"
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "דקה"
+msgstr[1] "%d דקות"
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "שעה"
+msgstr[1] "%u שעות"
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "דקה"
+msgstr[1] "%u דקות"
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] "בערך שעה"
+msgstr[1] "בערך %d שעות"
+
+#: src/Dialog/BtScan.vala:41
+msgid "Bluetooth File Transfer"
+msgstr "העברת קבצים בבלוטות׳"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr "יש לבחור התקן בלוטות׳ להלן כדי לשלוח קבצים"
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr "לא נמצאו התקנים"
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "נא לוודא שהמכשירים שלך גלויים ומוכנים לצימוד."
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "מתבצע גילוי"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr "התקנים זמינים"
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr "מאת"
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr "אל"
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr "שם קובץ"
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr "קצב העברה"
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr "ביטול"
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr "מתבצע ניסיון להתחבר אל %s…"
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr "ההתחברות אל ‚%s’ נכשלה."
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr "ההעברה של ‚%s’ נכשלה."
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr "הקובץ לא הועבר"
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr "ניסיון חוזר"
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr "בהמתנה לאישור מצד %s…"
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr "ההעברה נקטעה או שנדחתה על ידי %s."
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr "<b>מאת:</b> %s <b>לשלוח אל:</b> %s"
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr "(%i/%i) %s מתוך %s נשלחו, נותרו %s"
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr "שליחה"
+
+#~ msgid "Not Connected"
+#~ msgstr "אין חיבור"
+
+#, c-format
+#~ msgid "Receiving… %s of %s"
+#~ msgstr "מתקבל… %s מתוך %s"
+
+#, c-format
+#~ msgid "Sending… %s of %s"
+#~ msgstr "נשלח… %s מתוך %s"
+
+#~ msgid "Connecting…"
+#~ msgstr "בהתחברות…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "מתבצע ניתוק…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "לא ניתן להתחבר"
+
+#~ msgid "Headphones"
+#~ msgstr "אוזניות"
+
+#~ msgid "Connected"
+#~ msgstr "יש חיבור"
+
+#~ msgid "Middle-click to turn Bluetooth off"
+#~ msgstr "לחיצה אמצעית לכיבוי הבלוטות׳"
+
+#~ msgid "Bluetooth connected"
+#~ msgstr "בלוטות׳ מחובר"
+
+#~ msgid "Bluetooth is on"
+#~ msgstr "בלוטות׳ פעיל"
+
+#~ msgid "Bluetooth is off"
+#~ msgstr "בלוטות׳ כבוי"
+
+#~ msgid "Middle-click to turn Bluetooth on"
+#~ msgstr "לחיצה אמצעית להפעלת הבלוטות׳"
+
+#~ msgid "Bluetooth"
+#~ msgstr "בלוטות׳"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "הגדרות בלוטות׳…"
+
+#~ msgid "File transferred successfully "
+#~ msgstr "הקובץ הועבר בהצלחה "
+
+#, fuzzy
+#~| msgid "bluetooth"
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "בלוטות׳"
+
+#~ msgid "Middle-click to disable bluetooth"
+#~ msgstr "לחיצה אמצעית לביטול הבלוטות׳"
+
+#~ msgid "Indicator for Bluetooth signal"
+#~ msgstr "מחוון לאות בלוטות׳"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "מחוון הבלוטות׳"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "גילוי התקנים…"

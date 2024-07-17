@@ -1,0 +1,342 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2022-11-07 17:58+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr "Bluetooth ile Dosya Gönder"
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr "Dosyaları cihaza gönder…"
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr "Reddedilen dosya"
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr "<b>Dosya:</b> %s <b>Boyut: </b>%s zaten var"
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr "Gelen dosya"
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr "<b>%s</b> dosya göndermeye hazır: %s boyut: %s"
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr "Kabul Et"
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr "Reddet"
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr "Dosya alınıyor"
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr "%s dosya gönderiyor: %s boyut: %s"
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr "Hoparlör"
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr "Denetleyici"
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr "Klavye"
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr "Fare"
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr "Tablet"
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr "Dokunmatik Yüzey"
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr "Telefon"
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr "<b>Aktarma hızı:</b>"
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr "Kapat"
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr "Reddet"
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr "<b>Gönderen</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr "<b>Kime</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr "<b>Dosya adı</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr "Dosya aktarımı başarısız oldu"
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr "%s <b>Dosya:</b> %s alınmadı"
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr "Dosya başarıyla aktarıldı"
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr "%s <b>Kayıt yeri:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr "Alınıyor…  %s / %s"
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr "<b>Aktarma hızı:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr "%s / %s alındı, kalan süre %s"
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d saniye"
+msgstr[1] "%d saniye"
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d dakika"
+msgstr[1] "%d dakika"
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "%u saat"
+msgstr[1] "%u saat"
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "%u dakika"
+msgstr[1] "%u dakika"
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] "yaklaşık %d saat"
+msgstr[1] "yaklaşık %d saat"
+
+#: src/Dialog/BtScan.vala:41
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth Dosya Aktarımı"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr "Dosyaları Göndermek İçin Aşağıdan Bir Bluetooth Cihazı Seçin"
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr "Hiçbir Cihaz Bulunamadı"
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Lütfen cihazınızın görünür ve eşleştirmeye hazır olduğundan emin olun."
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "Bulunuyor"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr "Kullanılabilir Cihazlar"
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr "Gönderen"
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr "Kime"
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr "Dosya adı"
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr "Aktarım hızı"
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr "%s cihazına bağlanmaya çalışılıyor…"
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr "'%s' cihazına bağlanılamadı."
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr "'%s' aktarımı başarısız oldu."
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr "Dosya aktarılmadı"
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr "Yeniden Dene"
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr "%s cihazında kabul edilmeyi bekliyor…"
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr "Aktarım kesintiye uğradı veya %s tarafından reddedildi."
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr "<b>Gönderen:</b> %s <b>Kime:</b> %s"
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr "(%i/%i) %s / %s gönderildi, kalan süre %s"
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr "Gönder"
+
+#~ msgid "Not Connected"
+#~ msgstr "Bağlı Değil"
+
+#, c-format
+#~ msgid "Receiving… %s of %s"
+#~ msgstr "Alınıyor… %s / %s"
+
+#, c-format
+#~ msgid "Sending… %s of %s"
+#~ msgstr "Gönderiliyor… %s / %s"
+
+#~ msgid "Connecting…"
+#~ msgstr "Bağlanılıyor…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "Bağlantı kesiliyor…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "Bağlantı Kurulamıyor"
+
+#~ msgid "Headphones"
+#~ msgstr "Kulaklık"
+
+#~ msgid "Connected"
+#~ msgstr "Bağlı"
+
+#~ msgid "Middle-click to turn Bluetooth off"
+#~ msgstr "Orta tıklatma ile Bluetooth'u kapat"
+
+#~ msgid "Bluetooth connected"
+#~ msgstr "Bluetooth bağlandı"
+
+#~ msgid "Bluetooth is on"
+#~ msgstr "Bluetooth açık"
+
+#~ msgid "Bluetooth is off"
+#~ msgstr "Bluetooth kapalı"
+
+#~ msgid "Middle-click to turn Bluetooth on"
+#~ msgstr "Orta tıklatma ile Bluetooth'u aç"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "Bluetooth Ayarları…"
+
+#, fuzzy
+#~| msgid "bluetooth"
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "bluetooth"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "Bluetooth göstergesi"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "Cihazları Keşfet..."
