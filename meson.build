@@ -5,6 +5,8 @@ project(
     meson_version : '>= 0.57'
 )
 
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
+
 i18n = import('i18n')
 
 granite_dep = dependency ('granite')
