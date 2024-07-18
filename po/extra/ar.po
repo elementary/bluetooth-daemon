@@ -1,0 +1,63 @@
+# Arabic translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2021-08-26 22:37+0000\n"
+"Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
+"Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-bluetooth-extra/ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: data/bluetooth.desktop:3
+#, fuzzy
+msgid "Bluetooth"
+msgstr "مؤشر البلوتوث"
+
+#: data/bluetooth.desktop:4
+#, fuzzy
+msgid "Bluetooth obex"
+msgstr "مؤشر البلوتوث"
+
+#~ msgid "Connect and disconnect paired Bluetooth devices"
+#~ msgstr "قم بالاتصال بأجهزة البلوتوث أو أيقاف الاتصال بها"
+
+#~ msgid "Minor updates:"
+#~ msgstr "تحديثات طفيفة:"
+
+#~ msgid "Updated translations"
+#~ msgstr "تحديثات على الترجمة"
+
+#~ msgid ""
+#~ "Improve restoring Bluetooth state on restart and resuming from suspend"
+#~ msgstr ""
+#~ "تحسين إرجاع حالة البلوتوث بعد إعادة التشغيل أو الاستكمال بعد الإغلاق"
+
+#~ msgid "Add tooltip on hover"
+#~ msgstr "إضافة تلميح عند تمرير مؤشر الفأرة"
+
+#~ msgid "Add a fallback device name for headphones"
+#~ msgstr "إضافة بديل احتياطي لاسم الجهاز لسماعات الأذن"
+
+#~ msgid "Prevent showing duplicate devices"
+#~ msgstr "منع إظهار الأجهزة المتكررة"
+
+#~ msgid "Fix animated icon when disabling Bluetooth"
+#~ msgstr "إصلاح الأيقونة المتحركة عند تعطيل البلوتوث"
+
+#~ msgid "Use device type as fallback instead of \"(null)\""
+#~ msgstr "استخدام نوع الجهاز كاسم بديل احتياطي بدلاً من \"(null)\""
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

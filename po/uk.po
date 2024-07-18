@@ -1,0 +1,361 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2022-10-27 19:48+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
+"Language-Team: Ukrainian <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr "Надіслати файли через Bluetooth"
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr "Надіслати файли на пристрій…"
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr "Відхилений файл"
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr "<b>Файл:</b> %s <b>Розмір: </b>%s вже існує"
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr "Вхідний файл"
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr "<b>%s</b> готовий надіслати файл: %s розмір: %s"
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr "Прийняти"
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr "Відхилити"
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr "Отримання файлу"
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr "%s надсилає файл: %s розмір: %s"
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr "Гучномовець"
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr "Контролер"
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr "Клавіатура"
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr "Миша"
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr "Планшет"
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr "Сенсорна поверхня"
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr "Телефон"
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr "<b>Швидкість передавання:</b>"
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr "Закрити"
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr "Відхилити"
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr "<b>Від</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr "<b>До</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr "<b>Назва файлу</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr "Збій передавання файлу"
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr "%s <b>Файл:</b> %s не отримано"
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr "Файл успішно передано"
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr "%s <b>Зберегти до:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr "Отримання…  %s з %s"
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr "<b>Швидкість передавання:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr "Отримано %s з %s, залишилося часу %s"
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунди"
+msgstr[2] "%d секунд"
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d хвилина"
+msgstr[1] "%d хвилини"
+msgstr[2] "%d хвилин"
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "%u година"
+msgstr[1] "%u години"
+msgstr[2] "%u годин"
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "%u хвилина"
+msgstr[1] "%u хвилини"
+msgstr[2] "%u хвилин"
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] "приблизно %d година"
+msgstr[1] "приблизно %d години"
+msgstr[2] "приблизно %d годин"
+
+#: src/Dialog/BtScan.vala:41
+msgid "Bluetooth File Transfer"
+msgstr "Передавання файлів через Bluetooth"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr "Виберіть нижче пристрій Bluetooth для надсилання файлів"
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr "Пристроїв не знайдено"
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Переконайтеся, що ваші пристрої видно і вони готові до сполучення."
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "Виявлення"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr "Доступні пристрої"
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr "Від"
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr "До"
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr "Назва файлу"
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr "Швидкість передавання"
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr "Спроба під'єднатися до %s…"
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr "Не вдалося під'єднатися до «%s»."
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr "Збій надсилання «%s»."
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr "Файл не передано"
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr "Повторити спробу"
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr "Очікування погодження %s…"
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr "Передавання було перервано або його було відхилено %s."
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr "<b>Від:</b> %s <b>Надіслати до:</b> %s"
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr "(%i/%i) %s з %s надіслано, залишилося до завершення %s"
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr "Надіслати"
+
+#~ msgid "Not Connected"
+#~ msgstr "Не під’єднаний"
+
+#, c-format
+#~ msgid "Receiving… %s of %s"
+#~ msgstr "Отримання… %s з %s"
+
+#, c-format
+#~ msgid "Sending… %s of %s"
+#~ msgstr "Надсилання… %s з %s"
+
+#~ msgid "Connecting…"
+#~ msgstr "З'єднання…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "Від'єднання…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "Неможливо підʼєднатися"
+
+#~ msgid "Headphones"
+#~ msgstr "Навушники"
+
+#~ msgid "Connected"
+#~ msgstr "З'єднано"
+
+#~ msgid "Middle-click to turn Bluetooth off"
+#~ msgstr "Клацніть середньою клавішею, щоб вимкнути Bluetooth"
+
+#~ msgid "Bluetooth connected"
+#~ msgstr "Bluetooth під’єднано"
+
+#~ msgid "Bluetooth is on"
+#~ msgstr "Bluetooth увімкнено"
+
+#~ msgid "Bluetooth is off"
+#~ msgstr "Bluetooth вимкнено"
+
+#~ msgid "Middle-click to turn Bluetooth on"
+#~ msgstr "Клацніть середньою клавішею, щоб увімкнути Bluetooth"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "Налаштування Bluetooth…"
+
+#~ msgid "File transferred successfully "
+#~ msgstr "Файл успішно передано "
+
+#~ msgid "Name=%s"
+#~ msgstr "Name=%s"
+
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "Icon=bluetooth\n"
+
+#~ msgid "Description=%s"
+#~ msgstr "Description=%s"
+
+#~ msgid "MimeType=!inode;\n"
+#~ msgstr "MimeType=!inode;\n"
+
+#~ msgid "Middle-click to disable bluetooth"
+#~ msgstr "Клацніть середньою клавішею, щоб вимкнути Bluetooth"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "Bluetooth-індикатор"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "Пошук пристроїв…"

@@ -1,0 +1,343 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2022-11-15 12:37+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.2\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr "Lähetä tiedostoja Bluetoothin välityksellä"
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr "Lähetä tiedostoja laitteelle…"
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr "Tiedosto hylätty"
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr "<b>Tiedosto:</b> %s <b>Koko: </b>%s on jo olemassa"
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr "Saapuva tiedosto"
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr "<b>%s</b> on valmis tiedoston lähetykseen: %s koko: %s"
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr "Hyväksy"
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr "Hylkää"
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr "Vastaanotetaan tiedosto"
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr "%s lähettää tiedoston: %s koko: %s"
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr "Kaiutin"
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr "Ohjain"
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr "Näppäimistö"
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr "Hiiri"
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr "Tabletti"
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr "Kosketuslevy"
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr "Puhelin"
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr "<b>Siirtonopeus:</b>"
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr "Sulje"
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr "Hylkää"
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr "<b>Lähettäjä</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr "<b>Vastaanottaja</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr "<b>Tiedoston nimi</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr "Tiedostonsiirto epäonnistui"
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr "%s <b>Tiedosto:</b> %s ei vastaanotettu"
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr "Tiedostonsiirto onnistui"
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr "%s <b>Tallenna sijaintiin:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr "Vastaanotetaan…  %s/%s"
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr "<b>Siirtonopeus:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr "%s/%s vastaanotettu, aikaa jäljellä %s"
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunti"
+msgstr[1] "%d sekuntia"
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuutti"
+msgstr[1] "%d minuuttia"
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "%u tunti"
+msgstr[1] "%u tuntia"
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "%u minuutti"
+msgstr[1] "%u minuuttia"
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr "%s %s"
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] "noin %d tunti"
+msgstr[1] "noin %d tuntia"
+
+#: src/Dialog/BtScan.vala:41
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth-tiedostonsiirto"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr "Valitse Bluetooth-laite alapuolelta lähettääksesi tiedostoja"
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr "Laitteita ei löytynyt"
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Varmista, että laitteet ovat näkyvissä ja valmiit pariliitosta varten."
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "Tutkitaan"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr "Käytettävissä olevat laitteet"
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr "Lähettäjä"
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr "Vastaanottaja"
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr "Tiedoston nimi"
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr "Siirtonopeus"
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr "Peru"
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr "Yritetään yhdistää kohteeseen %s…"
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr "Yhteys kohteeseen '%s' epäonnistui."
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr "Kohteen '%s' siirtäminen epäonnistui."
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr "Tiedostoa ei ole siirretty"
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr "Yritä uudelleen"
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr "Odotetaan vastapuolen %s hyväksyntää…"
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr "Siirto keskeytyi tai %s kieltäytyi siitä."
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr "<b>Lähettäjä:</b> %s <b>Vastaanottaja:</b> %s"
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr "(%i/%i) %s/%s lähetetty, aikaa jäljellä %s"
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr "Lähetä"
+
+#~ msgid "Not Connected"
+#~ msgstr "Ei yhdistetty"
+
+#, c-format
+#~ msgid "Receiving… %s of %s"
+#~ msgstr "Vastaanotetaan… %s/%s"
+
+#, c-format
+#~ msgid "Sending… %s of %s"
+#~ msgstr "Lähetetään… %s/%s"
+
+#~ msgid "Connecting…"
+#~ msgstr "Yhdistetään…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "Katkaistaan yhteyttä…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "Yhdistäminen ei onnistunut"
+
+#~ msgid "Headphones"
+#~ msgstr "Kuulokkeet"
+
+#~ msgid "Connected"
+#~ msgstr "Yhdistetty"
+
+#~ msgid "Middle-click to turn Bluetooth off"
+#~ msgstr "Sammuta Bluetooth hiiren keskimmäisen painikkeen napsautuksella"
+
+#~ msgid "Bluetooth connected"
+#~ msgstr "Bluetooth yhdistetty"
+
+#~ msgid "Bluetooth is on"
+#~ msgstr "Bluetooth on päällä"
+
+#~ msgid "Bluetooth is off"
+#~ msgstr "Bluetooth on pois päältä"
+
+#~ msgid "Middle-click to turn Bluetooth on"
+#~ msgstr ""
+#~ "Aseta Bluetooth päälle hiiren keskimmäisen painikkeen napsautuksella"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "Bluetooth-asetukset…"
+
+#, fuzzy
+#~| msgid "bluetooth"
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "bluetooth"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "Bluetooth-ilmaisin"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "Etsi laitteita…"

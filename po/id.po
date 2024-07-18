@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2023-06-02 08:07+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
+"Language-Team: Indonesian <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/id/>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.17\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr ""
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr ""
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr ""
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr ""
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr ""
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr ""
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr ""
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr ""
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr ""
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr ""
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr ""
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr ""
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr ""
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr ""
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr ""
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr ""
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] ""
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] ""
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr ""
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] ""
+
+#: src/Dialog/BtScan.vala:41
+#, fuzzy
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr ""
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr ""
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr ""
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "Menemukan"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr ""
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr ""
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr ""
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr ""
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr ""
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr ""
+
+#~ msgid "Not Connected"
+#~ msgstr "Tidak Tersambung"
+
+#~ msgid "Connecting…"
+#~ msgstr "Menyambung…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "Memutus…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "Tidak Dapat Tersambung"
+
+#~ msgid "Connected"
+#~ msgstr "Tersambung"
+
+#, fuzzy
+#~| msgid "Not Connected"
+#~ msgid "Bluetooth connected"
+#~ msgstr "Tidak Tersambung"
+
+#, fuzzy
+#~| msgid "Bluetooth"
+#~ msgid "Bluetooth is on"
+#~ msgstr "Bluetooth"
+
+#, fuzzy
+#~| msgid "Bluetooth"
+#~ msgid "Bluetooth is off"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "Pengaturan Bluetooth…"
+
+#, fuzzy
+#~| msgid "bluetooth"
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "bluetooth"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "Indikator bluetooth"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "Temukan Perangkat…"

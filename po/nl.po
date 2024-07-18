@@ -1,0 +1,342 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2023-04-10 10:59+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.16.4\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr "Verstuur bestanden via Bluetooth"
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr "Verstuur bestanden naar apparaat…"
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr "Bestand afgewezen"
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr "<b>Bestand:</b> %s <b>Grootte: </b>%s bestaat al"
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr "Inkomend bestand"
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr "<b>%s</b> is klaar om het bestand te versturen: %s grootte: %s"
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr "Accepteren"
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr "Afwijzen"
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr "Bestand wordt ontvangen"
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr "%s verstuurd bestand: %s grootte: %s"
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr "Luidspreker"
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr "Controller"
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr "Toetsenbord"
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr "Muis"
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr "Tablet"
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr "Telefoon"
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr "<b> Overdrachtssnelheid:</b>"
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr "Sluiten"
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr "Afwijzen"
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr "<b>Van</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr "<b>Naar</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr "<b>Bestandsnaam</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr "Bestandsoverdracht mislukt"
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr "%s <b>Bestand:</b> %s niet ontvangen"
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr "Bestandsoverdracht met succes voltooid"
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr "%s <b>Opslaan naar:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr "Ontvangen…  %s van de %s"
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr "<b>Overdrachtssnelheid:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr "%s van de %s ontvangen, resterende doorlooptijd %s"
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d seconde"
+msgstr[1] "%d seconden"
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuut"
+msgstr[1] "%d minuten"
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "%u uur"
+msgstr[1] "%u uren"
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "%u minuut"
+msgstr[1] "%u minuten"
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] "ongeveer %d uur"
+msgstr[1] "ongeveer %d uren"
+
+#: src/Dialog/BtScan.vala:41
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth bestandsoverdracht"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr "Selecteer een Bluetooth-apparaat hieronder om bestanden te versturen"
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr "Geen apparaten gevonden"
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Controleer of uw apparaten zichtbaar en klaar zijn om te koppelen."
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "Ontdekken"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr "Beschikbare apparaten"
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr "Van"
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr "Naar"
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr "Bestandsnaam"
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr "Overdrachtssnelheid"
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr "Verbinden met %s…"
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr "Verbinden met '%s' is mislukt."
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr "De overdracht van '%s' is mislukt."
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr "Het bestand is niet overgedragen"
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr "Opnieuw proberen"
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr "Wachten op acceptatiebevestiging van %s…"
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr "De bestandsoverdracht was onderbroken of afgewezen door %s."
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr "<b>Van:</b> %s <b>Verzenden Naar:</b> %s"
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr "(%i/%i) %s van de %s verzonden, resterende tijd %s"
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr "Versturen"
+
+#~ msgid "Not Connected"
+#~ msgstr "Niet verbonden"
+
+#, c-format
+#~ msgid "Receiving… %s of %s"
+#~ msgstr "Ontvangen… %s van de %s"
+
+#, c-format
+#~ msgid "Sending… %s of %s"
+#~ msgstr "Versturen… %s van de %s"
+
+#~ msgid "Connecting…"
+#~ msgstr "Verbinding maken…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "Verbinding verbreken…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "Niet mogelijk om te verbinden"
+
+#~ msgid "Headphones"
+#~ msgstr "Koptelefoon"
+
+#~ msgid "Connected"
+#~ msgstr "Verbonden"
+
+#~ msgid "Middle-click to turn Bluetooth off"
+#~ msgstr "Middelklik om Bluetooth uit te schakelen"
+
+#~ msgid "Bluetooth connected"
+#~ msgstr "Bluetooth verbonden"
+
+#~ msgid "Bluetooth is on"
+#~ msgstr "Bluetooth staat aan"
+
+#~ msgid "Bluetooth is off"
+#~ msgstr "Bluetooth staat uit"
+
+#~ msgid "Middle-click to turn Bluetooth on"
+#~ msgstr "Middelklik om Bluetooth aan te zetten"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "Bluetooth-instellingen…"
+
+#, fuzzy
+#~| msgid "bluetooth"
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "bluetooth"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "De bluetooth indicator"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "Ontdek apparaten…"

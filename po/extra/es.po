@@ -1,0 +1,66 @@
+# Spanish translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2024-06-30 14:16+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
+"Language-Team: Spanish <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-bluetooth-extra/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5.5\n"
+
+#: data/bluetooth.desktop:3
+#, fuzzy
+msgid "Bluetooth"
+msgstr "Indicador de Bluetooth"
+
+#: data/bluetooth.desktop:4
+#, fuzzy
+msgid "Bluetooth obex"
+msgstr "Indicador de Bluetooth"
+
+#~ msgid "Connect and disconnect paired Bluetooth devices"
+#~ msgstr "Conecte y desconecte dispositivos Bluetooth emparejados"
+
+#~ msgid "Minor updates:"
+#~ msgstr "Actualizaciones menores:"
+
+#~ msgid "Updated translations"
+#~ msgstr "Traducciones actualizadas"
+
+#~ msgid ""
+#~ "Improve restoring Bluetooth state on restart and resuming from suspend"
+#~ msgstr ""
+#~ "Mejorada la restauración del estado de Bluetooth al reiniciar y reanudar "
+#~ "desde la suspensión"
+
+#~ msgid "Add tooltip on hover"
+#~ msgstr ""
+#~ "Se ha agregado una descripción emergente al pasar el puntero del ratón"
+
+#~ msgid "Add a fallback device name for headphones"
+#~ msgstr "Añadir un nombre predeterminado para auriculares"
+
+#~ msgid "Prevent showing duplicate devices"
+#~ msgstr "Se evita mostrar dispositivos duplicados"
+
+#~ msgid "Fix animated icon when disabling Bluetooth"
+#~ msgstr "Se corrigió el icono animado al desactivar el Bluetooth"
+
+#~ msgid "Use device type as fallback instead of \"(null)\""
+#~ msgstr ""
+#~ "Cuando no se puede obtener el nombre de los dispositivos se muestra su "
+#~ "tipo en lugar de «(null)»"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

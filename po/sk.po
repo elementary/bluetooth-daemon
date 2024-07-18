@@ -1,0 +1,347 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2024-07-10 19:16+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-bluetooth/sk/>\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.6.2\n"
+"X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
+
+#: src/Application.vala:168
+msgid "Send Files via Bluetooth"
+msgstr "Poslať súbory cez Bluetooth"
+
+#: src/Application.vala:170
+msgid "Send files to device…"
+msgstr "Poslať súbory do zariadenia…"
+
+#: src/Application.vala:259
+msgid "Rejected file"
+msgstr "Súbor odmietnutý"
+
+#: src/Application.vala:261
+#, c-format
+msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
+msgstr "<b>Súbor:</b> %s <b> Veľkosť: </b>%s už existuje"
+
+#: src/Application.vala:276
+msgid "Incoming file"
+msgstr "Prichádzajúci súbor"
+
+#: src/Application.vala:278
+#, c-format
+msgid "<b>%s</b> is ready to send file: %s size: %s"
+msgstr "<b>%s</b> je pripravené poslať súbor: %s veľkosť: %s"
+
+#: src/Application.vala:285
+msgid "Accept"
+msgstr "Prijať"
+
+#. /Translators response to refuse a file transfer
+#: src/Application.vala:290
+msgid "Decline"
+msgstr "Odmietnuť"
+
+#: src/Application.vala:294
+msgid "Receiving file"
+msgstr "Príjem súboru"
+
+#: src/Application.vala:295
+#, c-format
+msgid "%s is sending file: %s size: %s"
+msgstr "%s posiela súbor: %s veľkosť: %s"
+
+#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+msgid "Speaker"
+msgstr "Reproduktor"
+
+#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+msgid "Controller"
+msgstr "Ovládač"
+
+#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+msgid "Keyboard"
+msgstr "Klávesnica"
+
+#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+msgid "Mouse"
+msgstr "Myš"
+
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+msgid "Tablet"
+msgstr "Tablet"
+
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+msgid "Touchpad"
+msgstr "Touchpad"
+
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+msgid "Phone"
+msgstr "Telefón"
+
+#: src/Dialog/BtReceiver.vala:82
+msgid "<b>Transfer rate:</b>"
+msgstr "<b>Prenosová rýchlosť:</b>"
+
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtSender.vala:117
+msgid "Close"
+msgstr "Zatvoriť"
+
+#: src/Dialog/BtReceiver.vala:113
+msgid "Reject"
+msgstr "Zamietnuť"
+
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
+#: src/Dialog/BtSender.vala:285
+#, c-format
+msgid "<b>From</b>: %s"
+msgstr "<b>Od</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
+#: src/Dialog/BtSender.vala:286
+#, c-format
+msgid "<b>To</b>: %s"
+msgstr "<b>Do</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#, c-format
+msgid "<b>Filename</b>: %s"
+msgstr "<b>Názov súboru</b>: %s"
+
+#: src/Dialog/BtReceiver.vala:158
+msgid "File transfer failed"
+msgstr "Prenos súboru zlyhal"
+
+#: src/Dialog/BtReceiver.vala:159
+#, c-format
+msgid "%s <b>File:</b> %s not received"
+msgstr "%s <b>Súbor:</b> %s neprijatý"
+
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+msgid "File transferred successfully"
+msgstr "Súbor úspešne prenesený"
+
+#: src/Dialog/BtReceiver.vala:187
+#, c-format
+msgid "%s <b>Save to:</b> %s"
+msgstr "%s <b>Uložiť do:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:211
+#, c-format
+msgid "Receiving…  %s of %s"
+msgstr "Príjem…  %s z %s"
+
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#, c-format
+msgid "<b>Transfer rate:</b> %s"
+msgstr "<b>Prenosová rýchlosť:</b> %s"
+
+#: src/Dialog/BtReceiver.vala:227
+#, c-format
+msgid "%s of %s received, time remaining %s"
+msgstr "%s z %s prijaté, zostávajúci čas %s"
+
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekundy"
+msgstr[2] "%d sekúnd"
+
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minúta"
+msgstr[1] "%d minúty"
+msgstr[2] "%d minút"
+
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#, c-format
+msgid "%u hour"
+msgid_plural "%u hours"
+msgstr[0] "%u hodina"
+msgstr[1] "%u hodiny"
+msgstr[2] "%u hodín"
+
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#, c-format
+msgid "%u minute"
+msgid_plural "%u minutes"
+msgstr[0] "%u minúta"
+msgstr[1] "%u minúty"
+msgstr[2] "%u minút"
+
+#. /TRANSLATORS: For example "1 hour, 8 minutes".
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#, c-format
+msgid "%s, %s"
+msgstr "%s, %s"
+
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#, c-format
+msgid "approximately %d hour"
+msgid_plural "approximately %d hours"
+msgstr[0] "približne %d hodina"
+msgstr[1] "približne %d hodiny"
+msgstr[2] "približne %d hodín"
+
+#: src/Dialog/BtScan.vala:41
+msgid "Bluetooth File Transfer"
+msgstr "Prenos súborov cez Bluetooth"
+
+#: src/Dialog/BtScan.vala:49
+msgid "Select a Bluetooth Device Below to Send Files"
+msgstr "Vyberte zariadenie Bluetooth pre prenos súborov"
+
+#: src/Dialog/BtScan.vala:57
+msgid "No Devices Found"
+msgstr "Neboli nájdené žiadne zariadenia"
+
+#: src/Dialog/BtScan.vala:58
+msgid "Please ensure that your devices are visible and ready for pairing."
+msgstr "Uistite sa, že vaše zariadenia sú viditeľné a pripravené na párovanie."
+
+#: src/Dialog/BtScan.vala:79
+msgid "Discovering"
+msgstr "Hľadanie"
+
+#: src/Dialog/BtScan.vala:189
+msgid "Available Devices"
+msgstr "Dostupné zariadenia"
+
+#: src/Dialog/BtSender.vala:67
+msgid "From"
+msgstr "Od"
+
+#: src/Dialog/BtSender.vala:75
+msgid "To"
+msgstr "Do"
+
+#: src/Dialog/BtSender.vala:81
+msgid "Filename"
+msgstr "Názov súboru"
+
+#: src/Dialog/BtSender.vala:87
+msgid "Transfer rate"
+msgstr "Prenosová rýchlosť"
+
+#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
+#: src/Dialog/BtSender.vala:322
+msgid "Cancel"
+msgstr "Zrušiť"
+
+#: src/Dialog/BtSender.vala:228
+#, c-format
+msgid "Trying to connect to %s…"
+msgstr "Prebieha snaha o pripojenie k %s…"
+
+#: src/Dialog/BtSender.vala:246
+#, c-format
+msgid "Connecting to '%s' failed."
+msgstr "Pripájanie k ‚%s‘ zlyhalo."
+
+#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#, c-format
+msgid "The transfer of '%s' failed."
+msgstr "Prenos ‚%s‘ zlyhal."
+
+#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+msgid "The file has not been transferred"
+msgstr "Súbor nebol prenesený"
+
+#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+msgid "Retry"
+msgstr "Skúsiť znova"
+
+#: src/Dialog/BtSender.vala:288
+#, c-format
+msgid "Waiting for acceptance on %s…"
+msgstr "Čaká sa na prijatie od %s…"
+
+#: src/Dialog/BtSender.vala:312
+#, c-format
+msgid "The transfer was interrupted or it was declined by %s."
+msgstr "Prenos bol prerušený alebo bol odmietnutý od %s."
+
+#: src/Dialog/BtSender.vala:359
+#, c-format
+msgid "<b>From:</b> %s <b>Send to:</b> %s"
+msgstr "<b>Od:</b> %s <b>Poslať do:</b> %s"
+
+#: src/Dialog/BtSender.vala:379
+#, c-format
+msgid "(%i/%i) %s of %s sent, time remaining %s"
+msgstr "(%i/%i) %s z %s poslané, zostávajúci čas %s"
+
+#: src/Dialog/DeviceRow.vala:74
+msgid "Send"
+msgstr "Odoslať"
+
+#~ msgid "Not Connected"
+#~ msgstr "Nepripojené"
+
+#, c-format
+#~ msgid "Receiving… %s of %s"
+#~ msgstr "Príjem… %s z %s"
+
+#, c-format
+#~ msgid "Sending… %s of %s"
+#~ msgstr "Odosielanie… %s z %s"
+
+#~ msgid "Connecting…"
+#~ msgstr "Pripájanie…"
+
+#~ msgid "Disconnecting…"
+#~ msgstr "Odpájanie…"
+
+#~ msgid "Unable to Connect"
+#~ msgstr "Nepodarilo sa pripojiť"
+
+#~ msgid "Headphones"
+#~ msgstr "Slúchadlá"
+
+#~ msgid "Connected"
+#~ msgstr "Pripojené"
+
+#~ msgid "Middle-click to turn Bluetooth off"
+#~ msgstr "Stlačením kolieska vypnúť Bluetooth"
+
+#~ msgid "Bluetooth connected"
+#~ msgstr "Bluetooth pripojený"
+
+#~ msgid "Bluetooth is on"
+#~ msgstr "Bluetooth je zapnutý"
+
+#~ msgid "Bluetooth is off"
+#~ msgstr "Bluetooth je vypnutý"
+
+#~ msgid "Middle-click to turn Bluetooth on"
+#~ msgstr "Stlačením kolieska zapnúť Bluetooth"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth Settings…"
+#~ msgstr "Nastavenia Bluetooth…"
+
+#, fuzzy
+#~| msgid "bluetooth"
+#~ msgid "Icon=bluetooth\n"
+#~ msgstr "bluetooth"
+
+#~ msgid "The bluetooth indicator"
+#~ msgstr "Bluetooth indikátor"
+
+#~ msgid "Discover Devices…"
+#~ msgstr "Objaviť zariadenia..."

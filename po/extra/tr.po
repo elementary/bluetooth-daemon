@@ -1,0 +1,63 @@
+# Turkish translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2021-12-13 20:43+0000\n"
+"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-bluetooth-extra/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: data/bluetooth.desktop:3
+#, fuzzy
+msgid "Bluetooth"
+msgstr "Bluetooth Göstergesi"
+
+#: data/bluetooth.desktop:4
+#, fuzzy
+msgid "Bluetooth obex"
+msgstr "Bluetooth Göstergesi"
+
+#~ msgid "Connect and disconnect paired Bluetooth devices"
+#~ msgstr "Eşleştirilmiş Bluetooth cihazlarını bağlayın ve bağlantısını kesin"
+
+#~ msgid "Minor updates:"
+#~ msgstr "Küçük güncellemeler:"
+
+#~ msgid "Updated translations"
+#~ msgstr "Çeviriler güncellendi"
+
+#~ msgid ""
+#~ "Improve restoring Bluetooth state on restart and resuming from suspend"
+#~ msgstr ""
+#~ "Yeniden başlatma ve askıya alma durumundan devam etme sırasında Bluetooth "
+#~ "durumunun geri yüklenmesi iyileştirildi"
+
+#~ msgid "Add tooltip on hover"
+#~ msgstr "Üzerine gelindiğinde göstermek için araç ipucu eklendi"
+
+#~ msgid "Add a fallback device name for headphones"
+#~ msgstr "Kulaklıklar için yedek bir cihaz adı eklendi"
+
+#~ msgid "Prevent showing duplicate devices"
+#~ msgstr "Yinelenen cihazların gösterilmesi önlendi"
+
+#~ msgid "Fix animated icon when disabling Bluetooth"
+#~ msgstr "Bluetooth'u devre dışı bırakma simge animasyonu düzeltildi"
+
+#~ msgid "Use device type as fallback instead of \"(null)\""
+#~ msgstr "Yedek cihaz adı \"(null)\" yerine cihazın türü olarak ayarlandı"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."

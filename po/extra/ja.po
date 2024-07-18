@@ -1,0 +1,66 @@
+# Japanese translations for extra package.
+# Copyright (C) 2019 THE extra'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the extra package.
+# Automatically generated, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: extra\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"PO-Revision-Date: 2022-04-09 01:03+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
+"indicator-bluetooth-extra/ja/>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.4.2\n"
+
+#: data/bluetooth.desktop:3
+#, fuzzy
+msgid "Bluetooth"
+msgstr "Bluetooth インジケーター"
+
+#: data/bluetooth.desktop:4
+#, fuzzy
+msgid "Bluetooth obex"
+msgstr "Bluetooth インジケーター"
+
+#~ msgid "Connect and disconnect paired Bluetooth devices"
+#~ msgstr "ペアリングした Bluetooth デバイスを接続したり切断したりします"
+
+#~ msgid "Minor updates:"
+#~ msgstr "そのほかのアップデート:"
+
+#~ msgid "Updated translations"
+#~ msgstr "翻訳の更新"
+
+#~ msgid ""
+#~ "Improve restoring Bluetooth state on restart and resuming from suspend"
+#~ msgstr ""
+#~ "再起動やサスペンドからの復帰時に、適切な Bluetooth の状態を復元するように"
+#~ "修正"
+
+#~ msgid "Add tooltip on hover"
+#~ msgstr "ホバー時のツールチップを追加"
+
+#~ msgid "Add a fallback device name for headphones"
+#~ msgstr ""
+#~ "ヘッドフォンの製品名が検出できない場合に“ヘッドフォン”と表示するように修正"
+
+#~ msgid "Prevent showing duplicate devices"
+#~ msgstr "デバイスが重複して表示される不具合を修正"
+
+#~ msgid "Fix animated icon when disabling Bluetooth"
+#~ msgstr "Bluetooth を無効にするときに表示されるアニメーションアイコンを修正"
+
+#~ msgid "Use device type as fallback instead of \"(null)\""
+#~ msgstr ""
+#~ "デバイス名が利用可能ではない場合に、\"(null)\" と表示するのではなくデバイ"
+#~ "スの種類を表示するように修正"
+
+#~ msgid "elementary, Inc."
+#~ msgstr "elementary, Inc."
