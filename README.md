@@ -5,6 +5,7 @@ Send and receive files via bluetooth
 ## Building and Installation
 
 You'll need the following dependencies:
+
     libgranite-dev >= 6.0.0
     libgtk3-dev
     meson
