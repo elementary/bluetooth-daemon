@@ -1,4 +1,5 @@
 # Bluetooth Daemon
+[![Translation status](https://l10n.elementary.io/widget/desktop/bluetooth-daemon/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/)
 
 Send and receive files via bluetooth
 
