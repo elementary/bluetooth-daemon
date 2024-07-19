@@ -16,5 +16,5 @@ i18n.merge_file(
 install_data(
     'gschema.xml',
     rename: meson.project_name() +  '.gschema.xml',
-    install_dir: datadir / 'glib-2.0' / 'schemas'
+    install_dir: get_option('datadir') / 'glib-2.0' / 'schemas'
 )
