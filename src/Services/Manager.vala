@@ -24,9 +24,9 @@ public class Bluetooth.ObjectManager : Object {
     private GLib.DBusObjectManagerClient object_manager;
 
     construct {
-        settings = new Settings ("io.elementary.desktop.wingpanel.bluetooth");
+        settings = new Settings ("io.elementary.desktop.bluetooth");
         create_manager.begin ();
-        settings.changed ["bluetooth-obex-enabled"].connect (obex_agentmanager);
+        settings.changed ["sharing"].connect (obex_agentmanager);
         obex_agentmanager ();
     }
 
@@ -81,7 +81,7 @@ public class Bluetooth.ObjectManager : Object {
     private void obex_agentmanager () {
         try {
             var connection = GLib.Bus.get_sync (BusType.SESSION);
-            connection.call.begin ("org.bluez.obex", "/org/bluez/obex", "org.bluez.obex.AgentManager1", settings.get_boolean ("bluetooth-obex-enabled")? "RegisterAgent" : "UnregisterAgent", new Variant ("(o)", "/org/bluez/obex/elementary"), null, GLib.DBusCallFlags.NONE, -1);
+            connection.call.begin ("org.bluez.obex", "/org/bluez/obex", "org.bluez.obex.AgentManager1", settings.get_boolean ("sharing")? "RegisterAgent" : "UnregisterAgent", new Variant ("(o)", "/org/bluez/obex/elementary"), null, GLib.DBusCallFlags.NONE, -1);
         } catch (Error e) {
             critical (e.message);
         }
