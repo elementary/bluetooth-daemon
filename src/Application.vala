@@ -77,7 +77,7 @@ public class BluetoothApp : Gtk.Application {
 
             if (files.length > 0) {
                 if (bt_scan == null) {
-                    bt_scan = new BtScan (this, object_manager);
+                    bt_scan = new BtScan (object_manager);
                     Idle.add (() => { // Wait for async BtScan initialisation
                         bt_scan.show_all ();
                         return Source.REMOVE;
