@@ -271,7 +271,7 @@ public class BluetoothApp : Gtk.Application {
             return;
         }
 
-        if (object_manager.settings.get_boolean ("bluetooth-confirm-accept-files")) {
+        if (object_manager.settings.get_boolean ("confirm-accept-files")) {
             notification.set_priority (NotificationPriority.URGENT);
             notification.set_title (_("Incoming file"));
             notification.set_body (
