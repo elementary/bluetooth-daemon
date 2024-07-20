@@ -50,7 +50,7 @@ public class BtSender : Granite.Dialog {
     construct {
         liststore = new Gtk.ListStore (1, typeof (File));
 
-        var icon_image = new Gtk.Image.from_icon_name ("bluetooth", Gtk.IconSize.DIALOG) {
+        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
             valign = Gtk.Align.END,
             halign = Gtk.Align.END
         };

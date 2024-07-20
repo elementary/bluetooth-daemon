@@ -45,7 +45,7 @@ public class BtReceiver : Granite.Dialog {
         notification = new GLib.Notification ("bluetooth");
         notification.set_priority (NotificationPriority.NORMAL);
 
-        var icon_image = new Gtk.Image.from_icon_name ("bluetooth", Gtk.IconSize.DIALOG) {
+        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
             valign = Gtk.Align.END,
             halign = Gtk.Align.END
         };

@@ -2,7 +2,7 @@
 Name=Bluetooth
 Comment=Bluetooth obex
 Exec=io.elementary.bluetooth
-Icon=bluetooth
+Icon=io.elementary.bluetooth
 Type=Application
 NoDisplay=true
 Categories=System;

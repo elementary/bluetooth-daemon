@@ -17,4 +17,7 @@ subdir('data')
 subdir('po')
 subdir('src')
 
-gnome.post_install(glib_compile_schemas: true)
+gnome.post_install(
+    glib_compile_schemas: true,
+    gtk_update_icon_cache: true
+)
