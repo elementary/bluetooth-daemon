@@ -7,6 +7,7 @@ project(
 
 add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
 
+gnome = import('gnome')
 i18n = import('i18n')
 
 granite_dep = dependency ('granite')
@@ -15,3 +16,5 @@ gtk_dep = dependency ('gtk+-3.0')
 subdir('data')
 subdir('po')
 subdir('src')
+
+gnome.post_install(glib_compile_schemas: true)
