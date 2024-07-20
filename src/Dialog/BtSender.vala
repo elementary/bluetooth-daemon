@@ -357,7 +357,7 @@ public class BtSender : Granite.Dialog {
         notification.set_priority (NotificationPriority.NORMAL);
         notification.set_title (_("File transferred successfully"));
         notification.set_body (GLib.Markup.printf_escaped (_("<b>From:</b> %s <b>Send to:</b> %s"), file_path.get_path (), device.alias));
-        ((Gtk.Window)get_toplevel ()).application.send_notification ("io.elementary.bluetooth", notification);
+        Application.get_default ().send_notification ("io.elementary.bluetooth", notification);
     }
 
     private void on_transfer_progress (uint64 transferred) {
