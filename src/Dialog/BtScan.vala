@@ -33,7 +33,7 @@ public class BtScan : Granite.Dialog {
     }
 
     construct {
-        var icon_image = new Gtk.Image.from_icon_name ("bluetooth", Gtk.IconSize.DIALOG) {
+        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
             valign = Gtk.Align.CENTER,
             halign = Gtk.Align.CENTER
         };
