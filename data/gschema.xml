@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/io/elementary/desktop/bluetooth/" id="io.elementary.desktop.bluetooth">
+    <key type="b" name="sharing">
+      <default>true</default>
+      <summary>Sets registered agent obex</summary>
+      <description></description>
+    </key>
+    <key type="b" name="confirm-accept-files">
+      <default>true</default>
+      <summary>Whether to ask user before receiving a file</summary>
+      <description>If set to "true", when an external bluetooth device tries to send a file, the user will be asked to accept or decline it. </description>
+    </key>
+  </schema>
+</schemalist>
