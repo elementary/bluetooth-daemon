@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"POT-Creation-Date: 2024-07-20 05:09+0000\n"
 "PO-Revision-Date: 2020-05-27 17:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/wingpanel/"
@@ -20,14 +20,20 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/bluetooth.desktop:3
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Bluetooth Indikator"
+msgid "Bluetooth File Transfer"
+msgstr ""
 
 #: data/bluetooth.desktop:4
+msgid "Send and receive files via bluetooth"
+msgstr ""
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "Bluetooth Indikator"
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth Indikator"
+
+#, fuzzy
+#~ msgid "Bluetooth obex"
+#~ msgstr "Bluetooth Indikator"
 
 #, fuzzy
 #~| msgid "Connect and disconnect paired bluetooth devices"

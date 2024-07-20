@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"POT-Creation-Date: 2024-07-20 05:09+0000\n"
 "PO-Revision-Date: 2024-07-20 14:45+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -21,12 +21,18 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.desktop:3
-msgid "Bluetooth"
-msgstr "Bluetooth"
+msgid "Bluetooth File Transfer"
+msgstr ""
 
 #: data/bluetooth.desktop:4
-msgid "Bluetooth obex"
-msgstr "Bluetooth obex"
+msgid "Send and receive files via bluetooth"
+msgstr ""
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Bluetooth obex"
+#~ msgstr "Bluetooth obex"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "Підʼєднайте та від'єднайте сполучені пристрої Bluetooth"

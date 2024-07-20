@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"POT-Creation-Date: 2024-07-20 05:09+0000\n"
 "PO-Revision-Date: 2021-03-02 04:42+0000\n"
 "Last-Translator: david <dcardelleg@gmail.com>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/wingpanel/"
@@ -20,11 +20,17 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #: data/bluetooth.desktop:3
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Indicador de Bluetooth"
+msgid "Bluetooth File Transfer"
+msgstr ""
 
 #: data/bluetooth.desktop:4
+msgid "Send and receive files via bluetooth"
+msgstr ""
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "Indicador de Bluetooth"
+#~ msgid "Bluetooth"
+#~ msgstr "Indicador de Bluetooth"
+
+#, fuzzy
+#~ msgid "Bluetooth obex"
+#~ msgstr "Indicador de Bluetooth"
