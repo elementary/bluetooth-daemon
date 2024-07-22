@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2024-07-22 17:35+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth-fájlküldés"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
 msgstr "Fájlok küldése és fogadása Bluetooth-on keresztül"
 
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth-kijelzés"
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth-kijelzés"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
+msgstr ""
 
 #, fuzzy
-#~ msgid "Bluetooth obex"
+#~ msgid "Bluetooth"
 #~ msgstr "Bluetooth-kijelzés"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -65,6 +78,3 @@ msgstr "Fájlok küldése és fogadása Bluetooth-on keresztül"
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr ""
 #~ "\"(null)\" helyett az eszköz típusának használata alapértelmezett névként"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

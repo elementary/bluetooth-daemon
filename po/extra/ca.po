@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2024-07-22 17:35+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr "Transferència de fitxers per bluetooth"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
 msgstr "Envieu i rebeu fitxers mitjançant bluetooth."
 
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-#~ msgid "Bluetooth"
-#~ msgstr "Indicador del Bluetooth"
+msgid "Bluetooth Daemon"
+msgstr "Indicador del Bluetooth"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
+msgstr ""
 
 #, fuzzy
-#~ msgid "Bluetooth obex"
+#~ msgid "Bluetooth"
 #~ msgstr "Indicador del Bluetooth"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -64,6 +77,3 @@ msgstr "Envieu i rebeu fitxers mitjançant bluetooth."
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "Usa el tipus de dispositiu com a alternativa en lloc de (null)"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

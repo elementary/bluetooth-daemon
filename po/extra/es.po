@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2024-07-22 17:35+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/desktop/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr "Transferencia mediante Bluetooth"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
 msgstr "Envíe y reciba archivos a través de Bluetooth"
 
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-#~ msgid "Bluetooth"
-#~ msgstr "Indicador de Bluetooth"
+msgid "Bluetooth Daemon"
+msgstr "Indicador de Bluetooth"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
+msgstr ""
 
 #, fuzzy
-#~ msgid "Bluetooth obex"
+#~ msgid "Bluetooth"
 #~ msgstr "Indicador de Bluetooth"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -67,6 +80,3 @@ msgstr "Envíe y reciba archivos a través de Bluetooth"
 #~ msgstr ""
 #~ "Cuando no se puede obtener el nombre de los dispositivos se muestra su "
 #~ "tipo en lugar de «(null)»"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

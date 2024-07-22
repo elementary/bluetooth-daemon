@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2024-07-21 23:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth ファイル転送"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
 msgstr "Bluetooth 経由でファイルを送受信します"
 
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth インジケーター"
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth インジケーター"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
+msgstr ""
 
 #, fuzzy
-#~ msgid "Bluetooth obex"
+#~ msgid "Bluetooth"
 #~ msgstr "Bluetooth インジケーター"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -67,6 +80,3 @@ msgstr "Bluetooth 経由でファイルを送受信します"
 #~ msgstr ""
 #~ "デバイス名が利用可能ではない場合に、\"(null)\" と表示するのではなくデバイ"
 #~ "スの種類を表示するように修正"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
