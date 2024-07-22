@@ -29,7 +29,7 @@ i18n.merge_file(
 )
 
 i18n.merge_file(
-    input: 'bluetooth-daemon.metainfo.xml.in',
+    input: 'bluetooth-daemon.metainfo.xml',
     output: meson.project_name() + '.metainfo.xml',
     po_dir: meson.project_source_root () / 'po' / 'extra',
     type: 'xml',
