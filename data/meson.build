@@ -28,6 +28,15 @@ i18n.merge_file(
     install: true
 )
 
+i18n.merge_file(
+    input: 'bluetooth-daemon.metainfo.xml.in',
+    output: meson.project_name() + '.metainfo.xml',
+    po_dir: meson.project_source_root () / 'po' / 'extra',
+    type: 'xml',
+    install_dir: get_option('datadir') / 'metainfo',
+    install: true
+)
+
 install_data(
     'gschema.xml',
     rename: meson.project_name() +  '.gschema.xml',
