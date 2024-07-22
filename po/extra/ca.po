@@ -8,24 +8,24 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-20 05:09+0000\n"
-"PO-Revision-Date: 2021-08-27 11:29+0000\n"
+"PO-Revision-Date: 2024-07-22 17:35+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://l10n.elementary.io/projects/wingpanel/"
-"indicator-bluetooth-extra/ca/>\n"
+"Language-Team: Catalan <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
-msgstr ""
+msgstr "Transferència de fitxers per bluetooth"
 
 #: data/bluetooth.desktop:4
 msgid "Send and receive files via bluetooth"
-msgstr ""
+msgstr "Envieu i rebeu fitxers mitjançant bluetooth."
 
 #, fuzzy
 #~ msgid "Bluetooth"
