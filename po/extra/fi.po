@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2021-10-08 13:51+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr ""
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
+#, fuzzy
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth-ilmaisin"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
 msgstr ""
 
 #, fuzzy
 #~ msgid "Bluetooth"
-#~ msgstr "Bluetooth-ilmaisin"
-
-#, fuzzy
-#~ msgid "Bluetooth obex"
 #~ msgstr "Bluetooth-ilmaisin"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -43,6 +56,3 @@ msgstr ""
 
 #~ msgid "Updated translations"
 #~ msgstr "Päivitetyt kielikäännökset"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

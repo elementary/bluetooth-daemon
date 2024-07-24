@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2024-07-20 14:45+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
@@ -24,15 +24,30 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr ""
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
+#, fuzzy
+#| msgid "Bluetooth obex"
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth obex"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
 msgstr ""
 
 #~ msgid "Bluetooth"
 #~ msgstr "Bluetooth"
-
-#~ msgid "Bluetooth obex"
-#~ msgstr "Bluetooth obex"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "Підʼєднайте та від'єднайте сполучені пристрої Bluetooth"
@@ -63,6 +78,3 @@ msgstr ""
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "Застосовувати тип пристрою запасним замість «(null)»"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

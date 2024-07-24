@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2021-12-13 20:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/wingpanel/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr ""
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
+#, fuzzy
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth Göstergesi"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
 msgstr ""
 
 #, fuzzy
 #~ msgid "Bluetooth"
-#~ msgstr "Bluetooth Göstergesi"
-
-#, fuzzy
-#~ msgid "Bluetooth obex"
 #~ msgstr "Bluetooth Göstergesi"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -64,6 +77,3 @@ msgstr ""
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "Yedek cihaz adı \"(null)\" yerine cihazın türü olarak ayarlandı"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

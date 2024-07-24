@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
 "PO-Revision-Date: 2020-07-16 21:12+0000\n"
 "Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -23,16 +23,29 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr ""
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
+#, fuzzy
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth-indikator"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
 msgstr ""
 
 #, fuzzy
 #~ msgid "Bluetooth"
-#~ msgstr "Bluetooth-indikator"
-
-#, fuzzy
-#~ msgid "Bluetooth obex"
 #~ msgstr "Bluetooth-indikator"
 
 #, fuzzy
@@ -42,6 +55,3 @@ msgstr ""
 
 #~ msgid "Updated translations"
 #~ msgstr "Oppdaterte oversettingar"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

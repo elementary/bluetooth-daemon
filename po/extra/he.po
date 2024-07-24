@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
-"PO-Revision-Date: 2024-07-21 23:16+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
+"PO-Revision-Date: 2024-07-23 18:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
 "bluetooth-daemon-extra/he/>\n"
@@ -23,15 +23,28 @@ msgstr ""
 msgid "Bluetooth File Transfer"
 msgstr "העברת קבצים בבלוטות׳"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
 msgstr "שליחה וקבלת קבצים דרך בלוטות׳"
 
+#: data/bluetooth-daemon.metainfo.xml:10
+msgid "Bluetooth Daemon"
+msgstr "סוכן בלוטות׳"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgstr "ניהול הגדרות בלוטות׳ ואספקת יכולות העברה דרך בלוטות׳."
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary בע״מ"
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
+msgstr "מהדורה ראשונית 🎉️"
+
 #~ msgid "Bluetooth"
 #~ msgstr "בלוטות׳"
-
-#~ msgid "Bluetooth obex"
-#~ msgstr "obex בלוטות׳"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "חיבור וניתוק התקני Bluetooth מצומדים"
@@ -60,6 +73,3 @@ msgstr "שליחה וקבלת קבצים דרך בלוטות׳"
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "להשתמש בסוג ההתקן אם לא זוהה במקום ב־„(ריק)”"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary בע״מ"

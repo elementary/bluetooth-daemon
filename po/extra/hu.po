@@ -7,32 +7,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-20 05:09+0000\n"
-"PO-Revision-Date: 2022-10-06 17:28+0000\n"
+"POT-Creation-Date: 2024-07-22 17:35+0000\n"
+"PO-Revision-Date: 2024-07-22 17:35+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
-"Language-Team: Hungarian <https://l10n.elementary.io/projects/wingpanel/"
-"indicator-bluetooth-extra/hu/>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
+msgstr "Bluetooth-fájlküldés"
+
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via bluetooth"
+msgstr "Fájlok küldése és fogadása Bluetooth-on keresztül"
+
+#: data/bluetooth-daemon.metainfo.xml:10
+#, fuzzy
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth-kijelzés"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages bluetooth settings and provides bluetooth transfer features."
 msgstr ""
 
-#: data/bluetooth.desktop:4
-msgid "Send and receive files via bluetooth"
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Initial Release 🎉️"
 msgstr ""
 
 #, fuzzy
 #~ msgid "Bluetooth"
-#~ msgstr "Bluetooth-kijelzés"
-
-#, fuzzy
-#~ msgid "Bluetooth obex"
 #~ msgstr "Bluetooth-kijelzés"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
@@ -65,6 +78,3 @@ msgstr ""
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr ""
 #~ "\"(null)\" helyett az eszköz típusának használata alapértelmezett névként"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
