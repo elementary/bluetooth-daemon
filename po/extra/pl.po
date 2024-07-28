@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-22 17:35+0000\n"
-"PO-Revision-Date: 2024-07-21 23:16+0000\n"
+"PO-Revision-Date: 2024-07-29 15:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
-"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/bluetooth-"
-"daemon-extra/pl/>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,13 +29,14 @@ msgid "Send and receive files via bluetooth"
 msgstr "Wysyłaj i otrzymuj pliki przez Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:10
-#, fuzzy
 msgid "Bluetooth Daemon"
-msgstr "Wskaźnik Bluetooth"
+msgstr "Bluetooth Daemon"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages bluetooth settings and provides bluetooth transfer features."
 msgstr ""
+"Obsługuje ustawienia bluetooth oraz dostarcza funkcje transferu przez "
+"bluetooth."
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
@@ -43,7 +44,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Pierwsze wydanie 🎉️"
 
 #, fuzzy
 #~ msgid "Bluetooth"
