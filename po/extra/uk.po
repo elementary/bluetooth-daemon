@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-22 17:35+0000\n"
-"PO-Revision-Date: 2024-07-20 14:45+0000\n"
+"PO-Revision-Date: 2024-07-31 21:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
 "bluetooth-daemon-extra/uk/>\n"
@@ -22,21 +22,21 @@ msgstr ""
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
-msgstr ""
+msgstr "Передавання файлів через Bluetooth"
 
 #: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via bluetooth"
-msgstr ""
+msgstr "Передавайте й отримуйте файли через Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:10
-#, fuzzy
-#| msgid "Bluetooth obex"
 msgid "Bluetooth Daemon"
-msgstr "Bluetooth obex"
+msgstr "Bluetooth Daemon"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages bluetooth settings and provides bluetooth transfer features."
 msgstr ""
+"Керує налаштуваннями Bluetooth і надає функції передачі даних через "
+"Bluetooth."
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
@@ -44,7 +44,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Початковий випуск 🎉️"
 
 #~ msgid "Bluetooth"
 #~ msgstr "Bluetooth"
