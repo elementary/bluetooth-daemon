@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-22 17:35+0000\n"
-"PO-Revision-Date: 2017-05-31 21:59+0000\n"
-"Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/wingpanel/"
-"wingpanel-indicator-bluetooth/sl/>\n"
+"PO-Revision-Date: 2024-08-07 17:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Slovenian <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
 #: src/Application.vala:168
@@ -95,7 +95,7 @@ msgstr ""
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
 #: src/Dialog/BtSender.vala:117
 msgid "Close"
-msgstr ""
+msgstr "Zapri"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
@@ -247,7 +247,7 @@ msgstr ""
 #: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
 #: src/Dialog/BtSender.vala:322
 msgid "Cancel"
-msgstr ""
+msgstr "Prekliči"
 
 #: src/Dialog/BtSender.vala:228
 #, c-format
