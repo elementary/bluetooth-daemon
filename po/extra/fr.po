@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 17:35+0000\n"
+"POT-Creation-Date: 2024-08-14 03:15+0000\n"
 "PO-Revision-Date: 2024-07-23 18:16+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/desktop/"
-"bluetooth-daemon-extra/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/desktop/bluetooth-"
+"daemon-extra/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +24,9 @@ msgid "Bluetooth File Transfer"
 msgstr "Transfert de fichier Bluetooth"
 
 #: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
-msgid "Send and receive files via bluetooth"
+#, fuzzy
+#| msgid "Send and receive files via bluetooth"
+msgid "Send and receive files via Bluetooth"
 msgstr "Envoyez et recevez des fichiers via Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:10
@@ -32,7 +34,9 @@ msgid "Bluetooth Daemon"
 msgstr "Service Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:13
-msgid "Manages bluetooth settings and provides bluetooth transfer features."
+#, fuzzy
+#| msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
 msgstr ""
 "Gère les paramètres Bluetooth et fournit des fonctions de transfert "
 "Bluetooth."

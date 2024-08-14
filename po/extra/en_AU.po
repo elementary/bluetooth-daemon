@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 17:35+0000\n"
+"POT-Creation-Date: 2024-08-14 03:15+0000\n"
 "PO-Revision-Date: 2019-11-07 13:58-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -22,7 +22,7 @@ msgid "Bluetooth File Transfer"
 msgstr ""
 
 #: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
-msgid "Send and receive files via bluetooth"
+msgid "Send and receive files via Bluetooth"
 msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:10
@@ -31,7 +31,7 @@ msgid "Bluetooth Daemon"
 msgstr "Bluetooth Indicator"
 
 #: data/bluetooth-daemon.metainfo.xml:13
-msgid "Manages bluetooth settings and provides bluetooth transfer features."
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
 msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:29
