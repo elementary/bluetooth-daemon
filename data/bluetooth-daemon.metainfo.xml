@@ -8,9 +8,9 @@
   <compulsory_for_desktop>Pantheon</compulsory_for_desktop>
 
   <name>Bluetooth Daemon</name>
-  <summary>Send and receive files via bluetooth</summary>
+  <summary>Send and receive files via Bluetooth</summary>
   <description>
-    <p>Manages bluetooth settings and provides bluetooth transfer features.</p>
+    <p>Manages Bluetooth settings and provides Bluetooth transfer features.</p>
   </description>
 
   <content_rating type="oars-1.1" />

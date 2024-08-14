@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Bluetooth Daemon
-Comment=Send and receive files via bluetooth
+Comment=Send and receive files via Bluetooth
 Exec=io.elementary.bluetooth -s
 Icon=io.elementary.bluetooth
 Type=Application
