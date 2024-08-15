@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 03:15+0000\n"
 "PO-Revision-Date: 2024-08-15 03:51+0000\n"
-"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
+"Last-Translator: Max2020 <alcizmaxpereira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/bluetooth-daemon/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -39,16 +39,16 @@ msgstr "Arquivo a receber"
 #: src/Application.vala:278
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
-msgstr ""
+msgstr "<b>%s</b> está pronto para enviar o arquivo: %s tamanho: %s"
 
 #: src/Application.vala:285
 msgid "Accept"
-msgstr ""
+msgstr "Aceitar"
 
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:290
 msgid "Decline"
-msgstr ""
+msgstr "Recusar"
 
 #: src/Application.vala:294
 msgid "Receiving file"
@@ -89,7 +89,7 @@ msgstr "Telefone"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Taxa de transferência:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
 #: src/Dialog/BtSender.vala:117
@@ -98,42 +98,42 @@ msgstr "Fechar"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Rejeitar"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
 #: src/Dialog/BtSender.vala:285
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>De</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
 #: src/Dialog/BtSender.vala:286
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Para</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Nome do arquivo</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
-msgstr ""
+msgstr "Transferência de arquivo falhou"
 
 #: src/Dialog/BtReceiver.vala:159
 #, c-format
 msgid "%s <b>File:</b> %s not received"
-msgstr ""
+msgstr "%s <b>Arquivo:</b> %s não recebido"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
 msgid "File transferred successfully"
-msgstr ""
+msgstr "Arquivo transferido com sucesso"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s <b>Salvar em:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
@@ -143,7 +143,7 @@ msgstr "Recebendo…  %s de %s"
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Taxa de transferência:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
