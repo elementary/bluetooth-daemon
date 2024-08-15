@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 03:15+0000\n"
-"PO-Revision-Date: 2024-08-15 03:51+0000\n"
+"PO-Revision-Date: 2024-08-15 03:53+0000\n"
 "Last-Translator: Max2020 <alcizmaxpereira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "desktop/bluetooth-daemon/pt_BR/>\n"
@@ -25,7 +25,7 @@ msgstr "Enviar arquivos para o dispositivo…"
 
 #: src/Application.vala:259
 msgid "Rejected file"
-msgstr "Rejeitar arquivo"
+msgstr "Arquivo rejeitado"
 
 #: src/Application.vala:261
 #, c-format
@@ -138,7 +138,7 @@ msgstr "%s <b>Salvar em:</b> %s"
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr "Recebendo…  %s de %s"
+msgstr "Recebendo…  %s of %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
 #, c-format
