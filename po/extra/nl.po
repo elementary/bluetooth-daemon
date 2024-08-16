@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 03:15+0000\n"
-"PO-Revision-Date: 2024-08-07 17:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/bluetooth-"
-"daemon-extra/nl/>\n"
+"PO-Revision-Date: 2024-08-17 06:16+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,16 +25,15 @@ msgstr "Bluetooth bestandsoverdracht"
 
 #: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
-msgstr ""
+msgstr "Verstuur en ontvang bestanden via Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:10
-#, fuzzy
 msgid "Bluetooth Daemon"
-msgstr "Bluetooth indicator"
+msgstr "Bluetooth daemon"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
-msgstr ""
+msgstr "Beheert Bluetooth-instellingen en biedt Bluetooth overdracht-functies."
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
@@ -42,7 +41,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Eerste release 🎉️"
 
 #, fuzzy
 #~ msgid "Bluetooth"
