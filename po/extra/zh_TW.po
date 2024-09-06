@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 03:15+0000\n"
-"PO-Revision-Date: 2024-09-05 21:13+0000\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "desktop/bluetooth-daemon-extra/zh_Hant/>\n"
@@ -25,15 +25,15 @@ msgstr "藍牙檔案傳輸"
 
 #: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
-msgstr ""
+msgstr "透過藍牙傳送或接收檔案"
 
 #: data/bluetooth-daemon.metainfo.xml:10
 msgid "Bluetooth Daemon"
-msgstr ""
+msgstr "藍牙伺服程式"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
-msgstr ""
+msgstr "管理藍牙設定並提供藍牙傳輸功能。"
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
@@ -41,4 +41,4 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "初次發佈 🎉️"
