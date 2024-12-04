@@ -3,61 +3,61 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-14 03:15+0000\n"
-"PO-Revision-Date: 2024-08-07 17:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/bluetooth-"
-"daemon/cs/>\n"
+"PO-Revision-Date: 2024-12-05 13:16+0000\n"
+"Last-Translator: Jáchym Řezáč <r3zackacz@users.noreply.l10n.elementary.io>\n"
+"Language-Team: Czech <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
 #: src/Application.vala:168
 msgid "Send Files via Bluetooth"
-msgstr ""
+msgstr "Poslat soubory přes Bluetooth"
 
 #: src/Application.vala:170
 msgid "Send files to device…"
-msgstr ""
+msgstr "Odeslat soubory do zařízení…"
 
 #: src/Application.vala:259
 msgid "Rejected file"
-msgstr ""
+msgstr "Odmítnutý soubor"
 
 #: src/Application.vala:261
 #, c-format
 msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
-msgstr ""
+msgstr "<b>Soubor:</b>%s<b>o velikosti:</b>%s již existuje"
 
 #: src/Application.vala:276
 msgid "Incoming file"
-msgstr ""
+msgstr "Příchozí soubor"
 
 #: src/Application.vala:278
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
-msgstr ""
+msgstr "<b>%s</b> je připraven odeslat soubor: %s o velikosti: %s"
 
 #: src/Application.vala:285
 msgid "Accept"
-msgstr ""
+msgstr "Přijmout"
 
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:290
 msgid "Decline"
-msgstr ""
+msgstr "Odmítnout"
 
 #: src/Application.vala:294
 msgid "Receiving file"
-msgstr ""
+msgstr "Přijímání souboru"
 
 #: src/Application.vala:295
 #, c-format
 msgid "%s is sending file: %s size: %s"
-msgstr ""
+msgstr "%s odesílá soubor: %s o velikosti: %s"
 
 #: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
 msgid "Speaker"
@@ -89,7 +89,7 @@ msgstr "Telefon"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Rychlost přenosu:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
 #: src/Dialog/BtSender.vala:117
@@ -98,145 +98,145 @@ msgstr "Zavřít"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Odmítnout"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
 #: src/Dialog/BtSender.vala:285
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>Od</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
 #: src/Dialog/BtSender.vala:286
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Na:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Název souboru</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
-msgstr ""
+msgstr "Přenos souboru selhal"
 
 #: src/Dialog/BtReceiver.vala:159
 #, c-format
 msgid "%s <b>File:</b> %s not received"
-msgstr ""
+msgstr "%s <b>Soubor:</b> %s nebyl přijat"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
 msgid "File transferred successfully"
-msgstr ""
+msgstr "Soubor úspěšně přenesen"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s <b>Uložit do:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr ""
+msgstr "Přenášení…  %s z %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Rychlost přenosu:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
 msgid "%s of %s received, time remaining %s"
-msgstr ""
+msgstr "%s z %s přijato, zbývá %s"
 
 #: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekundy"
+msgstr[2] "%d sekund"
 
 #: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%d minuta"
+msgstr[1] "%d minuty"
+msgstr[2] "%d minut"
 
 #: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%u hodina"
+msgstr[1] "%u hodiny"
+msgstr[2] "%u hodin"
 
 #: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "%u minuta"
+msgstr[1] "%u minuty"
+msgstr[2] "%u minut"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
 #: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
 #, c-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s a %s"
 
 #: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "přibližně %d hodina"
+msgstr[1] "přibližně %d hodiny"
+msgstr[2] "přibližně %d hodin"
 
 #: src/Dialog/BtScan.vala:41
-#, fuzzy
 msgid "Bluetooth File Transfer"
-msgstr "Bluetooth je zapnuté"
+msgstr "Přenos souborů přes Bluetooth"
 
 #: src/Dialog/BtScan.vala:49
 msgid "Select a Bluetooth Device Below to Send Files"
-msgstr ""
+msgstr "Vyberte zařízení Bluetooth níže pro odeslání souborů"
 
 #: src/Dialog/BtScan.vala:57
 msgid "No Devices Found"
-msgstr ""
+msgstr "Žádné zařízení nenalezeno"
 
 #: src/Dialog/BtScan.vala:58
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
+"Ujistěte se prosím, že vaše zářízení jsou zjistitelná a připravená pro "
+"párování."
 
 #: src/Dialog/BtScan.vala:79
-#, fuzzy
 msgid "Discovering"
-msgstr "Odpojování…"
+msgstr "Vyhledávání"
 
 #: src/Dialog/BtScan.vala:189
 msgid "Available Devices"
-msgstr ""
+msgstr "Dostupná zařízení"
 
 #: src/Dialog/BtSender.vala:67
 msgid "From"
-msgstr ""
+msgstr "Od"
 
 #: src/Dialog/BtSender.vala:75
 msgid "To"
-msgstr ""
+msgstr "Pro"
 
 #: src/Dialog/BtSender.vala:81
 msgid "Filename"
-msgstr ""
+msgstr "Název souboru"
 
 #: src/Dialog/BtSender.vala:87
 msgid "Transfer rate"
-msgstr ""
+msgstr "Rychlost přenosu"
 
 #: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
 #: src/Dialog/BtSender.vala:322
@@ -246,49 +246,49 @@ msgstr "Zrušit"
 #: src/Dialog/BtSender.vala:228
 #, c-format
 msgid "Trying to connect to %s…"
-msgstr ""
+msgstr "Pokus o připojení k %s…"
 
 #: src/Dialog/BtSender.vala:246
 #, c-format
 msgid "Connecting to '%s' failed."
-msgstr ""
+msgstr "Připojování k \"%s\" selhalo."
 
 #: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
 #, c-format
 msgid "The transfer of '%s' failed."
-msgstr ""
+msgstr "Přenos \"%s\" selhal."
 
 #: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
 msgid "The file has not been transferred"
-msgstr ""
+msgstr "Soubor nebyl přenesen"
 
 #: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
 msgid "Retry"
-msgstr ""
+msgstr "Zkusit znovu"
 
 #: src/Dialog/BtSender.vala:288
 #, c-format
 msgid "Waiting for acceptance on %s…"
-msgstr ""
+msgstr "Čekání na přijetí od %s…"
 
 #: src/Dialog/BtSender.vala:312
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
-msgstr ""
+msgstr "Přenos byl přerušen nebo zamítnut %s."
 
 #: src/Dialog/BtSender.vala:359
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
-msgstr ""
+msgstr "<b>Od:</b> %s <b>Odeslat na:</b> %s"
 
 #: src/Dialog/BtSender.vala:379
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
-msgstr ""
+msgstr "(%i/%i) %s z %s odesláno, zbývá %s"
 
 #: src/Dialog/DeviceRow.vala:74
 msgid "Send"
-msgstr ""
+msgstr "Odeslat"
 
 #~ msgid "Not Connected"
 #~ msgstr "Nepřipojeno"
