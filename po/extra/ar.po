@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2021-08-26 22:37+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -42,6 +42,14 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "تحديثات على الترجمة"
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr ""
 
@@ -54,9 +62,6 @@ msgstr ""
 
 #~ msgid "Minor updates:"
 #~ msgstr "تحديثات طفيفة:"
-
-#~ msgid "Updated translations"
-#~ msgstr "تحديثات على الترجمة"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"

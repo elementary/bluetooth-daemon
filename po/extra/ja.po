@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2024-08-15 03:51+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
@@ -40,6 +40,14 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr "初リリース 🎉️"
 
@@ -52,9 +60,6 @@ msgstr "初リリース 🎉️"
 
 #~ msgid "Minor updates:"
 #~ msgstr "そのほかのアップデート:"
-
-#~ msgid "Updated translations"
-#~ msgstr "翻訳の更新"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"

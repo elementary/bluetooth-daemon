@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2019-11-07 13:58-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -37,5 +37,13 @@ msgid "elementary, Inc."
 msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr ""

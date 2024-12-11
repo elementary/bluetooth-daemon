@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2022-04-14 22:06+0000\n"
 "Last-Translator: Pikhosh <pikhosh@gmail.com>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/wingpanel/"
@@ -40,11 +40,16 @@ msgid "elementary, Inc."
 msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "ترجمه های بروز شده"
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr ""
 
 #~ msgid "Minor updates:"
 #~ msgstr "بروزرسانی های جزئی:"
-
-#~ msgid "Updated translations"
-#~ msgstr "ترجمه های بروز شده"
