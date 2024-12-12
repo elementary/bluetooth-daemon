@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-11 22:18+0000\n"
-"PO-Revision-Date: 2024-08-15 03:51+0000\n"
+"PO-Revision-Date: 2024-12-13 07:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/bluetooth-"
-"daemon-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
@@ -41,7 +41,7 @@ msgstr "elementary בע״מ"
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Other Improvements:"
-msgstr ""
+msgstr "שיפורים אחרים:"
 
 #: data/bluetooth-daemon.metainfo.xml:39
 msgid "Updated translations"
