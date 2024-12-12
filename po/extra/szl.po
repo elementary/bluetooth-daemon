@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2020-02-23 00:08+0000\n"
 "Last-Translator: gkkulik <g.kulik@o2.pl>\n"
 "Language-Team: Silesian <https://l10n.elementary.io/projects/wingpanel/"
@@ -42,6 +42,14 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "Zaktualizowane przekłady"
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr ""
 
@@ -53,6 +61,3 @@ msgstr ""
 #~| msgid "Connect and disconnect paired bluetooth devices"
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "Łōnczynie i rozłōnczanie sporowanych maszin bluetooth"
-
-#~ msgid "Updated translations"
-#~ msgstr "Zaktualizowane przekłady"

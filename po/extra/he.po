@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2024-08-15 03:51+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/"
-"bluetooth-daemon-extra/he/>\n"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/bluetooth-"
+"daemon-extra/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,6 +40,14 @@ msgid "elementary, Inc."
 msgstr "elementary בע״מ"
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "תרגומים עודכנו"
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr "מהדורה ראשונית 🎉️"
 
@@ -51,9 +59,6 @@ msgstr "מהדורה ראשונית 🎉️"
 
 #~ msgid "Minor updates:"
 #~ msgstr "עדכונים משניים:"
-
-#~ msgid "Updated translations"
-#~ msgstr "תרגומים עודכנו"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"

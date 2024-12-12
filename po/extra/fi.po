@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 03:15+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2024-12-01 13:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/"
@@ -41,6 +41,14 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "Päivitetyt kielikäännökset"
+
+#: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
 msgstr "Ensimmäinen julkaisu 🎉️"
 
@@ -53,6 +61,3 @@ msgstr "Ensimmäinen julkaisu 🎉️"
 
 #~ msgid "Minor updates:"
 #~ msgstr "Pieniä päivityksiä:"
-
-#~ msgid "Updated translations"
-#~ msgstr "Päivitetyt kielikäännökset"
