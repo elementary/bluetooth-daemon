@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-11 22:18+0000\n"
-"PO-Revision-Date: 2024-09-29 02:16+0000\n"
+"PO-Revision-Date: 2024-12-13 07:16+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "desktop/bluetooth-daemon-extra/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
@@ -41,7 +41,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Other Improvements:"
 
 #: data/bluetooth-daemon.metainfo.xml:39
 msgid "Updated translations"
