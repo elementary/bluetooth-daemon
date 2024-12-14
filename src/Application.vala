@@ -87,8 +87,8 @@ public class BluetoothApp : Gtk.Application {
                 bt_sender.add_files (files, device);
                 bt_senders.append (bt_sender);
                 bt_sender.show_all ();
-                bt_sender.destroy.connect (()=> {
-                    bt_senders.foreach ((sender)=>{
+                bt_sender.destroy.connect (() => {
+                    bt_senders.foreach ((sender) => {
                         if (sender.device == bt_sender.device) {
                             bt_senders.remove_link (bt_senders.find (sender));
                         }
@@ -190,12 +190,12 @@ public class BluetoothApp : Gtk.Application {
     }
 
     private void dialog_active (string session_path) {
-        bt_receivers.foreach ((receiver)=>{
+        bt_receivers.foreach ((receiver) => {
             if (receiver.transfer.session == session_path) {
                 receiver.show_all ();
             }
         });
-        bt_senders.foreach ((sender)=>{
+        bt_senders.foreach ((sender) => {
             if (sender.transfer.session == session_path) {
                 sender.show_all ();
             }
@@ -204,7 +204,7 @@ public class BluetoothApp : Gtk.Application {
 
     private bool insert_sender (File[] files, Bluetooth.Device device) {
         bool exist = false;
-        bt_senders.foreach ((sender)=>{
+        bt_senders.foreach ((sender) => {
             if (sender.device == device) {
                 sender.insert_files (files);
                 sender.present ();
@@ -226,8 +226,8 @@ public class BluetoothApp : Gtk.Application {
 
         bt_receiver = new BtReceiver (this);
         bt_receivers.append (bt_receiver);
-        bt_receiver.destroy.connect (()=> {
-            bt_receivers.foreach ((receiver)=>{
+        bt_receiver.destroy.connect (() => {
+            bt_receivers.foreach ((receiver) => {
                 if (receiver.transfer.session == bt_receiver.session) {
                     bt_receivers.remove_link (bt_receivers.find (receiver));
                 }
