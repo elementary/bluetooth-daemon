@@ -51,14 +51,15 @@ public class BluetoothApp : Gtk.Application {
 
         foreach (unowned string arg in args) {
             var file = command.create_file_for_arg (arg);
-            if (file.query_exists ()) {
-                files += file;
-            } else {
+            if (!file.query_exists ()) {
                 stderr.printf (
-                    "The file %s was not found and will not be sent.\n",
+                    "Ignoring not found file: %s\n",
                     file.get_path ()
                 );
+                continue;
             }
+
+            files += file;
         }
 
         return files;
