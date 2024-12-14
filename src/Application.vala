@@ -46,6 +46,56 @@ public class BluetoothApp : Gtk.Application {
         Intl.setlocale (LocaleCategory.ALL, "");
     }
 
+    private File[] create_files_for_arg (ApplicationCommandLine command, string[] args) {
+        File[] files = {};
+
+        foreach (unowned string arg in args) {
+            var file = command.create_file_for_arg (arg);
+            if (file.query_exists ()) {
+                files += file;
+            } else {
+                stderr.printf (
+                    "The file %s was not found and will not be sent.\n",
+                    file.get_path ()
+                );
+            }
+        }
+
+        return files;
+    }
+
+    private void scan_and_send_files (File[] files) {
+        if (bt_scan == null) {
+            bt_scan = new BtScan (this, object_manager);
+            Idle.add (() => { // Wait for async BtScan initialisation
+                bt_scan.show_all ();
+                return Source.REMOVE;
+            });
+        } else {
+            bt_scan.present ();
+        }
+
+        bt_scan.destroy.connect (() => {
+            bt_scan = null;
+        });
+
+        bt_scan.send_file.connect ((device) => {
+            if (!insert_sender (files, device)) {
+                bt_sender = new BtSender (this);
+                bt_sender.add_files (files, device);
+                bt_senders.append (bt_sender);
+                bt_sender.show_all ();
+                bt_sender.destroy.connect (()=> {
+                    bt_senders.foreach ((sender)=>{
+                        if (sender.device == bt_sender.device) {
+                            bt_senders.remove_link (bt_senders.find (sender));
+                        }
+                    });
+                });
+            }
+        });
+    }
+
     public override int command_line (ApplicationCommandLine command) {
         string [] args_cmd = command.get_arguments ();
         unowned string [] args = args_cmd;
@@ -59,50 +109,12 @@ public class BluetoothApp : Gtk.Application {
 
         activate ();
 
+        // Handle "send" option
         if (arg_files != null) {
-            File [] files = {};
-            foreach (unowned string arg_file in arg_files) {
-                var file = command.create_file_for_arg (arg_file);
-                if (file.query_exists ()) {
-                    files += file;
-                } else {
-                    stderr.printf (
-                        "The file %s was not found and will not be sent.\n",
-                        file.get_path ()
-                    );
-                }
-            }
+            File[] files = create_files_for_arg (command, arg_files);
 
             if (files.length > 0) {
-                if (bt_scan == null) {
-                    bt_scan = new BtScan (this, object_manager);
-                    Idle.add (() => { // Wait for async BtScan initialisation
-                        bt_scan.show_all ();
-                        return Source.REMOVE;
-                    });
-                } else {
-                    bt_scan.present ();
-                }
-
-                bt_scan.destroy.connect (() => {
-                    bt_scan = null;
-                });
-
-                bt_scan.send_file.connect ((device) => {
-                    if (!insert_sender (files, device)) {
-                        bt_sender = new BtSender (this);
-                        bt_sender.add_files (files, device);
-                        bt_senders.append (bt_sender);
-                        bt_sender.show_all ();
-                        bt_sender.destroy.connect (()=> {
-                            bt_senders.foreach ((sender)=>{
-                                if (sender.device == bt_sender.device) {
-                                    bt_senders.remove_link (bt_senders.find (sender));
-                                }
-                            });
-                        });
-                    }
-                });
+                scan_and_send_files (files);
             }
         }
 
