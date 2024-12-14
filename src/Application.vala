@@ -23,8 +23,7 @@
 public class BluetoothApp : Gtk.Application {
     public const OptionEntry[] OPTIONS_BLUETOOTH = {
         { "silent", 's', 0, OptionArg.NONE, out silent, "Run the Application in background", null},
-        { "send", 'f', 0, OptionArg.NONE, out send, "Open file to send via Bluetooth", null },
-        { "", 0, 0, OptionArg.STRING_ARRAY, out arg_files, "Get files", null },
+        { "send", 'f', 0, OptionArg.FILENAME_ARRAY, out arg_files, "Open file to send via Bluetooth", "FILE..." },
         { null }
     };
 
@@ -37,10 +36,9 @@ public class BluetoothApp : Gtk.Application {
     public GLib.List<BtReceiver> bt_receivers;
     public GLib.List<BtSender> bt_senders;
     public static bool silent = true;
-    public static bool send = false;
     public static bool active_once;
     [CCode (array_length = false, array_null_terminated = true)]
-    public static string[]? arg_files = {};
+    public static string[]? arg_files = null;
 
     construct {
         application_id = "io.elementary.bluetooth";
@@ -61,7 +59,7 @@ public class BluetoothApp : Gtk.Application {
 
         activate ();
 
-        if (send) {
+        if (arg_files != null) {
             File [] files = {};
             foreach (unowned string arg_file in arg_files) {
                 var file = command.create_file_for_arg (arg_file);
@@ -105,9 +103,6 @@ public class BluetoothApp : Gtk.Application {
                         });
                     }
                 });
-
-                arg_files = {};
-                send = false;
             }
         }
 
