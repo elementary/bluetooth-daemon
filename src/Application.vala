@@ -44,6 +44,7 @@ public class BluetoothApp : Gtk.Application {
         application_id = "io.elementary.bluetooth";
         flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
         Intl.setlocale (LocaleCategory.ALL, "");
+        add_main_option_entries (OPTIONS_BLUETOOTH);
     }
 
     private File[] create_files_for_arg (ApplicationCommandLine command, string[] args) {
@@ -98,16 +99,6 @@ public class BluetoothApp : Gtk.Application {
     }
 
     public override int command_line (ApplicationCommandLine command) {
-        string [] args_cmd = command.get_arguments ();
-        unowned string [] args = args_cmd;
-        var opt_context = new OptionContext (null);
-        opt_context.add_main_entries (OPTIONS_BLUETOOTH, null);
-        try {
-            opt_context.parse (ref args);
-        } catch (Error err) {
-            warning (err.message);
-        }
-
         activate ();
 
         // Handle "send" option
