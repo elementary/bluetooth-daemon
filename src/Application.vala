@@ -47,7 +47,7 @@ public class BluetoothApp : Gtk.Application {
         add_main_option_entries (OPTIONS_BLUETOOTH);
     }
 
-    private File[] create_files_for_arg (ApplicationCommandLine command, string[] args) {
+    private File[] create_files_for_args (ApplicationCommandLine command, string[] args) {
         File[] files = {};
 
         foreach (unowned string arg in args) {
@@ -103,7 +103,7 @@ public class BluetoothApp : Gtk.Application {
 
         // Handle "send" option
         if (arg_files != null) {
-            File[] files = create_files_for_arg (command, arg_files);
+            File[] files = create_files_for_args (command, arg_files);
 
             if (files.length > 0) {
                 scan_and_send_files (files);
