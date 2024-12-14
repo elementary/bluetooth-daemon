@@ -138,7 +138,7 @@ public class BluetoothApp : Gtk.Application {
             bt_receivers = new GLib.List<BtReceiver> ();
             bt_senders = new GLib.List<BtSender> ();
             object_manager = new Bluetooth.ObjectManager ();
-            object_manager.notify["has-object"].connect (() => {
+            object_manager.notify["has-adapter"].connect (() => {
                 var build_path = Path.build_filename (
                     Environment.get_home_dir (), ".local", "share", "contractor"
                 );
@@ -154,7 +154,7 @@ public class BluetoothApp : Gtk.Application {
                     )
                 );
 
-                if (object_manager.has_object) {
+                if (object_manager.has_adapter) {
                     if (!active_once) {
                         agent_obex = new Bluetooth.Obex.Agent ();
                         agent_obex.transfer_view.connect (dialog_active);
