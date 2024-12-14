@@ -7,36 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
-"PO-Revision-Date: 2022-04-09 01:03+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"PO-Revision-Date: 2024-12-12 05:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/wingpanel/"
-"indicator-bluetooth-extra/ja/>\n"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/bluetooth.desktop:3
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Bluetooth インジケーター"
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth ファイル転送"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr "Bluetooth 経由でファイルを送受信します"
+
+#: data/bluetooth-daemon.metainfo.xml:10
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth デーモン"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr "Bluetooth の設定を管理し、Bluetooth での転送機能を提供します。"
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr "そのほかの改善:"
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr "初リリース 🎉️"
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "Bluetooth インジケーター"
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth インジケーター"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "ペアリングした Bluetooth デバイスを接続したり切断したりします"
 
 #~ msgid "Minor updates:"
 #~ msgstr "そのほかのアップデート:"
-
-#~ msgid "Updated translations"
-#~ msgstr "翻訳の更新"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"
@@ -61,6 +84,3 @@ msgstr "Bluetooth インジケーター"
 #~ msgstr ""
 #~ "デバイス名が利用可能ではない場合に、\"(null)\" と表示するのではなくデバイ"
 #~ "スの種類を表示するように修正"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

@@ -7,36 +7,60 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
-"PO-Revision-Date: 2021-11-02 02:04+0000\n"
-"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"PO-Revision-Date: 2024-08-07 17:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
-"wingpanel/indicator-bluetooth-extra/zh_Hans/>\n"
+"desktop/bluetooth-daemon-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.desktop:3
+msgid "Bluetooth File Transfer"
+msgstr "蓝牙文件传输"
+
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-msgid "Bluetooth"
+msgid "Bluetooth Daemon"
 msgstr "蓝牙指示器"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "更新翻译"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr ""
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "蓝牙指示器"
+#~ msgid "Bluetooth"
+#~ msgstr "蓝牙指示器"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "连接和断开配对的蓝牙设备"
 
 #~ msgid "Minor updates:"
 #~ msgstr "次要更新："
-
-#~ msgid "Updated translations"
-#~ msgstr "更新翻译"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"
@@ -56,6 +80,3 @@ msgstr "蓝牙指示器"
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "使用设备类型作为后备而不是“(null)”"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

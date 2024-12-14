@@ -7,36 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
-"PO-Revision-Date: 2021-09-23 12:58+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"PO-Revision-Date: 2024-12-13 07:16+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
-"wingpanel/indicator-bluetooth-extra/en_GB/>\n"
+"desktop/bluetooth-daemon-extra/en_GB/>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/bluetooth.desktop:3
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Bluetooth Indicator"
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth File Transfer"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr "Send and receive files via Bluetooth"
+
+#: data/bluetooth-daemon.metainfo.xml:10
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth Daemon"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr "Manages Bluetooth settings and provides Bluetooth transfer features."
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr "Other Improvements:"
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "Updated translations"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr "Initial Release 🎉️"
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "Bluetooth Indicator"
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth Indicator"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "Connect and disconnect paired Bluetooth devices"
 
 #~ msgid "Minor updates:"
 #~ msgstr "Minor updates:"
-
-#~ msgid "Updated translations"
-#~ msgstr "Updated translations"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"
@@ -57,6 +80,3 @@ msgstr "Bluetooth Indicator"
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "Use device type as fallback instead of \"(null)\""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

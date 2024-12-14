@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2021-08-26 22:37+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/wingpanel/"
@@ -21,23 +21,47 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 
 #: data/bluetooth.desktop:3
+msgid "Bluetooth File Transfer"
+msgstr ""
+
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-msgid "Bluetooth"
+msgid "Bluetooth Daemon"
 msgstr "مؤشر البلوتوث"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "تحديثات على الترجمة"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr ""
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "مؤشر البلوتوث"
+#~ msgid "Bluetooth"
+#~ msgstr "مؤشر البلوتوث"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "قم بالاتصال بأجهزة البلوتوث أو أيقاف الاتصال بها"
 
 #~ msgid "Minor updates:"
 #~ msgstr "تحديثات طفيفة:"
-
-#~ msgid "Updated translations"
-#~ msgstr "تحديثات على الترجمة"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"
@@ -58,6 +82,3 @@ msgstr "مؤشر البلوتوث"
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "استخدام نوع الجهاز كاسم بديل احتياطي بدلاً من \"(null)\""
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

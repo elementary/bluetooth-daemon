@@ -19,7 +19,7 @@ public class BtScan : Granite.MessageDialog {
     }
 
     construct {
-        image_icon = new ThemedIcon ("bluetooth");
+        image_icon = new ThemedIcon ("io.elementary.bluetooth");
         primary_text = _("Bluetooth File Transfer");
         secondary_text = _("Select a Bluetooth Device Below to Send Files");
         resizable = true;

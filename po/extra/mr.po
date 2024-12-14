@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
 "PO-Revision-Date: 2019-11-28 16:24+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/wingpanel/"
@@ -20,22 +20,43 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 
 #: data/bluetooth.desktop:3
+msgid "Bluetooth File Transfer"
+msgstr ""
+
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:10
 #, fuzzy
-msgid "Bluetooth"
+msgid "Bluetooth Daemon"
 msgstr "ब्लूटूथ निर्देशक"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "एलिमेंटरी, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "अद्ययावत भाषांतर"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr ""
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "ब्लूटूथ निर्देशक"
+#~ msgid "Bluetooth"
+#~ msgstr "ब्लूटूथ निर्देशक"
 
 #, fuzzy
 #~| msgid "Connect and disconnect paired bluetooth devices"
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "जोडलेले ब्लूटूथ डिव्हाइस कनेक्ट आणि डिस्कनेक्ट करा"
-
-#~ msgid "Updated translations"
-#~ msgstr "अद्ययावत भाषांतर"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "एलिमेंटरी, Inc."

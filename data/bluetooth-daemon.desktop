@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Bluetooth
-Comment=Bluetooth obex
+Name=Bluetooth Daemon
+Comment=Send and receive files via Bluetooth
 Exec=io.elementary.bluetooth -s
-Icon=bluetooth
+Icon=io.elementary.bluetooth
 Type=Application
 NoDisplay=true
 Categories=System;

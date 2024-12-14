@@ -7,36 +7,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
-"PO-Revision-Date: 2021-10-08 13:51+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"PO-Revision-Date: 2024-12-01 13:02+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/wingpanel/"
-"indicator-bluetooth-extra/fi/>\n"
+"Language-Team: Finnish <https://l10n.elementary.io/projects/desktop/"
+"bluetooth-daemon-extra/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.desktop:3
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Bluetooth-ilmaisin"
+msgid "Bluetooth File Transfer"
+msgstr "Bluetooth-tiedostonsiirto"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr "Lähetä ja vastaanota tiedostoja Bluetoothilla"
+
+#: data/bluetooth-daemon.metainfo.xml:10
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth-taustaosa"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr ""
+"Hallitsee Bluetooth-asetuksia ja tarjoaa Bluetooth-siirto-ominaisuuksia."
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "Päivitetyt kielikäännökset"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr "Ensimmäinen julkaisu 🎉️"
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "Bluetooth-ilmaisin"
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth-ilmaisin"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "Yhdistä ja katkaise yhteys paritettuihin Bluetooth-laitteisiin"
 
 #~ msgid "Minor updates:"
 #~ msgstr "Pieniä päivityksiä:"
-
-#~ msgid "Updated translations"
-#~ msgstr "Päivitetyt kielikäännökset"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."

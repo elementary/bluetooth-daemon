@@ -7,36 +7,59 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 09:52-0700\n"
-"PO-Revision-Date: 2021-08-26 12:26+0000\n"
+"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"PO-Revision-Date: 2024-08-19 18:16+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
-"Language-Team: Slovak <https://l10n.elementary.io/projects/wingpanel/"
-"indicator-bluetooth-extra/sk/>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/desktop/bluetooth-"
+"daemon-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/bluetooth.desktop:3
-#, fuzzy
-msgid "Bluetooth"
-msgstr "Indikátor Bluetooth"
+msgid "Bluetooth File Transfer"
+msgstr "Prenos súborov cez Bluetooth"
 
-#: data/bluetooth.desktop:4
+#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+msgid "Send and receive files via Bluetooth"
+msgstr "Odosielajte a prijímajte súbory cez Bluetooth"
+
+#: data/bluetooth-daemon.metainfo.xml:10
+msgid "Bluetooth Daemon"
+msgstr "Bluetooth démon"
+
+#: data/bluetooth-daemon.metainfo.xml:13
+msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
+msgstr "Spravuje nastavenia Bluetooth a poskytuje prenosové funkcie Bluetooth."
+
+#: data/bluetooth-daemon.metainfo.xml:29
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/bluetooth-daemon.metainfo.xml:37
+msgid "Other Improvements:"
+msgstr ""
+
+#: data/bluetooth-daemon.metainfo.xml:39
+msgid "Updated translations"
+msgstr "Aktualizované preklady"
+
+#: data/bluetooth-daemon.metainfo.xml:46
+msgid "Initial Release 🎉️"
+msgstr "Prvé vydanie 🎉️"
+
 #, fuzzy
-msgid "Bluetooth obex"
-msgstr "Indikátor Bluetooth"
+#~ msgid "Bluetooth"
+#~ msgstr "Indikátor Bluetooth"
 
 #~ msgid "Connect and disconnect paired Bluetooth devices"
 #~ msgstr "Pripojte a odpojte spárované Bluetooth zariadenia"
 
 #~ msgid "Minor updates:"
 #~ msgstr "Menšie aktualizácie:"
-
-#~ msgid "Updated translations"
-#~ msgstr "Aktualizované preklady"
 
 #~ msgid ""
 #~ "Improve restoring Bluetooth state on restart and resuming from suspend"
@@ -57,6 +80,3 @@ msgstr "Indikátor Bluetooth"
 
 #~ msgid "Use device type as fallback instead of \"(null)\""
 #~ msgstr "Použiť typ zariadenia ako zálohu namiesto „(null)“"
-
-#~ msgid "elementary, Inc."
-#~ msgstr "elementary, Inc."
