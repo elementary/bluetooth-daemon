@@ -19,7 +19,7 @@ public class Bluetooth.ObjectManager : Object {
     public signal void device_added (Bluetooth.Device device);
     public signal void device_removed (Bluetooth.Device device);
     public signal void status_discovering ();
-    public bool has_object { get; private set; default = false; }
+    public bool has_adapter { get; private set; default = false; }
     public Settings settings;
     private GLib.DBusObjectManagerClient object_manager;
 
@@ -93,7 +93,7 @@ public class Bluetooth.ObjectManager : Object {
             device_added (device);
         } else if (iface is Bluetooth.Adapter) {
             unowned var adapter = (Bluetooth.Adapter) iface;
-            has_object = true;
+            has_adapter = true;
             ((DBusProxy) adapter).g_properties_changed.connect ((changed, invalid) => {
                 var discovering = changed.lookup_value ("Discovering", GLib.VariantType.BOOLEAN);
                 if (discovering != null) {
@@ -107,7 +107,7 @@ public class Bluetooth.ObjectManager : Object {
         if (iface is Bluetooth.Device) {
             device_removed ((Bluetooth.Device) iface);
         } else if (iface is Bluetooth.Adapter) {
-            has_object = !get_adapters ().is_empty;
+            has_adapter = !get_adapters ().is_empty;
         }
     }
 
