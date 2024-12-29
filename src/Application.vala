@@ -23,8 +23,7 @@
 public class BluetoothApp : Gtk.Application {
     public const OptionEntry[] OPTIONS_BLUETOOTH = {
         { "silent", 's', 0, OptionArg.NONE, out silent, "Run the Application in background", null},
-        { "send", 'f', 0, OptionArg.NONE, out send, "Open file to send via Bluetooth", null },
-        { "", 0, 0, OptionArg.STRING_ARRAY, out arg_files, "Get files", null },
+        { "send", 'f', 0, OptionArg.FILENAME_ARRAY, out arg_files, "Open file to send via Bluetooth", "FILE…" },
         { null }
     };
 
@@ -37,77 +36,77 @@ public class BluetoothApp : Gtk.Application {
     public GLib.List<BtReceiver> bt_receivers;
     public GLib.List<BtSender> bt_senders;
     public static bool silent = true;
-    public static bool send = false;
     public static bool active_once;
     [CCode (array_length = false, array_null_terminated = true)]
-    public static string[]? arg_files = {};
+    public static string[]? arg_files = null;
 
     construct {
         application_id = "io.elementary.bluetooth";
         flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
         Intl.setlocale (LocaleCategory.ALL, "");
+        add_main_option_entries (OPTIONS_BLUETOOTH);
+    }
+
+    private File[] create_files_for_args (ApplicationCommandLine command, string[] args) {
+        File[] files = {};
+
+        foreach (unowned string arg in args) {
+            var file = command.create_file_for_arg (arg);
+            if (!file.query_exists ()) {
+                stderr.printf (
+                    "Ignoring not found file: %s\n",
+                    file.get_path ()
+                );
+                continue;
+            }
+
+            files += file;
+        }
+
+        return files;
+    }
+
+    private void scan_and_send_files (File[] files) {
+        if (bt_scan == null) {
+            bt_scan = new BtScan (this, object_manager);
+            Idle.add (() => { // Wait for async BtScan initialisation
+                bt_scan.show_all ();
+                return Source.REMOVE;
+            });
+        } else {
+            bt_scan.present ();
+        }
+
+        bt_scan.destroy.connect (() => {
+            bt_scan = null;
+        });
+
+        bt_scan.send_file.connect ((device) => {
+            if (!insert_sender (files, device)) {
+                bt_sender = new BtSender (this);
+                bt_sender.add_files (files, device);
+                bt_senders.append (bt_sender);
+                bt_sender.show_all ();
+                bt_sender.destroy.connect (() => {
+                    bt_senders.foreach ((sender) => {
+                        if (sender.device == bt_sender.device) {
+                            bt_senders.remove_link (bt_senders.find (sender));
+                        }
+                    });
+                });
+            }
+        });
     }
 
     public override int command_line (ApplicationCommandLine command) {
-        string [] args_cmd = command.get_arguments ();
-        unowned string [] args = args_cmd;
-        var opt_context = new OptionContext (null);
-        opt_context.add_main_entries (OPTIONS_BLUETOOTH, null);
-        try {
-            opt_context.parse (ref args);
-        } catch (Error err) {
-            warning (err.message);
-        }
-
         activate ();
 
-        if (send) {
-            File [] files = {};
-            foreach (unowned string arg_file in arg_files) {
-                var file = command.create_file_for_arg (arg_file);
-                if (file.query_exists ()) {
-                    files += file;
-                } else {
-                    stderr.printf (
-                        "The file %s was not found and will not be sent.\n",
-                        file.get_path ()
-                    );
-                }
-            }
+        // Handle "send" option
+        if (arg_files != null) {
+            File[] files = create_files_for_args (command, arg_files);
 
             if (files.length > 0) {
-                if (bt_scan == null) {
-                    bt_scan = new BtScan (this, object_manager);
-                    Idle.add (() => { // Wait for async BtScan initialisation
-                        bt_scan.show_all ();
-                        return Source.REMOVE;
-                    });
-                } else {
-                    bt_scan.present ();
-                }
-
-                bt_scan.destroy.connect (() => {
-                    bt_scan = null;
-                });
-
-                bt_scan.send_file.connect ((device) => {
-                    if (!insert_sender (files, device)) {
-                        bt_sender = new BtSender (this);
-                        bt_sender.add_files (files, device);
-                        bt_senders.append (bt_sender);
-                        bt_sender.show_all ();
-                        bt_sender.destroy.connect (()=> {
-                            bt_senders.foreach ((sender)=>{
-                                if (sender.device == bt_sender.device) {
-                                    bt_senders.remove_link (bt_senders.find (sender));
-                                }
-                            });
-                        });
-                    }
-                });
-
-                arg_files = {};
-                send = false;
+                scan_and_send_files (files);
             }
         }
 
@@ -138,7 +137,7 @@ public class BluetoothApp : Gtk.Application {
             bt_receivers = new GLib.List<BtReceiver> ();
             bt_senders = new GLib.List<BtSender> ();
             object_manager = new Bluetooth.ObjectManager ();
-            object_manager.notify["has-object"].connect (() => {
+            object_manager.notify["has-adapter"].connect (() => {
                 var build_path = Path.build_filename (
                     Environment.get_home_dir (), ".local", "share", "contractor"
                 );
@@ -154,7 +153,7 @@ public class BluetoothApp : Gtk.Application {
                     )
                 );
 
-                if (object_manager.has_object) {
+                if (object_manager.has_adapter) {
                     if (!active_once) {
                         agent_obex = new Bluetooth.Obex.Agent ();
                         agent_obex.transfer_view.connect (dialog_active);
@@ -191,12 +190,12 @@ public class BluetoothApp : Gtk.Application {
     }
 
     private void dialog_active (string session_path) {
-        bt_receivers.foreach ((receiver)=>{
+        bt_receivers.foreach ((receiver) => {
             if (receiver.transfer.session == session_path) {
                 receiver.show_all ();
             }
         });
-        bt_senders.foreach ((sender)=>{
+        bt_senders.foreach ((sender) => {
             if (sender.transfer.session == session_path) {
                 sender.show_all ();
             }
@@ -205,7 +204,7 @@ public class BluetoothApp : Gtk.Application {
 
     private bool insert_sender (File[] files, Bluetooth.Device device) {
         bool exist = false;
-        bt_senders.foreach ((sender)=>{
+        bt_senders.foreach ((sender) => {
             if (sender.device == device) {
                 sender.insert_files (files);
                 sender.present ();
@@ -227,8 +226,8 @@ public class BluetoothApp : Gtk.Application {
 
         bt_receiver = new BtReceiver (this);
         bt_receivers.append (bt_receiver);
-        bt_receiver.destroy.connect (()=> {
-            bt_receivers.foreach ((receiver)=>{
+        bt_receiver.destroy.connect (() => {
+            bt_receivers.foreach ((receiver) => {
                 if (receiver.transfer.session == bt_receiver.session) {
                     bt_receivers.remove_link (bt_receivers.find (receiver));
                 }
