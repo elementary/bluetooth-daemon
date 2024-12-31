@@ -32,6 +32,9 @@ public class Bluetooth.Obex.Agent : GLib.Object {
     public signal void response_accepted (string address, GLib.ObjectPath objectpath);
     public signal void transfer_view (string session_path);
     public signal void response_canceled ();
+
+    public const string AGENT_OBJECT_PATH = "/org/bluez/obex/elementary";
+
     /*one confirmation for many files in one session */
     private GLib.ObjectPath many_files;
 
@@ -42,7 +45,7 @@ public class Bluetooth.Obex.Agent : GLib.Object {
             GLib.BusNameOwnerFlags.NONE,
             (conn)=>{
                 try {
-                    conn.register_object ("/org/bluez/obex/elementary", this);
+                    conn.register_object (AGENT_OBJECT_PATH, this);
                 } catch (Error e) {
                     error (e.message);
                 }

@@ -27,7 +27,9 @@ public class Bluetooth.ObjectManager : Object {
 
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
+
         create_manager.begin ();
+
         settings.changed ["sharing"].connect (() => {
             if (settings.get_boolean ("sharing")) {
                 register_agent ();
@@ -95,7 +97,7 @@ public class Bluetooth.ObjectManager : Object {
                 "/org/bluez/obex",
                 "org.bluez.obex.AgentManager1",
                 "RegisterAgent",
-                new Variant ("(o)", "/org/bluez/obex/elementary"),
+                new Variant ("(o)", Obex.Agent.AGENT_OBJECT_PATH),
                 null,
                 GLib.DBusCallFlags.NONE,
                 -1
@@ -113,7 +115,7 @@ public class Bluetooth.ObjectManager : Object {
                 "/org/bluez/obex",
                 "org.bluez.obex.AgentManager1",
                 "UnregisterAgent",
-                new Variant ("(o)", "/org/bluez/obex/elementary"),
+                new Variant ("(o)", Obex.Agent.AGENT_OBJECT_PATH),
                 null,
                 GLib.DBusCallFlags.NONE,
                 -1
