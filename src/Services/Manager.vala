@@ -151,8 +151,9 @@ public class Bluetooth.ObjectManager : Object {
         var adapters = new Gee.LinkedList<Bluetooth.Adapter> ();
         object_manager.get_objects ().foreach ((object) => {
             GLib.DBusInterface? iface = object.get_interface ("org.bluez.Adapter1");
-            if (iface == null)
+            if (iface == null) {
                 return;
+            }
 
             adapters.add (((Bluetooth.Adapter) iface));
         });
@@ -164,8 +165,9 @@ public class Bluetooth.ObjectManager : Object {
         var devices = new Gee.LinkedList<Bluetooth.Device> ();
         object_manager.get_objects ().foreach ((object) => {
             GLib.DBusInterface? iface = object.get_interface ("org.bluez.Device1");
-            if (iface == null)
+            if (iface == null) {
                 return;
+            }
 
             devices.add (((Bluetooth.Device) iface));
         });
