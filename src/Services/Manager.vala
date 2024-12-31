@@ -21,6 +21,7 @@ public class Bluetooth.ObjectManager : Object {
     public signal void status_discovering ();
 
     public bool has_adapter { get; private set; default = false; }
+    public bool ready { get; private set; default = false; }
 
     private Settings settings;
     private GLib.DBusObjectManagerClient object_manager;
@@ -28,7 +29,9 @@ public class Bluetooth.ObjectManager : Object {
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
 
-        create_manager.begin ();
+        create_manager.begin (() => {
+            ready = true;
+        });
 
         settings.changed ["sharing"].connect (() => {
             if (settings.get_boolean ("sharing")) {
