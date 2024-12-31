@@ -215,11 +215,11 @@ public class Bluetooth.ObjectManager : Object {
 
     public Bluetooth.Adapter? get_adapter_from_path (string path) {
         GLib.DBusObject? object = object_manager.get_object (path);
-        if (object != null) {
-            return (Bluetooth.Adapter?) object.get_interface ("org.bluez.Adapter1");
+        if (object == null) {
+            return null;
         }
 
-        return null;
+        return (Bluetooth.Adapter?) object.get_interface ("org.bluez.Adapter1");
     }
 
     public Bluetooth.Device? get_device (string address) {
@@ -229,6 +229,7 @@ public class Bluetooth.ObjectManager : Object {
                 return device;
             }
         }
+
         return null;
     }
 }
