@@ -47,9 +47,8 @@ public class BluetoothApp : Gtk.Application {
         add_main_option_entries (OPTIONS_BLUETOOTH);
     }
 
-    private File[] create_files_for_args (ApplicationCommandLine command, string[] args) {
-        File[] files = {};
-
+    private Gee.ArrayList<File> create_files_for_args (ApplicationCommandLine command, string[] args) {
+        var files = new Gee.ArrayList<File> ();
         foreach (unowned string arg in args) {
             var file = command.create_file_for_arg (arg);
             if (!file.query_exists ()) {
@@ -60,41 +59,46 @@ public class BluetoothApp : Gtk.Application {
                 continue;
             }
 
-            files += file;
+            files.add (file);
         }
 
         return files;
     }
 
-    private void scan_and_send_files (File[] files) {
-        if (bt_scan == null) {
-            bt_scan = new BtScan (this, object_manager);
-            Idle.add (() => { // Wait for async BtScan initialisation
-                bt_scan.show_all ();
-                return Source.REMOVE;
-            });
-        } else {
-            bt_scan.present ();
-        }
-
-        bt_scan.destroy.connect (() => {
-            bt_scan = null;
-        });
-
-        bt_scan.send_file.connect ((device) => {
-            if (!insert_sender (files, device)) {
-                bt_sender = new BtSender (this);
-                bt_sender.add_files (files, device);
-                bt_senders.append (bt_sender);
-                bt_sender.show_all ();
-                bt_sender.destroy.connect (() => {
-                    bt_senders.foreach ((sender) => {
-                        if (sender.device == bt_sender.device) {
-                            bt_senders.remove_link (bt_senders.find (sender));
-                        }
-                    });
-                });
+    private void scan_and_send_files (Gee.ArrayList files) {
+        Idle.add (() => {
+            if (!object_manager.ready) {
+                return Source.CONTINUE;
             }
+
+            if (bt_scan == null) {
+                bt_scan = new BtScan (this, object_manager);
+                bt_scan.destroy.connect (() => {
+                    bt_scan = null;
+                });
+
+                bt_scan.send_file.connect ((device) => {
+                    if (!insert_sender (files, device)) {
+                        bt_sender = new BtSender (this);
+                        bt_sender.add_files (files, device);
+                        bt_senders.append (bt_sender);
+                        bt_sender.show_all ();
+                        bt_sender.destroy.connect (() => {
+                            bt_senders.foreach ((sender) => {
+                                if (sender.device == bt_sender.device) {
+                                    bt_senders.remove_link (bt_senders.find (sender));
+                                }
+                            });
+                        });
+                    }
+                });
+
+                bt_scan.init ();
+            } else {
+                bt_scan.present ();
+            }
+
+            return Source.REMOVE;
         });
     }
 
@@ -103,9 +107,9 @@ public class BluetoothApp : Gtk.Application {
 
         // Handle "send" option
         if (arg_files != null) {
-            File[] files = create_files_for_args (command, arg_files);
+            var files = create_files_for_args (command, arg_files);
 
-            if (files.length > 0) {
+            if (files.size > 0) {
                 scan_and_send_files (files);
             }
         }
@@ -202,7 +206,7 @@ public class BluetoothApp : Gtk.Application {
         });
     }
 
-    private bool insert_sender (File[] files, Bluetooth.Device device) {
+    private bool insert_sender (Gee.ArrayList<File> files, Bluetooth.Device device) {
         bool exist = false;
         bt_senders.foreach ((sender) => {
             if (sender.device == device) {
@@ -211,6 +215,7 @@ public class BluetoothApp : Gtk.Application {
                 exist = true;
             }
         });
+
         return exist;
     }
 

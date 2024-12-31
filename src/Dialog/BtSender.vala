@@ -148,7 +148,7 @@ public class BtSender : Granite.Dialog {
         });
     }
 
-    public void add_files (File [] files, Bluetooth.Device device) {
+    public void add_files (Gee.ArrayList<File> files, Bluetooth.Device device) {
         foreach (var file in files) {
             Gtk.TreeIter iter;
             liststore.append (out iter);
@@ -164,7 +164,7 @@ public class BtSender : Granite.Dialog {
         create_session.begin ();
     }
 
-    public void insert_files (File [] files) {
+    public void insert_files (Gee.ArrayList<File> files) {
         foreach (var file in files) {
             bool exist = false;
             liststore.foreach ((model, path, iter) => {
