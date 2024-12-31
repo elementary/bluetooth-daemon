@@ -19,15 +19,24 @@ public class Bluetooth.ObjectManager : Object {
     public signal void device_added (Bluetooth.Device device);
     public signal void device_removed (Bluetooth.Device device);
     public signal void status_discovering ();
+
     public bool has_adapter { get; private set; default = false; }
+
     private Settings settings;
     private GLib.DBusObjectManagerClient object_manager;
 
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
         create_manager.begin ();
-        settings.changed ["sharing"].connect (obex_agentmanager);
-        obex_agentmanager ();
+        settings.changed ["sharing"].connect (() => {
+            if (settings.get_boolean ("sharing")) {
+                register_agent ();
+            } else {
+                unregister_agent ();
+            }
+        });
+
+        register_agent ();
     }
 
     public async void create_manager () {
@@ -78,10 +87,37 @@ public class Bluetooth.ObjectManager : Object {
         }
     }
 
-    private void obex_agentmanager () {
+    private void register_agent () {
         try {
             var connection = GLib.Bus.get_sync (BusType.SESSION);
-            connection.call.begin ("org.bluez.obex", "/org/bluez/obex", "org.bluez.obex.AgentManager1", settings.get_boolean ("sharing")? "RegisterAgent" : "UnregisterAgent", new Variant ("(o)", "/org/bluez/obex/elementary"), null, GLib.DBusCallFlags.NONE, -1);
+            connection.call.begin (
+                "org.bluez.obex",
+                "/org/bluez/obex",
+                "org.bluez.obex.AgentManager1",
+                "RegisterAgent",
+                new Variant ("(o)", "/org/bluez/obex/elementary"),
+                null,
+                GLib.DBusCallFlags.NONE,
+                -1
+            );
+        } catch (Error e) {
+            critical (e.message);
+        }
+    }
+
+    private void unregister_agent () {
+        try {
+            var connection = GLib.Bus.get_sync (BusType.SESSION);
+            connection.call.begin (
+                "org.bluez.obex",
+                "/org/bluez/obex",
+                "org.bluez.obex.AgentManager1",
+                "UnregisterAgent",
+                new Variant ("(o)", "/org/bluez/obex/elementary"),
+                null,
+                GLib.DBusCallFlags.NONE,
+                -1
+            );
         } catch (Error e) {
             critical (e.message);
         }
