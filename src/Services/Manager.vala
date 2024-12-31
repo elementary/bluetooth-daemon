@@ -20,7 +20,7 @@ public class Bluetooth.ObjectManager : Object {
     public signal void device_removed (Bluetooth.Device device);
     public signal void status_discovering ();
     public bool has_adapter { get; private set; default = false; }
-    public Settings settings;
+    private Settings settings;
     private GLib.DBusObjectManagerClient object_manager;
 
     construct {
