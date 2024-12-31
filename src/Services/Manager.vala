@@ -147,11 +147,16 @@ public class Bluetooth.ObjectManager : Object {
             }
         }
     }
+
+    // Check if there is an adapter discovering devices
     public bool check_discovering () {
         var adapters = get_adapters ();
         foreach (var adapter in adapters) {
-            return adapter.discovering;
+            if (adapter.discovering) {
+                return true;
+            }
         }
+
         return false;
     }
 
