@@ -161,7 +161,7 @@ public class Bluetooth.ObjectManager : Object {
         return (owned) adapters;
     }
 
-    public Gee.Collection<Bluetooth.Device> get_devices () requires (object_manager != null) {
+    public Gee.LinkedList<Bluetooth.Device> get_devices () requires (object_manager != null) {
         var devices = new Gee.LinkedList<Bluetooth.Device> ();
         object_manager.get_objects ().foreach ((object) => {
             GLib.DBusInterface? iface = object.get_interface ("org.bluez.Device1");
@@ -174,6 +174,7 @@ public class Bluetooth.ObjectManager : Object {
 
         return (owned) devices;
     }
+
     public async void start_discovery () {
         var adapters = get_adapters ();
         foreach (var adapter in adapters) {
