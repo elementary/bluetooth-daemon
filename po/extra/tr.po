@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-11 22:18+0000\n"
-"PO-Revision-Date: 2024-09-20 09:43+0000\n"
+"PO-Revision-Date: 2025-01-27 23:16+0000\n"
 "Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/"
 "bluetooth-daemon-extra/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
@@ -41,7 +41,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Diğer iyileştirmeler:"
 
 #: data/bluetooth-daemon.metainfo.xml:39
 msgid "Updated translations"
