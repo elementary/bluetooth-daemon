@@ -32,7 +32,7 @@ public class BluetoothApp : Gtk.Application {
     public Bluetooth.Obex.Transfer transfer;
     public BtReceiver bt_receiver;
     public BtSender bt_sender;
-    public BtScan bt_scan = null;
+    public ScanDialog bt_scan = null;
     public GLib.List<BtReceiver> bt_receivers;
     public GLib.List<BtSender> bt_senders;
     public static bool silent = true;
@@ -68,7 +68,7 @@ public class BluetoothApp : Gtk.Application {
 
     private void scan_and_send_files (File[] files) {
         if (bt_scan == null) {
-            bt_scan = new BtScan (this, object_manager);
+            bt_scan = new ScanDialog (this, object_manager);
             Idle.add (() => { // Wait for async BtScan initialisation
                 bt_scan.show_all ();
                 return Source.REMOVE;

@@ -9,7 +9,7 @@ executable(
     'Services' / 'Transfer.vala',
     'Dialog' / 'BtReceiver.vala',
     'Dialog' / 'BtSender.vala',
-    'Dialog' / 'BtScan.vala',
+    'Dialog' / 'ScanDialog.vala',
     'Dialog' / 'DeviceRow.vala',
     dependencies : [
         granite_dep,
