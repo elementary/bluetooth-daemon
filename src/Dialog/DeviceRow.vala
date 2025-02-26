@@ -69,7 +69,10 @@ public class DeviceRow : Gtk.ListBoxRow {
         size_group.add_widget (send_button);
 
         var grid = new Gtk.Grid () {
-            margin = 6,
+            margin_top = 6,
+            margin_end = 6,
+            margin_bottom = 6,
+            margin_start = 6,
             column_spacing = 6
         };
         grid.attach (overlay, 0, 0, 1, 2);
