@@ -113,7 +113,9 @@ public class BluetoothApp : Gtk.Application {
         return 0;
     }
 
-    protected override void activate () {
+    protected override void startup () {
+        base.startup ();
+
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
 
@@ -124,7 +126,9 @@ public class BluetoothApp : Gtk.Application {
             gtk_settings.gtk_application_prefer_dark_theme =
             granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
         });
+    }
 
+    protected override void activate () {
         if (silent) {
             if (active_once) { // after process hold exist.
                 release (); // Protect from multiple holds. Has no effect if not already held.
