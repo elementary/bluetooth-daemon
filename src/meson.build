@@ -8,7 +8,7 @@ executable(
     'Services' / 'Session.vala',
     'Services' / 'Transfer.vala',
     'Dialog' / 'BtReceiver.vala',
-    'Dialog' / 'BtSender.vala',
+    'Dialog' / 'SenderDialog.vala',
     'Dialog' / 'BtScan.vala',
     'Dialog' / 'DeviceRow.vala',
     dependencies : [

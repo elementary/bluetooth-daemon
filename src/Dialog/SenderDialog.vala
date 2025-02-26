@@ -1,28 +1,14 @@
 /*
- * Copyright 2021 elementary, Inc. (https://elementary.io)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2021-2025 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Torikulhabib <torik.habib@gamail.com>
- *
  */
 
-public class BtSender : Granite.Dialog {
+public class SenderDialog : Granite.Dialog {
     public Bluetooth.Obex.Transfer transfer;
     public Bluetooth.Device device;
+
     private Gtk.ProgressBar progressbar;
     private Gtk.Label path_label;
     private Gtk.Label device_label;
@@ -41,9 +27,10 @@ public class BtSender : Granite.Dialog {
     private GLib.DBusProxy client_proxy;
     private GLib.DBusProxy session;
 
-    public BtSender (Gtk.Application application) {
-        Object (application: application,
-                resizable :false
+    public SenderDialog (Gtk.Application application) {
+        Object (
+            application: application,
+            resizable :false
         );
     }
 
@@ -51,17 +38,19 @@ public class BtSender : Granite.Dialog {
         liststore = new Gtk.ListStore (1, typeof (File));
 
         var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
-            valign = Gtk.Align.END,
-            halign = Gtk.Align.END
+            valign = END,
+            halign = END
         };
 
         icon_label = new Gtk.Image () {
-            halign = Gtk.Align.END,
-            valign = Gtk.Align.END
+            halign = END,
+            valign = END,
+            pixel_size = 24
         };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (icon_image);
+        var overlay = new Gtk.Overlay () {
+            child = icon_image
+        };
         overlay.add_overlay (icon_label);
 
         path_label = new Gtk.Label (GLib.Markup.printf_escaped ("<b>%s</b>:", _("From"))) {
@@ -78,27 +67,32 @@ public class BtSender : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
+
         filename_label = new Gtk.Label (GLib.Markup.printf_escaped ("<b>%s</b>:", _("Filename"))) {
             max_width_chars = 45,
             use_markup = true,
             wrap = true,
             xalign = 0
         };
+
         rate_label = new Gtk.Label (GLib.Markup.printf_escaped ("<b>%s</b>:", _("Transfer rate"))) {
             max_width_chars = 45,
             use_markup = true,
             wrap = true,
             xalign = 0
         };
+
         progressbar = new Gtk.ProgressBar () {
             hexpand = true
         };
+
         progress_label = new Gtk.Label (null) {
             max_width_chars = 45,
             hexpand = false,
             wrap = true,
             xalign = 0
         };
+
         var message_grid = new Gtk.Grid () {
             column_spacing = 0,
             width_request = 450,
@@ -106,15 +100,17 @@ public class BtSender : Granite.Dialog {
             margin_end = 15
         };
         message_grid.attach (overlay, 0, 0, 1, 3);
-        message_grid.attach (path_label, 1, 0, 1, 1);
-        message_grid.attach (device_label, 1, 1, 1, 1);
-        message_grid.attach (filename_label, 1, 2, 1, 1);
-        message_grid.attach (rate_label, 1, 3, 1, 1);
-        message_grid.attach (progressbar, 1, 4, 1, 1);
-        message_grid.attach (progress_label, 1, 5, 1, 1);
+        message_grid.attach (path_label, 1, 0);
+        message_grid.attach (device_label, 1, 1);
+        message_grid.attach (filename_label, 1, 2);
+        message_grid.attach (rate_label, 1, 3);
+        message_grid.attach (progressbar, 1, 4);
+        message_grid.attach (progress_label, 1, 5);
+
         get_content_area ().add (message_grid);
 
         add_button (_("Close"), Gtk.ResponseType.CLOSE);
+
         var reject_transfer = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
         reject_transfer.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
@@ -139,6 +135,7 @@ public class BtSender : Granite.Dialog {
                 }
             }
         });
+
         delete_event.connect (() => {
             if (transfer.status == "active") {
                 return hide_on_delete ();
@@ -184,6 +181,7 @@ public class BtSender : Granite.Dialog {
             total_n_current (true);
         }
     }
+
     private bool next_file () {
         Gtk.TreeIter iter;
         if (liststore.get_iter_from_string (out iter, current_file.to_string ())) {
@@ -194,6 +192,7 @@ public class BtSender : Granite.Dialog {
         }
         return false;
     }
+
     private void total_n_current (bool total = false) {
         total_file = 0;
         int current = 0;
@@ -224,7 +223,7 @@ public class BtSender : Granite.Dialog {
             );
             path_label.set_markup (GLib.Markup.printf_escaped (_("<b>From</b>: %s"), file_path.get_parent ().get_path ()));
             device_label.set_markup (GLib.Markup.printf_escaped (_("<b>To</b>: %s"), device.alias));
-            icon_label.set_from_gicon (new ThemedIcon (device.icon == null? "bluetooth" : device.icon), Gtk.IconSize.LARGE_TOOLBAR);
+            icon_label.gicon = new ThemedIcon (device.icon == null? "bluetooth" : device.icon);
             progress_label.label = _("Trying to connect to %s…").printf (device.alias);
             VariantBuilder builder = new VariantBuilder (VariantType.DICTIONARY);
             builder.add ("{sv}", "Target", new Variant.string ("opp"));
@@ -274,6 +273,7 @@ public class BtSender : Granite.Dialog {
             GLib.warning (e.message);
         }
     }
+
     private async void remove_session () {
         try {
             yield client_proxy.call ("RemoveSession", new Variant ("(o)", s_session), GLib.DBusCallFlags.NONE, -1);
@@ -281,10 +281,11 @@ public class BtSender : Granite.Dialog {
             GLib.warning (e.message);
         }
     }
+
     private async void send_file () {
         path_label.set_markup (GLib.Markup.printf_escaped (_("<b>From</b>: %s"), file_path.get_parent ().get_path ()));
         device_label.set_markup (GLib.Markup.printf_escaped (_("<b>To</b>: %s"), device.alias));
-        icon_label.set_from_gicon (new ThemedIcon (device.icon == null? "bluetooth" : device.icon), Gtk.IconSize.LARGE_TOOLBAR);
+        icon_label.gicon = new ThemedIcon (device.icon == null? "bluetooth" : device.icon);
         progress_label.label = _("Waiting for acceptance on %s…").printf (device.alias);
         try {
             Variant variant = yield session.call ("SendFile", new Variant ("(s)", file_path.get_path ()), GLib.DBusCallFlags.NONE, -1);
@@ -351,6 +352,7 @@ public class BtSender : Granite.Dialog {
                 break;
         }
     }
+
     private void send_notify () {
         var notification = new GLib.Notification ("bluetooth");
         notification.set_icon (new ThemedIcon (device.icon));

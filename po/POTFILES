@@ -1,7 +1,7 @@
 src/Application.vala
 src/Dialog/BtReceiver.vala
 src/Dialog/BtScan.vala
-src/Dialog/BtSender.vala
+src/Dialog/SenderDialog.vala
 src/Dialog/DeviceRow.vala
 src/Services/Adapter.vala
 src/Services/Device.vala
