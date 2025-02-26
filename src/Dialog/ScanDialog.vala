@@ -15,9 +15,10 @@ public class ScanDialog : Granite.Dialog {
     private Gtk.ListBox list_box;
 
     public ScanDialog (Gtk.Application application, Bluetooth.ObjectManager manager) {
-        Object (application: application,
-                manager: manager,
-                resizable: false
+        Object (
+            application: application,
+            manager: manager,
+            resizable: false
         );
     }
 
