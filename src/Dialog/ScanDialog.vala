@@ -1,31 +1,20 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2016-2018 elementary LLC.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2016-2024 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
  *              Torikulhabib <torik.habib@gamail.com>
  */
 
-public class BtScan : Granite.Dialog {
+public class ScanDialog : Granite.Dialog {
     public signal void send_file (Bluetooth.Device device);
-    private Gtk.ListBox list_box;
-    public Bluetooth.ObjectManager manager { get; construct;}
 
-    public BtScan (Gtk.Application application, Bluetooth.ObjectManager manager) {
+    public Bluetooth.ObjectManager manager { get; construct; }
+
+    private Gtk.ListBox list_box;
+
+    public ScanDialog (Gtk.Application application, Bluetooth.ObjectManager manager) {
         Object (application: application,
                 manager: manager,
                 resizable: false
@@ -34,8 +23,8 @@ public class BtScan : Granite.Dialog {
 
     construct {
         var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
-            valign = Gtk.Align.CENTER,
-            halign = Gtk.Align.CENTER
+            valign = CENTER,
+            halign = CENTER
         };
 
         var title_label = new Gtk.Label (_("Bluetooth File Transfer")) {
@@ -59,46 +48,48 @@ public class BtScan : Granite.Dialog {
             ""
         );
         empty_alert.show_all ();
+
         list_box = new Gtk.ListBox () {
             activate_on_single_click = true,
-            selection_mode = Gtk.SelectionMode.BROWSE
+            selection_mode = BROWSE
         };
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
-        list_box.set_header_func ((Gtk.ListBoxUpdateHeaderFunc) title_rows);
         list_box.set_placeholder (empty_alert);
 
         var scrolled = new Gtk.ScrolledWindow (null, null) {
-            expand = true,
+            child = list_box,
+            hexpand = true,
+            vexpand = true,
+            hscrollbar_policy = NEVER,
+            margin_end = 10,
+            margin_start = 10,
+            max_content_height = 350,
+            propagate_natural_height = true
         };
-        scrolled.add (list_box);
+        scrolled.get_style_context ().add_class (Gtk.STYLE_CLASS_FRAME);
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (scrolled);
+        var overlay = new Gtk.Overlay () {
+            child = scrolled
+        };
 
         var overlaybar = new Granite.Widgets.OverlayBar (overlay) {
             label = _("Discovering")
         };
 
-        var frame = new Gtk.Frame (null) {
-            margin_left = 10,
-            margin_right = 10,
-            width_request = 350,
-            height_request = 350
+        var image_grid = new Gtk.Grid () {
+            margin_bottom = 6
         };
-        frame.add (overlay);
-        var image_label = new Gtk.Grid () {
-            margin_bottom = 5
+        image_grid.attach (icon_image, 0, 0, 1, 2);
+        image_grid.attach (title_label, 1, 0);
+        image_grid.attach (info_label, 1, 1);
+
+        var content_box = new Gtk.Box (VERTICAL, 0) {
+            valign = CENTER
         };
-        image_label.attach (icon_image, 0, 0, 1, 2);
-        image_label.attach (title_label, 1, 0, 1, 1);
-        image_label.attach (info_label, 1, 1, 1, 1);
-        var frame_device = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL,
-            valign = Gtk.Align.CENTER
-        };
-        frame_device.add (image_label);
-        frame_device.add (frame);
-        get_content_area ().add (frame_device);
+        content_box.add (image_grid);
+        content_box.add (overlay);
+
+        get_content_area ().add (content_box);
 
         manager.device_added.connect (add_device);
         manager.device_removed.connect (device_removed);
@@ -107,11 +98,13 @@ public class BtScan : Granite.Dialog {
         });
 
         add_button (_("Close"), Gtk.ResponseType.CLOSE);
+
         response.connect ((response_id) => {
             manager.stop_discovery.begin ();
             destroy ();
         });
     }
+
     public override void show () {
         base.show ();
         var devices = manager.get_devices ();
@@ -122,21 +115,20 @@ public class BtScan : Granite.Dialog {
     }
 
     private void add_device (Bluetooth.Device device) {
-        bool device_exist = false;
-        foreach (var row in list_box.get_children ()) {
-            if (((DeviceRow) row).device == device) {
-                device_exist = true;
+        for (int i = 0; list_box.get_row_at_index (i) != null; i++) {
+            if (((DeviceRow) list_box.get_row_at_index (i)).device == device) {
+                return;
             }
         }
-        if (device_exist) {
-            return;
-        }
+
         var row = new DeviceRow (device, manager.get_adapter_from_path (device.adapter));
         list_box.add (row);
+
         if (list_box.get_selected_row () == null) {
             list_box.select_row (row);
             list_box.row_activated (row);
         }
+
         row.send_file.connect ((device)=> {
             manager.stop_discovery.begin ();
             send_file (device);
@@ -144,13 +136,14 @@ public class BtScan : Granite.Dialog {
     }
 
     public void device_removed (Bluetooth.Device device) {
-        foreach (var row in list_box.get_children ()) {
-            if (((DeviceRow) row).device == device) {
-                list_box.remove (row);
+        for (int i = 0; list_box.get_row_at_index (i) != null; i++) {
+            if (((DeviceRow) list_box.get_row_at_index (i)).device == device) {
+                list_box.remove (list_box.get_row_at_index (i));
                 break;
             }
         }
     }
+
     [CCode (instance_pos = -1)]
     private int compare_rows (DeviceRow row1, DeviceRow row2) {
         unowned Bluetooth.Device device1 = row1.device;
@@ -182,17 +175,5 @@ public class BtScan : Granite.Dialog {
         var name1 = device1.name ?? device1.address;
         var name2 = device2.name ?? device2.address;
         return name1.collate (name2);
-    }
-    [CCode (instance_pos = -1)]
-    private void title_rows (DeviceRow row1, DeviceRow? row2) {
-        if (row2 == null) {
-            var label = new Gtk.Label (_("Available Devices"));
-            label.xalign = 0;
-            label.margin = 3;
-            label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-            row1.set_header (label);
-        } else {
-            row1.set_header (null);
-        }
     }
 }
