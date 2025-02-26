@@ -30,10 +30,10 @@ public class BluetoothApp : Gtk.Application {
     public Bluetooth.ObjectManager object_manager;
     public Bluetooth.Obex.Agent agent_obex;
     public Bluetooth.Obex.Transfer transfer;
-    public BtReceiver bt_receiver;
+    public ReceiverDialog bt_receiver;
     public BtSender bt_sender;
     public BtScan bt_scan = null;
-    public GLib.List<BtReceiver> bt_receivers;
+    public GLib.List<ReceiverDialog> bt_receivers;
     public GLib.List<BtSender> bt_senders;
     public static bool silent = true;
     public static bool active_once;
@@ -134,7 +134,7 @@ public class BluetoothApp : Gtk.Application {
         }
 
         if (object_manager == null) {
-            bt_receivers = new GLib.List<BtReceiver> ();
+            bt_receivers = new GLib.List<ReceiverDialog> ();
             bt_senders = new GLib.List<BtSender> ();
             object_manager = new Bluetooth.ObjectManager ();
             object_manager.notify["has-adapter"].connect (() => {
@@ -224,7 +224,7 @@ public class BluetoothApp : Gtk.Application {
             return;
         }
 
-        bt_receiver = new BtReceiver (this);
+        bt_receiver = new ReceiverDialog (this);
         bt_receivers.append (bt_receiver);
         bt_receiver.destroy.connect (() => {
             bt_receivers.foreach ((receiver) => {

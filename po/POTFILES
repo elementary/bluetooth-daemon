@@ -1,5 +1,5 @@
 src/Application.vala
-src/Dialog/BtReceiver.vala
+src/Dialog/ReceiverDialog.vala
 src/Dialog/BtScan.vala
 src/Dialog/BtSender.vala
 src/Dialog/DeviceRow.vala
