@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2016-2024 elementary, Inc. (https://elementary.io)
+ * SPDX-FileCopyrightText: 2016-2025 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  *              Oleksandr Lynok <oleksandr.lynok@gmail.com>
