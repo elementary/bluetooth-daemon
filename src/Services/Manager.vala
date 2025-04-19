@@ -15,6 +15,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+[DBus (name = "org.bluez.AgentManager1")]
+public interface Bluetooth.AgentManager : Object {
+    public abstract void register_agent (ObjectPath agent, string capability) throws Error;
+    public abstract void request_default_agent (ObjectPath agent) throws Error;
+    public abstract void unregister_agent (ObjectPath agent) throws Error;
+}
+
 public class Bluetooth.ObjectManager : Object {
     public signal void device_added (Bluetooth.Device device);
     public signal void device_removed (Bluetooth.Device device);
@@ -22,8 +29,12 @@ public class Bluetooth.ObjectManager : Object {
 
     public bool has_adapter { get; private set; default = false; }
 
-    private Settings settings;
+    private bool is_registered = false;
+
+    private AgentManager agent_manager;
+    private Bluetooth.Agent agent;
     private GLib.DBusObjectManagerClient object_manager;
+    private Settings settings;
 
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
@@ -32,13 +43,13 @@ public class Bluetooth.ObjectManager : Object {
 
         settings.changed ["sharing"].connect (() => {
             if (settings.get_boolean ("sharing")) {
-                register_agent ();
+                register_agent.begin ();
             } else {
-                unregister_agent ();
+                unregister_agent.begin ();
             }
         });
 
-        register_agent ();
+        register_agent.begin ();
     }
 
     public async void create_manager () {
@@ -74,6 +85,9 @@ public class Bluetooth.ObjectManager : Object {
     [CCode (cname="bluetooth_adapter_proxy_get_type")]
     extern static GLib.Type get_adapter_proxy_type ();
 
+    [CCode (cname="bluetooth_agent_manager_proxy_get_type")]
+    extern static GLib.Type get_agent_manager_proxy_type ();
+
     private GLib.Type object_manager_proxy_get_type (DBusObjectManagerClient manager, string object_path, string? interface_name) {
         if (interface_name == null) {
             return typeof (GLib.DBusObjectProxy);
@@ -84,44 +98,58 @@ public class Bluetooth.ObjectManager : Object {
                 return get_device_proxy_type ();
             case "org.bluez.Adapter1":
                 return get_adapter_proxy_type ();
+            case "org.bluez.AgentManager1":
+                return get_agent_manager_proxy_type ();
             default:
                 return typeof (GLib.DBusProxy);
         }
     }
 
-    private void register_agent () {
-        try {
-            var connection = GLib.Bus.get_sync (BusType.SESSION);
-            connection.call.begin (
-                "org.bluez.obex",
-                "/org/bluez/obex",
-                "org.bluez.obex.AgentManager1",
-                "RegisterAgent",
-                new Variant ("(o)", Obex.Agent.AGENT_OBJECT_PATH),
-                null,
-                GLib.DBusCallFlags.NONE,
-                -1
-            );
-        } catch (Error e) {
-            critical (e.message);
+    private async void create_agent () {
+        if (object_manager == null) {
+            return;
+        }
+        GLib.DBusObject? bluez_object = object_manager.get_object ("/org/bluez");
+        if (bluez_object != null) {
+            agent_manager = (AgentManager) bluez_object.get_interface ("org.bluez.AgentManager1");
+        }
+
+        agent = new Bluetooth.Agent ();
+        agent.notify["ready"].connect (() => {
+            if (is_registered) {
+                register_agent.begin ();
+            }
+        });
+
+        agent.unregistered.connect (() => {
+            is_registered = false;
+        });
+    }
+
+    public async void register_agent () {
+        is_registered = true;
+        if (agent_manager == null) {
+            yield create_agent ();
+        }
+
+        if (agent_manager != null && agent.ready) {
+            try {
+                agent_manager.register_agent (agent.get_path (), "DisplayYesNo");
+                agent_manager.request_default_agent (agent.get_path ());
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
-    private void unregister_agent () {
-        try {
-            var connection = GLib.Bus.get_sync (BusType.SESSION);
-            connection.call.begin (
-                "org.bluez.obex",
-                "/org/bluez/obex",
-                "org.bluez.obex.AgentManager1",
-                "UnregisterAgent",
-                new Variant ("(o)", Obex.Agent.AGENT_OBJECT_PATH),
-                null,
-                GLib.DBusCallFlags.NONE,
-                -1
-            );
-        } catch (Error e) {
-            critical (e.message);
+    public async void unregister_agent () {
+        is_registered = false;
+        if (agent_manager != null && agent.ready) {
+            try {
+                agent_manager.unregister_agent (agent.get_path ());
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
     }
 
