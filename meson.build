@@ -12,6 +12,7 @@ i18n = import('i18n')
 
 granite_dep = dependency ('granite')
 gtk_dep = dependency ('gtk+-3.0')
+posix_dep = meson.get_compiler('vala').find_library('posix')
 
 subdir('data')
 subdir('po')
