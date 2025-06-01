@@ -31,10 +31,10 @@ public class BluetoothApp : Gtk.Application {
     public Bluetooth.Obex.Agent agent_obex;
     public Bluetooth.Obex.Transfer transfer;
     public BtReceiver bt_receiver;
-    public BtSender bt_sender;
+    public SenderDialog bt_sender;
     public BtScan bt_scan = null;
     public GLib.List<BtReceiver> bt_receivers;
-    public GLib.List<BtSender> bt_senders;
+    public GLib.List<SenderDialog> bt_senders;
     public static bool silent = true;
     public static bool active_once;
     [CCode (array_length = false, array_null_terminated = true)]
@@ -79,7 +79,7 @@ public class BluetoothApp : Gtk.Application {
 
                 bt_scan.send_file.connect ((device) => {
                     if (!insert_sender (files, device)) {
-                        bt_sender = new BtSender (this);
+                        bt_sender = new SenderDialog (this);
                         bt_sender.add_files (files, device);
                         bt_senders.append (bt_sender);
                         bt_sender.show_all ();
@@ -94,6 +94,7 @@ public class BluetoothApp : Gtk.Application {
                 });
 
                 bt_scan.init ();
+                return Source.CONTINUE; // Wait for initialisation
             } else {
                 bt_scan.present ();
             }
@@ -117,7 +118,9 @@ public class BluetoothApp : Gtk.Application {
         return 0;
     }
 
-    protected override void activate () {
+    protected override void startup () {
+        base.startup ();
+
         var granite_settings = Granite.Settings.get_default ();
         var gtk_settings = Gtk.Settings.get_default ();
 
@@ -128,7 +131,9 @@ public class BluetoothApp : Gtk.Application {
             gtk_settings.gtk_application_prefer_dark_theme =
             granite_settings.prefers_color_scheme == Granite.Settings.ColorScheme.DARK;
         });
+    }
 
+    protected override void activate () {
         if (silent) {
             if (active_once) { // after process hold exist.
                 release (); // Protect from multiple holds. Has no effect if not already held.
@@ -139,7 +144,7 @@ public class BluetoothApp : Gtk.Application {
 
         if (object_manager == null) {
             bt_receivers = new GLib.List<BtReceiver> ();
-            bt_senders = new GLib.List<BtSender> ();
+            bt_senders = new GLib.List<SenderDialog> ();
             object_manager = new Bluetooth.ObjectManager ();
             object_manager.notify["has-adapter"].connect (() => {
                 var build_path = Path.build_filename (

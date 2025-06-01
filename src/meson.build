@@ -5,15 +5,17 @@ executable(
     'Services' / 'Device.vala',
     'Services' / 'Manager.vala',
     'Services' / 'ObexAgent.vala',
+    'Services' / 'RFKill.vala',
     'Services' / 'Session.vala',
     'Services' / 'Transfer.vala',
     'Dialog' / 'BtReceiver.vala',
-    'Dialog' / 'BtSender.vala',
+    'Dialog' / 'SenderDialog.vala',
     'Dialog' / 'BtScan.vala',
     'Dialog' / 'DeviceRow.vala',
     dependencies : [
         granite_dep,
         gtk_dep,
+        posix_dep
     ],
     install : true
 )

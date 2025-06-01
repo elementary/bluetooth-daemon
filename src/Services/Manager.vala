@@ -22,9 +22,11 @@ public class Bluetooth.ObjectManager : Object {
 
     public bool has_adapter { get; private set; default = false; }
     public bool ready { get; private set; default = false; }
+    private bool is_powered { get; set; default = false; }
 
     private Settings settings;
     private GLib.DBusObjectManagerClient object_manager;
+    private RFKillManager rfkill;
 
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
@@ -33,12 +35,22 @@ public class Bluetooth.ObjectManager : Object {
             ready = true;
         });
 
+        rfkill = new RFKillManager ();
+        rfkill.open ();
+        rfkill.device_added.connect (check_global_state);
+        rfkill.device_changed.connect (check_global_state);
+        rfkill.device_deleted.connect (check_global_state);
+
         settings.changed ["sharing"].connect (() => {
             if (settings.get_boolean ("sharing")) {
                 register_agent ();
             } else {
                 unregister_agent ();
             }
+        });
+
+        settings.changed["enabled"].connect (() => {
+            set_global_state.begin ();
         });
 
         register_agent ();
@@ -140,7 +152,14 @@ public class Bluetooth.ObjectManager : Object {
                 if (discovering != null) {
                     status_discovering ();
                 }
+
+                var powered = changed.lookup_value ("Powered", new VariantType ("b"));
+                if (powered != null) {
+                    check_global_state ();
+                }
             });
+
+            check_global_state ();
         }
     }
 
@@ -150,6 +169,8 @@ public class Bluetooth.ObjectManager : Object {
         } else if (iface is Bluetooth.Adapter) {
             has_adapter = !get_adapters ().is_empty;
         }
+
+        check_global_state ();
     }
 
     public Gee.LinkedList<Bluetooth.Adapter> get_adapters () requires (object_manager != null) {
@@ -236,5 +257,55 @@ public class Bluetooth.ObjectManager : Object {
         }
 
         return null;
+    }
+
+    private void check_global_state () {
+        var active = false;
+        var adapters = get_adapters ();
+        foreach (var adapter in adapters) {
+            if (adapter.powered) {
+                active = true;
+                break;
+            }
+        }
+
+        if (active != is_powered) {
+            is_powered = active;
+        }
+
+        if (settings.get_boolean ("enabled") != is_powered) {
+            settings.set_boolean ("enabled", is_powered);
+        }
+    }
+
+    private async void set_global_state () {
+        var state = settings.get_boolean ("enabled");
+        if (is_powered == state) {
+            return;
+        }
+
+        /* `is_powered` and `connected` properties will be set by the check_global state () callback when adapter or device
+         * properties change.  Do not set now so that global_state_changed signal will be emitted. */
+        var adapters = get_adapters ();
+        foreach (var adapter in adapters) {
+            adapter.powered = state;
+        }
+
+        if (state == false) {
+            var devices = get_devices ();
+            foreach (var device in devices) {
+                if (device.connected) {
+                    try {
+                        yield device.disconnect ();
+                    } catch (Error e) {
+                        critical (e.message);
+                    }
+                }
+            }
+        }
+
+        rfkill.set_software_lock (RFKillDeviceType.BLUETOOTH, !state);
+
+        check_global_state ();
     }
 }

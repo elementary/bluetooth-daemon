@@ -1,19 +1,6 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
-/*-
- * Copyright (c) 2016 elementary LLC.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2016-2025 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Corentin Noël <corentin@elementary.io>
  *              Torikulhabib <torik.habib@gamail.com>
@@ -21,37 +8,42 @@
 
 public class DeviceRow : Gtk.ListBoxRow {
     public signal void send_file (Bluetooth.Device device);
+
     public Bluetooth.Device device { get; construct; }
     public unowned Bluetooth.Adapter adapter { get; construct; }
+
     private static Gtk.SizeGroup size_group;
     private Gtk.Button send_button;
     private Gtk.Image state;
-    private Gtk.Label state_label;
 
     public DeviceRow (Bluetooth.Device device, Bluetooth.Adapter adapter) {
-        Object (device: device, adapter: adapter);
+        Object (
+            device: device,
+            adapter: adapter
+        );
     }
 
     static construct {
-        size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        size_group = new Gtk.SizeGroup (HORIZONTAL);
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth", Gtk.IconSize.DND);
+        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth", DND);
 
-        state = new Gtk.Image.from_icon_name ("emblem-disabled", Gtk.IconSize.MENU) {
-            halign = Gtk.Align.END,
-            valign = Gtk.Align.END
+        state = new Gtk.Image.from_icon_name ("emblem-disabled", MENU) {
+            halign = END,
+            valign = END
         };
 
-        state_label = new Gtk.Label (null) {
-            xalign = 0,
-            use_markup = true
+        var state_label = new Gtk.Label (null) {
+            xalign = 0
         };
+        state_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
-        var overlay = new Gtk.Overlay ();
-        overlay.tooltip_text = device.address;
-        overlay.add (image);
+        var overlay = new Gtk.Overlay () {
+            child = image,
+            tooltip_text = device.address
+        };
         overlay.add_overlay (state);
 
         string? device_name = device.alias;
@@ -64,28 +56,31 @@ public class DeviceRow : Gtk.ListBoxRow {
         }
 
         var label = new Gtk.Label (device_name) {
-            ellipsize = Pango.EllipsizeMode.END,
+            ellipsize = END,
             hexpand = true,
             xalign = 0
         };
 
         send_button = new Gtk.Button () {
-            valign = Gtk.Align.CENTER,
+            valign = CENTER,
             label = _("Send")
         };
 
         size_group.add_widget (send_button);
 
         var grid = new Gtk.Grid () {
-            margin = 6,
-            column_spacing = 6,
-            orientation = Gtk.Orientation.HORIZONTAL
+            margin_top = 6,
+            margin_end = 6,
+            margin_bottom = 6,
+            margin_start = 6,
+            column_spacing = 6
         };
         grid.attach (overlay, 0, 0, 1, 2);
-        grid.attach (label, 1, 0, 1, 1);
-        grid.attach (state_label, 1, 1, 1, 1);
+        grid.attach (label, 1, 0);
+        grid.attach (state_label, 1, 1);
         grid.attach (send_button, 4, 0, 1, 2);
-        add (grid);
+
+        child = grid;
         show_all ();
 
         set_sensitive (adapter.powered);
@@ -114,7 +109,9 @@ public class DeviceRow : Gtk.ListBoxRow {
                 image.icon_name = device.icon ?? "bluetooth";
             }
         });
-        state_label.label = GLib.Markup.printf_escaped ("<span font_size='small'>%s</span>", device_icon ());
+
+        state_label.label = device_icon ();
+
         send_button.clicked.connect (() => {
             send_file (device);
             get_toplevel ().destroy ();
@@ -141,6 +138,7 @@ public class DeviceRow : Gtk.ListBoxRow {
                 return device.address;
         }
     }
+
     private void set_status (bool status) {
         state.icon_name = status? "emblem-enabled" : "emblem-disabled";
     }
