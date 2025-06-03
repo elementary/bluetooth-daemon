@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"POT-Creation-Date: 2025-06-03 21:15+0000\n"
 "PO-Revision-Date: 2024-07-21 23:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/desktop/"
@@ -16,75 +16,85 @@ msgstr ""
 "X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
-#: src/Application.vala:168
+#: src/Application.vala:39
+msgid "Run the Application in the background"
+msgstr ""
+
+#: src/Application.vala:40
+#, fuzzy
+#| msgid "Send Files via Bluetooth"
+msgid "Transfer files to a Bluetooth device"
+msgstr "Отправить файлы по Bluetooth"
+
+#: src/Application.vala:174
 msgid "Send Files via Bluetooth"
 msgstr "Отправить файлы по Bluetooth"
 
-#: src/Application.vala:170
+#: src/Application.vala:176
 msgid "Send files to device…"
 msgstr "Отправить файлы на устройство…"
 
-#: src/Application.vala:259
+#: src/Application.vala:266
 msgid "Rejected file"
 msgstr "Отклонённый файл"
 
-#: src/Application.vala:261
+#: src/Application.vala:268
 #, c-format
 msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
 msgstr "<b>Файл:</b> %s <b>Размер: </b>%s уже существует"
 
-#: src/Application.vala:276
+#: src/Application.vala:284
 msgid "Incoming file"
 msgstr "Входящий файл"
 
-#: src/Application.vala:278
+#: src/Application.vala:286
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
 msgstr "<b>%s</b> готов отправить файл: %s размер: %s"
 
-#: src/Application.vala:285
+#: src/Application.vala:293
 msgid "Accept"
 msgstr "Принять"
 
 #. /Translators response to refuse a file transfer
-#: src/Application.vala:290
+#: src/Application.vala:298
 msgid "Decline"
 msgstr "Отклонить"
 
-#: src/Application.vala:294
+#: src/Application.vala:302
 msgid "Receiving file"
 msgstr "Получение файла"
 
-#: src/Application.vala:295
+#: src/Application.vala:303
 #, c-format
 msgid "%s is sending file: %s size: %s"
 msgstr "%s отправляет файл: %s размер: %s"
 
-#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
 msgstr "Динамик"
 
-#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
 msgstr "Контроллер"
 
-#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
 msgstr "Клавиатура"
 
-#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+#: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
 msgstr "Мышь"
 
-#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+#: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
 msgstr "Планшет"
 
-#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+#: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
 msgstr "Сенсорная панель"
 
-#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+#: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
 msgstr "Телефон"
 
@@ -93,7 +103,7 @@ msgid "<b>Transfer rate:</b>"
 msgstr "<b>Скорость передачи:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
-#: src/Dialog/BtSender.vala:117
+#: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Закрыть"
 
@@ -101,19 +111,19 @@ msgstr "Закрыть"
 msgid "Reject"
 msgstr "Отклонить"
 
-#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
-#: src/Dialog/BtSender.vala:285
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
+#: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
 msgstr "<b>От</b>: %s"
 
-#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
-#: src/Dialog/BtSender.vala:286
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
+#: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
 msgstr "<b>К</b>: %s"
 
-#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
 msgstr "<b>Имя файла</b>: %s"
@@ -127,7 +137,7 @@ msgstr "Ошибка передачи файла"
 msgid "%s <b>File:</b> %s not received"
 msgstr "%s <b>Файл:</b> %s не получен"
 
-#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
 msgstr "Файл успешно передан"
 
@@ -141,7 +151,7 @@ msgstr "%s <b>Сохранение в:</b> %s"
 msgid "Receiving…  %s of %s"
 msgstr "Получение…  %s из %s"
 
-#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
 msgstr "<b>Скорость передачи:</b> %s"
@@ -151,7 +161,7 @@ msgstr "<b>Скорость передачи:</b> %s"
 msgid "%s of %s received, time remaining %s"
 msgstr "%s из %s получено, оставшееся время %s"
 
-#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -159,7 +169,7 @@ msgstr[0] "%d секунда"
 msgstr[1] "%d секунды"
 msgstr[2] "%d секунд"
 
-#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
@@ -167,7 +177,7 @@ msgstr[0] "%d минута"
 msgstr[1] "%d минуты"
 msgstr[2] "%d минут"
 
-#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
@@ -175,7 +185,7 @@ msgstr[0] "%u час"
 msgstr[1] "%u часа"
 msgstr[2] "%u часов"
 
-#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
@@ -184,12 +194,12 @@ msgstr[1] "%u минуты"
 msgstr[2] "%u минут"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
-#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
@@ -217,75 +227,75 @@ msgstr "Убедитесь, что ваши устройства видны и �
 msgid "Discovering"
 msgstr "Обнаружение"
 
-#: src/Dialog/BtScan.vala:189
+#: src/Dialog/BtScan.vala:191
 msgid "Available Devices"
 msgstr "Доступные устройства"
 
-#: src/Dialog/BtSender.vala:67
+#: src/Dialog/SenderDialog.vala:56
 msgid "From"
 msgstr "От"
 
-#: src/Dialog/BtSender.vala:75
+#: src/Dialog/SenderDialog.vala:64
 msgid "To"
 msgstr "На"
 
-#: src/Dialog/BtSender.vala:81
+#: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
 msgstr "Имя файла"
 
-#: src/Dialog/BtSender.vala:87
+#: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
 msgstr "Скорость передачи"
 
-#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
-#: src/Dialog/BtSender.vala:322
+#: src/Dialog/SenderDialog.vala:114 src/Dialog/SenderDialog.vala:257
+#: src/Dialog/SenderDialog.vala:323
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Dialog/BtSender.vala:228
+#: src/Dialog/SenderDialog.vala:227
 #, c-format
 msgid "Trying to connect to %s…"
 msgstr "Попытка подключения к %s…"
 
-#: src/Dialog/BtSender.vala:246
+#: src/Dialog/SenderDialog.vala:245
 #, c-format
 msgid "Connecting to '%s' failed."
 msgstr "Не удалось подключиться к «%s»."
 
-#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#: src/Dialog/SenderDialog.vala:247 src/Dialog/SenderDialog.vala:311
 #, c-format
 msgid "The transfer of '%s' failed."
 msgstr "Ошибка при передаче «%s»."
 
-#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+#: src/Dialog/SenderDialog.vala:250 src/Dialog/SenderDialog.vala:316
 msgid "The file has not been transferred"
 msgstr "Файл не был передан"
 
-#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+#: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
 msgstr "Повторить"
 
-#: src/Dialog/BtSender.vala:288
+#: src/Dialog/SenderDialog.vala:289
 #, c-format
 msgid "Waiting for acceptance on %s…"
 msgstr "Ожидание подтверждения %s…"
 
-#: src/Dialog/BtSender.vala:312
+#: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
 msgstr "%s прервало или отклонило передачу."
 
-#: src/Dialog/BtSender.vala:359
+#: src/Dialog/SenderDialog.vala:361
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
 msgstr "<b>От:</b> %s <b>Отправка на:</b> %s"
 
-#: src/Dialog/BtSender.vala:379
+#: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
 msgstr "(%i/%i) %s из %s отправлено, оставшееся время %s"
 
-#: src/Dialog/DeviceRow.vala:74
+#: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Отправить"
 
