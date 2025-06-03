@@ -21,12 +21,6 @@
  */
 
 public class BluetoothApp : Gtk.Application {
-    public const OptionEntry[] OPTIONS_BLUETOOTH = {
-        { "silent", 's', 0, OptionArg.NONE, out silent, "Run the Application in background", null},
-        { "send", 'f', 0, OptionArg.FILENAME_ARRAY, out arg_files, "Open file to send via Bluetooth", "FILE…" },
-        { null }
-    };
-
     public Bluetooth.ObjectManager object_manager;
     public Bluetooth.Obex.Agent agent_obex;
     public Bluetooth.Obex.Transfer transfer;
@@ -35,82 +29,99 @@ public class BluetoothApp : Gtk.Application {
     public BtScan bt_scan = null;
     public GLib.List<BtReceiver> bt_receivers;
     public GLib.List<SenderDialog> bt_senders;
-    public static bool silent = true;
-    public static bool active_once;
-    [CCode (array_length = false, array_null_terminated = true)]
-    public static string[]? arg_files = null;
+    private bool is_silent = false; // Running in background. Only access by primary instance
+    private bool active_once = false; // Bluetooth.Obex.Agent created. Only access by primary instance
 
     construct {
-        application_id = "io.elementary.bluetooth";
+        application_id = "io.elementary.bluetooth"; //Ensures a unique instance
         flags |= ApplicationFlags.HANDLES_COMMAND_LINE;
         Intl.setlocale (LocaleCategory.ALL, "");
-        add_main_option_entries (OPTIONS_BLUETOOTH);
+        add_main_option ("silent", 's', 0, OptionArg.NONE, _("Run the Application in the background"), null);
+        add_main_option ("send", 'f', 0, OptionArg.STRING_ARRAY, _("Transfer files to a Bluetooth device"), null);
     }
 
-    private File[] create_files_for_args (ApplicationCommandLine command, string[] args) {
-        File[] files = {};
-
-        foreach (unowned string arg in args) {
-            var file = command.create_file_for_arg (arg);
-            if (!file.query_exists ()) {
-                stderr.printf (
-                    "Ignoring not found file: %s\n",
-                    file.get_path ()
-                );
-                continue;
+    private void scan_and_send_files (Gee.ArrayList files) {
+        Idle.add (() => {
+            if (!object_manager.ready) {
+                return Source.CONTINUE;
             }
 
-            files += file;
-        }
-
-        return files;
-    }
-
-    private void scan_and_send_files (File[] files) {
-        if (bt_scan == null) {
-            bt_scan = new BtScan (this, object_manager);
-            Idle.add (() => { // Wait for async BtScan initialisation
-                bt_scan.show_all ();
-                return Source.REMOVE;
-            });
-        } else {
-            bt_scan.present ();
-        }
-
-        bt_scan.destroy.connect (() => {
-            bt_scan = null;
-        });
-
-        bt_scan.send_file.connect ((device) => {
-            if (!insert_sender (files, device)) {
-                bt_sender = new SenderDialog (this);
-                bt_sender.add_files (files, device);
-                bt_senders.append (bt_sender);
-                bt_sender.show_all ();
-                bt_sender.destroy.connect (() => {
-                    bt_senders.foreach ((sender) => {
-                        if (sender.device == bt_sender.device) {
-                            bt_senders.remove_link (bt_senders.find (sender));
-                        }
-                    });
+            if (bt_scan == null) {
+                bt_scan = new BtScan (this, object_manager);
+                bt_scan.destroy.connect (() => {
+                    bt_scan = null;
                 });
+
+                bt_scan.send_file.connect ((device) => {
+                    if (!insert_sender (files, device)) {
+                        bt_sender = new SenderDialog (this);
+                        bt_sender.add_files (files, device);
+                        bt_senders.append (bt_sender);
+                        bt_sender.show_all ();
+                        bt_sender.destroy.connect (() => {
+                            bt_senders.foreach ((sender) => {
+                                if (sender.device == bt_sender.device) {
+                                    bt_senders.remove_link (bt_senders.find (sender));
+                                }
+                            });
+                        });
+                    }
+                });
+
+                bt_scan.init ();
+                return Source.CONTINUE; // Wait for initialisation
+            } else {
+                bt_scan.present ();
             }
+
+            return Source.REMOVE;
         });
     }
 
+    // Only the primary instance runs this so we can reference `is_silent` and `active_once` here
     public override int command_line (ApplicationCommandLine command) {
-        activate ();
+        ensure_object_manager ();
+
+        unowned var options = command.get_options_dict ();
+        if (!is_silent) {
+            bool silent;
+            options.lookup ("silent", "b", out silent);
+            if (silent) {
+                is_silent = true;
+                if (active_once) { // after process hold exist.
+                    release (); // Protect from multiple holds. Has no effect if not already held.
+                }
+
+                hold ();
+            }
+        }
 
         // Handle "send" option
-        if (arg_files != null) {
-            File[] files = create_files_for_args (command, arg_files);
+        if (options.contains ("send")) {
+            var filenames = options.lookup_value ("send", VariantType.STRING_ARRAY).get_strv ();
+            if (filenames != null) {
+                var files = new Gee.ArrayList<File> ();
+                foreach (unowned string arg in filenames) {
+                    var file = command.create_file_for_arg (arg);
+                    if (!file.query_exists ()) {
+                        stderr.printf (
+                            "Ignoring not found file: %s\n",
+                            file.get_path ()
+                        );
+                        continue;
+                    }
 
-            if (files.length > 0) {
-                scan_and_send_files (files);
+                    files.add (file);
+                }
+
+                if (files.size > 0) {
+                    scan_and_send_files (files);
+                }
             }
         }
 
-        return 0;
+        return Posix.EXIT_SUCCESS;
+
     }
 
     protected override void startup () {
@@ -128,15 +139,7 @@ public class BluetoothApp : Gtk.Application {
         });
     }
 
-    protected override void activate () {
-        if (silent) {
-            if (active_once) { // after process hold exist.
-                release (); // Protect from multiple holds. Has no effect if not already held.
-            }
-            hold ();
-            silent = false;
-        }
-
+    private void ensure_object_manager () {
         if (object_manager == null) {
             bt_receivers = new GLib.List<BtReceiver> ();
             bt_senders = new GLib.List<SenderDialog> ();
@@ -206,7 +209,7 @@ public class BluetoothApp : Gtk.Application {
         });
     }
 
-    private bool insert_sender (File[] files, Bluetooth.Device device) {
+    private bool insert_sender (Gee.ArrayList<File> files, Bluetooth.Device device) {
         bool exist = false;
         bt_senders.foreach ((sender) => {
             if (sender.device == device) {
@@ -215,6 +218,7 @@ public class BluetoothApp : Gtk.Application {
                 exist = true;
             }
         });
+
         return exist;
     }
 
