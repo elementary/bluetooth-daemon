@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2025-06-14 15:41+0000\n"
-"Last-Translator: Victor Carreras <victor_Carreras2011@hotmail.com>\n"
+"PO-Revision-Date: 2025-06-15 15:55+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <italo@gp-mail.com>\n"
 "Language-Team: Spanish <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/es/>\n"
 "Language: es\n"
@@ -21,7 +21,7 @@ msgstr "Ejecutar la aplicación en segundo plano"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
-msgstr "Transfiere archivos a un dispositivo Bluetooth"
+msgstr "Transferir archivos a un dispositivo Bluetooth"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
