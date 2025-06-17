@@ -32,6 +32,20 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="1.1.0" date="2025-06-16" urgency="medium">
+      <description>
+        <p>Other Improvements:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/bluetooth-daemon/issues/39">Command line option --send=FILE does nothing</issue>
+        <issue url="https://github.com/elementary/bluetooth-daemon/issues/40">Bluetooth daemon crashes when trying to send files from the commandline or contract</issue>
+        <issue url="https://github.com/elementary/wingpanel-indicator-bluetooth/issues/61">Use rfkill to enable bluetooth</issue>
+      </issues>
+    </release>
+
     <release version="1.0.1" date="2024-12-13" urgency="medium">
       <description>
         <p>Other Improvements:</p>
