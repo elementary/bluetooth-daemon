@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2025-07-19 10:55+0000\n"
+"PO-Revision-Date: 2025-07-26 19:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/be/>\n"
@@ -18,187 +18,192 @@ msgstr ""
 
 #: src/Application.vala:39
 msgid "Run the Application in the background"
-msgstr ""
+msgstr "Запусціць праграму ў фонавым рэжыме"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
-msgstr ""
+msgstr "Перадаць файлы на прыладу Bluetooth"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
-msgstr ""
+msgstr "Адправіць файлы праз Bluetooth"
 
 #: src/Application.vala:176
 msgid "Send files to device…"
-msgstr ""
+msgstr "Адправіць файлы на прыладу…"
 
 #: src/Application.vala:266
 msgid "Rejected file"
-msgstr ""
+msgstr "Адхілены файл"
 
 #: src/Application.vala:268
 #, c-format
 msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
-msgstr ""
+msgstr "<b>Файл:</b> %s <b>Памер: </b>%s ужо існуе"
 
 #: src/Application.vala:284
 msgid "Incoming file"
-msgstr ""
+msgstr "Уваходны файл"
 
 #: src/Application.vala:286
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
-msgstr ""
+msgstr "<b>%s</b> гатовы адправіць файл: %s памер: %s"
 
 #: src/Application.vala:293
 msgid "Accept"
-msgstr ""
+msgstr "Прыняць"
 
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:298
 msgid "Decline"
-msgstr ""
+msgstr "Адхіліць"
 
 #: src/Application.vala:302
 msgid "Receiving file"
-msgstr ""
+msgstr "Ідзе атрыманне файла"
 
 #: src/Application.vala:303
 #, c-format
 msgid "%s is sending file: %s size: %s"
-msgstr ""
+msgstr "%s адпраўляе файл: %s памер: %s"
 
 #: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
-msgstr ""
+msgstr "Дынамік"
 
 #: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
-msgstr ""
+msgstr "Кантролер"
 
 #: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
-msgstr ""
+msgstr "Клавіятура"
 
 #: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
-msgstr ""
+msgstr "Мыш"
 
 #: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
-msgstr ""
+msgstr "Планшэт"
 
 #: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
-msgstr ""
+msgstr "Сэнсарная пляцоўка"
 
 #: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
-msgstr ""
+msgstr "Тэлефон"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Хуткасць перадачы:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
-msgstr "Зачыніць"
+msgstr "Закрыць"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Адхіліць"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
 #: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>Ад</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
 #: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Да</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Назва файла</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
-msgstr ""
+msgstr "Збой перадачы файла"
 
 #: src/Dialog/BtReceiver.vala:159
 #, c-format
 msgid "%s <b>File:</b> %s not received"
-msgstr ""
+msgstr "%s<b>Файл:</b>%s не атрыманы"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
-msgstr ""
+msgstr "Файл пераданы"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s<b>Захаваць у:</b>%s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr ""
+msgstr "Атрыманне…  %s з %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Хуткасць перадачы:</b>%s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
 msgid "%s of %s received, time remaining %s"
-msgstr ""
+msgstr "Атрымана %s з %s, засталося %s"
 
 #: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d секунда"
+msgstr[1] "%d секунды"
+msgstr[2] "%d секунд"
 
 #: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d хвіліна"
+msgstr[1] "%d хвіліны"
+msgstr[2] "%d хвілін"
 
 #: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u гадзіна"
+msgstr[1] "%u гадзіны"
+msgstr[2] "%u гадзін"
 
 #: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u хвіліна"
+msgstr[1] "%u хвіліны"
+msgstr[2] "%u хвілін"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
 #: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "прыблізна %d гадзіна"
+msgstr[1] "прыблізна %d гадзіны"
+msgstr[2] "прыблізна %d гадзін"
 
 #: src/Dialog/BtScan.vala:41
 msgid "Bluetooth File Transfer"
@@ -206,88 +211,88 @@ msgstr "Перадача файлаў праз Bluetooth"
 
 #: src/Dialog/BtScan.vala:49
 msgid "Select a Bluetooth Device Below to Send Files"
-msgstr ""
+msgstr "Выберыце прыладу Bluetooth ніжэй для перадачы файлаў"
 
 #: src/Dialog/BtScan.vala:57
 msgid "No Devices Found"
-msgstr ""
+msgstr "Прылад не знойдзена"
 
 #: src/Dialog/BtScan.vala:58
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Пераканайцеся, што вашы прылады бачныя і гатовыя да спалучэння."
 
 #: src/Dialog/BtScan.vala:79
 msgid "Discovering"
-msgstr ""
+msgstr "Выяўленне"
 
 #: src/Dialog/BtScan.vala:191
 msgid "Available Devices"
-msgstr ""
+msgstr "Даступныя прылады"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
-msgstr ""
+msgstr "Ад"
 
 #: src/Dialog/SenderDialog.vala:64
 msgid "To"
-msgstr ""
+msgstr "Да"
 
 #: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
-msgstr ""
+msgstr "Назва файла"
 
 #: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
-msgstr ""
+msgstr "Хуткасць перадачы"
 
 #: src/Dialog/SenderDialog.vala:114 src/Dialog/SenderDialog.vala:257
 #: src/Dialog/SenderDialog.vala:323
 msgid "Cancel"
-msgstr ""
+msgstr "Скасаваць"
 
 #: src/Dialog/SenderDialog.vala:227
 #, c-format
 msgid "Trying to connect to %s…"
-msgstr ""
+msgstr "Спрабуецца далучэнне да %s…"
 
 #: src/Dialog/SenderDialog.vala:245
 #, c-format
 msgid "Connecting to '%s' failed."
-msgstr ""
+msgstr "Не ўдалося далучыцца да '%s'."
 
 #: src/Dialog/SenderDialog.vala:247 src/Dialog/SenderDialog.vala:311
 #, c-format
 msgid "The transfer of '%s' failed."
-msgstr ""
+msgstr "Збой пры перадачы на '%s'."
 
 #: src/Dialog/SenderDialog.vala:250 src/Dialog/SenderDialog.vala:316
 msgid "The file has not been transferred"
-msgstr ""
+msgstr "Файл не быў перададзены"
 
 #: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
-msgstr ""
+msgstr "Паспрабаваць зноў"
 
 #: src/Dialog/SenderDialog.vala:289
 #, c-format
 msgid "Waiting for acceptance on %s…"
-msgstr ""
+msgstr "Чаканне прыняцця ад %s…"
 
 #: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
-msgstr ""
+msgstr "Перадача была перарвана або адхілена %s."
 
 #: src/Dialog/SenderDialog.vala:361
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
-msgstr ""
+msgstr "<b>Ад:</b> %s <b>Адправіць на:</b> %s"
 
 #: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
-msgstr ""
+msgstr "(%i/%i) адпраўлена %s з %s, засталося %s"
 
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
-msgstr ""
+msgstr "Адправіць"
