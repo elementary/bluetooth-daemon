@@ -3,27 +3,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2024-08-16 04:16+0000\n"
-"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
+"PO-Revision-Date: 2025-07-28 23:55+0000\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
 "desktop/bluetooth-daemon/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
 #: src/Application.vala:39
 msgid "Run the Application in the background"
-msgstr ""
+msgstr "Executar o aplicativo em segundo plano"
 
 #: src/Application.vala:40
-#, fuzzy
-#| msgid "Send Files via Bluetooth"
 msgid "Transfer files to a Bluetooth device"
-msgstr "Enviar arquivos via Bluetooth"
+msgstr "Enviar arquivos para um dispositivo Bluetooth"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
