@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2025-08-03 08:55+0000\n"
+"PO-Revision-Date: 2025-08-09 11:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
 "l10n.elementaryos.org/projects/desktop/bluetooth-daemon/zh_Hans/>\n"
@@ -20,10 +20,8 @@ msgid "Run the Application in the background"
 msgstr "在后台运行应用程序"
 
 #: src/Application.vala:40
-#, fuzzy
-#| msgid "Send Files via Bluetooth"
 msgid "Transfer files to a Bluetooth device"
-msgstr "通过蓝牙发送"
+msgstr "传输文件到蓝牙设备"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
