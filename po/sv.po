@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2025-10-22 09:58+0000\n"
+"PO-Revision-Date: 2025-10-23 12:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Application.vala:39
 msgid "Run the Application in the background"
-msgstr "Kör applikationen i bakgrunden"
+msgstr "Kör programmet i bakgrunden"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
