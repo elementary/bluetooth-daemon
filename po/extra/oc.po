@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2020-11-09 09:15+0000\n"
+"PO-Revision-Date: 2025-10-25 08:48+0000\n"
 "Last-Translator: Mejans <farga@mejans.fr>\n"
-"Language-Team: Occitan <https://l10n.elementary.io/projects/wingpanel/"
-"indicator-bluetooth-extra/oc/>\n"
+"Language-Team: Occitan <https://l10n.elementaryos.org/projects/desktop/"
+"bluetooth-daemon-extra/oc/>\n"
 "Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/bluetooth.desktop:3
 msgid "Bluetooth File Transfer"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:39
 msgid "Updated translations"
-msgstr "Mesas a jorn de las traduccions"
+msgstr "Traduccions actualizadas"
 
 #: data/bluetooth-daemon.metainfo.xml:46
 msgid "Initial Release 🎉️"
