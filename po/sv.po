@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-03 21:15+0000\n"
-"PO-Revision-Date: 2025-10-23 12:55+0000\n"
+"PO-Revision-Date: 2025-10-30 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/sv/>\n"
@@ -21,7 +21,7 @@ msgstr "Kör programmet i bakgrunden"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
-msgstr "Överföra filer till en Bluetooth-enhet"
+msgstr "Överför filer till en Bluetooth-enhet"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
@@ -29,7 +29,7 @@ msgstr "Skicka filer via Bluetooth"
 
 #: src/Application.vala:176
 msgid "Send files to device…"
-msgstr "Skicka filer till enheten…"
+msgstr "Skicka filer till enhet…"
 
 #: src/Application.vala:266
 msgid "Rejected file"
@@ -56,11 +56,11 @@ msgstr "Acceptera"
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:298
 msgid "Decline"
-msgstr "Avböj"
+msgstr "Neka"
 
 #: src/Application.vala:302
 msgid "Receiving file"
-msgstr "Mottagningsfil"
+msgstr "Tar emot fil"
 
 #: src/Application.vala:303
 #, c-format
@@ -69,11 +69,11 @@ msgstr "%s skickar fil: %s storlek: %s"
 
 #: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
-msgstr "Talare"
+msgstr "Högtalare"
 
 #: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
-msgstr "Kontroller"
+msgstr "Handkontroller"
 
 #: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
@@ -85,7 +85,7 @@ msgstr "Mus"
 
 #: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
-msgstr "Surfplatta"
+msgstr "Ritplatta"
 
 #: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
@@ -136,7 +136,7 @@ msgstr "%s <b>Fil:</b> %s inte mottagen"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
-msgstr "Filen överfördes framgångsrikt"
+msgstr "Filen överfördes"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
@@ -146,7 +146,7 @@ msgstr "%s <b>Spara till:</b> %s"
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr "Mottagande... %s av %s"
+msgstr "Tar emot...  %s av %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
@@ -156,7 +156,7 @@ msgstr "<b>Överföringshastighet:</b> %s"
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
 msgid "%s of %s received, time remaining %s"
-msgstr "%s av %s mottagen, återstående tid %s"
+msgstr "%s av %s mottaget, återstående tid %s"
 
 #: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
@@ -197,7 +197,7 @@ msgstr "%s, %s"
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
 msgstr[0] "ungefär %d timme"
-msgstr[1] "cirka %d timmar"
+msgstr[1] "ungefär %d timmar"
 
 #: src/Dialog/BtScan.vala:41
 msgid "Bluetooth File Transfer"
@@ -275,7 +275,7 @@ msgstr "Väntar på acceptans på %s…"
 #: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
-msgstr "Överföringen avbröts eller avvisades av %s."
+msgstr "Överföringen avbröts eller nekades av %s."
 
 #: src/Dialog/SenderDialog.vala:361
 #, c-format
@@ -285,7 +285,7 @@ msgstr "<b>Från:</b> %s <b>Skicka till:</b> %s"
 #: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
-msgstr "(%i/%i) %s av %s skickad, återstående tid %s"
+msgstr "(%i/%i) %s av %s skickat, återstående tid %s"
 
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
