@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2021-02-16 01:08+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/wingpanel/"
@@ -20,11 +20,11 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/bluetooth.desktop:3
+#: data/bluetooth.desktop:2
 msgid "Bluetooth File Transfer"
 msgstr ""
 
-#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+#: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
 msgstr ""
 
@@ -41,15 +41,15 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth-daemon.metainfo.xml:37
+#: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
 msgstr ""
 
-#: data/bluetooth-daemon.metainfo.xml:39
+#: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
 msgstr "Освежени преводи"
 
-#: data/bluetooth-daemon.metainfo.xml:46
+#: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
 msgstr ""
 

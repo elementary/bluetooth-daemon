@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2024-12-19 16:04+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/desktop/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.4\n"
 
-#: data/bluetooth.desktop:3
+#: data/bluetooth.desktop:2
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth-fájlküldés"
 
-#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+#: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
 msgstr "Fájlok küldése és fogadása Bluetooth-on keresztül"
 
@@ -41,15 +41,15 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth-daemon.metainfo.xml:37
+#: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
 msgstr "Egyéb fejlesztések:"
 
-#: data/bluetooth-daemon.metainfo.xml:39
+#: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/bluetooth-daemon.metainfo.xml:46
+#: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
 msgstr "Első kiadás 🎉️"
 

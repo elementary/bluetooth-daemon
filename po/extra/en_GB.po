@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2024-12-13 07:16+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -19,11 +19,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.8.4\n"
 
-#: data/bluetooth.desktop:3
+#: data/bluetooth.desktop:2
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth File Transfer"
 
-#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+#: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
 msgstr "Send and receive files via Bluetooth"
 
@@ -39,15 +39,15 @@ msgstr "Manages Bluetooth settings and provides Bluetooth transfer features."
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth-daemon.metainfo.xml:37
+#: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
 msgstr "Other Improvements:"
 
-#: data/bluetooth-daemon.metainfo.xml:39
+#: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
 msgstr "Updated translations"
 
-#: data/bluetooth-daemon.metainfo.xml:46
+#: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
 msgstr "Initial Release 🎉️"
 

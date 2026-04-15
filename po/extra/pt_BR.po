@@ -7,23 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:18+0000\n"
-"PO-Revision-Date: 2024-08-15 03:51+0000\n"
-"Last-Translator: José Rafael <jrafaeldesantana@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
+"PO-Revision-Date: 2025-05-14 14:55+0000\n"
+"Last-Translator: Max2020 <alcizmaxpereira@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
 "desktop/bluetooth-daemon-extra/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
-#: data/bluetooth.desktop:3
+#: data/bluetooth.desktop:2
 msgid "Bluetooth File Transfer"
 msgstr "Transferência de arquivos por Bluetooth"
 
-#: data/bluetooth.desktop:4 data/bluetooth-daemon.metainfo.xml:11
+#: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
 msgstr "Enviar e receber arquivos por Bluetooth"
 
@@ -41,15 +41,15 @@ msgstr ""
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/bluetooth-daemon.metainfo.xml:37
+#: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Outras melhorias:"
 
-#: data/bluetooth-daemon.metainfo.xml:39
+#: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/bluetooth-daemon.metainfo.xml:46
+#: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
 msgstr "Versão inicial 🎉️"
 
