@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2025-11-30 07:55+0000\n"
 "Last-Translator: Bas Ernst <bas@ernstgenova.it>\n"
 "Language-Team: Dutch <https://l10n.elementaryos.org/projects/desktop/"
@@ -99,7 +99,7 @@ msgstr "Telefoon"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b> Overdrachtssnelheid:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Sluiten"
@@ -199,29 +199,25 @@ msgid_plural "approximately %d hours"
 msgstr[0] "ongeveer %d uur"
 msgstr[1] "ongeveer %d uren"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth bestandsoverdracht"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Selecteer een Bluetooth-apparaat hieronder om bestanden te versturen"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Geen apparaten gevonden"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Controleer of uw apparaten zichtbaar en klaar zijn om te koppelen."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Ontdekken"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Beschikbare apparaten"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -290,6 +286,9 @@ msgstr "(%i/%i) %s van de %s verzonden, resterende tijd %s"
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Versturen"
+
+#~ msgid "Available Devices"
+#~ msgstr "Beschikbare apparaten"
 
 #~ msgid "Not Connected"
 #~ msgstr "Niet verbonden"

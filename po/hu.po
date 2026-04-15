@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2025-06-19 11:55+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementaryos.org/projects/desktop/"
@@ -99,7 +99,7 @@ msgstr "Telefon"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Átvitel sebessége:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Bezárás"
@@ -199,30 +199,26 @@ msgid_plural "approximately %d hours"
 msgstr[0] "körülbelül %d óra"
 msgstr[1] "körülbelül %d óra"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth-fájlküldés"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Válasszon egy Bluetooth-eszközt a fájlok küldéséhez"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Nem található eszköz"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Győződjön meg róla, hogy az eszközei láthatók és készen állnak a párosításra."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Felfedezés"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Elérhető eszközök"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -291,6 +287,9 @@ msgstr "(%i/%i) %s/%s átküldve, hátralévő idő: %s"
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Küldés"
+
+#~ msgid "Available Devices"
+#~ msgstr "Elérhető eszközök"
 
 #~ msgid "Not Connected"
 #~ msgstr "Nincs csatlakoztatva"

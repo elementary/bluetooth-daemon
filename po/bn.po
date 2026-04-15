@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2017-12-27 08:19+0000\n"
 "Last-Translator: Subhadeep Jasu <subhajasu@gmail.com>\n"
 "Language-Team: Bengali <https://weblate.elementary.io/projects/wingpanel/"
@@ -99,7 +99,7 @@ msgstr ""
 msgid "<b>Transfer rate:</b>"
 msgstr ""
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr ""
@@ -199,31 +199,27 @@ msgid_plural "approximately %d hours"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 #, fuzzy
 msgid "Bluetooth File Transfer"
 msgstr "ব্লুটুথ"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr ""
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr ""
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 #, fuzzy
 msgid "Discovering"
 msgstr "সংযোগ বিচ্ছিন্ন করছে…"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr ""
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"

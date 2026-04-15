@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2025-06-05 07:55+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementaryos.org/projects/desktop/"
@@ -99,7 +99,7 @@ msgstr "Téléphone"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Taux de transfert :</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Fermer"
@@ -199,32 +199,28 @@ msgid_plural "approximately %d hours"
 msgstr[0] "environ %d heure"
 msgstr[1] "environ %d heures"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Transfert de fichier Bluetooth"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr ""
 "Sélectionnez un périphérique Bluetooth ci-dessous pour envoyer des fichiers"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Aucun périphérique trouvé"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Veuillez vous assurer que vos appareils sont visibles et prêts à être "
 "appairés."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Découverte"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Périphériques disponibles"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -293,6 +289,9 @@ msgstr "(%i/%i) %s sur %s envoyés, temps restant %s"
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Envoyer"
+
+#~ msgid "Available Devices"
+#~ msgstr "Périphériques disponibles"
 
 #~ msgid "Not Connected"
 #~ msgstr "Déconnecté"
