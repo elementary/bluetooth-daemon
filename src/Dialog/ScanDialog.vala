@@ -106,13 +106,14 @@ public class ScanDialog : Granite.Dialog {
         });
     }
 
-    public override void show () {
-        base.show ();
+    public void init () {
         var devices = manager.get_devices ();
         foreach (var device in devices) {
             add_device (device);
         }
-        manager.start_discovery.begin ();
+        manager.start_discovery.begin (() => {
+            show_all ();
+        });
     }
 
     private void add_device (Bluetooth.Device device) {

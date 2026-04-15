@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:18+0000\n"
+"POT-Creation-Date: 2025-06-03 21:15+0000\n"
 "PO-Revision-Date: 2022-11-16 21:49+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/wingpanel/"
@@ -15,75 +15,85 @@ msgstr ""
 "X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
-#: src/Application.vala:168
+#: src/Application.vala:39
+msgid "Run the Application in the background"
+msgstr ""
+
+#: src/Application.vala:40
+#, fuzzy
+#| msgid "Send Files via Bluetooth"
+msgid "Transfer files to a Bluetooth device"
+msgstr "Dateien mittels Bluetooth senden"
+
+#: src/Application.vala:174
 msgid "Send Files via Bluetooth"
 msgstr "Dateien mittels Bluetooth senden"
 
-#: src/Application.vala:170
+#: src/Application.vala:176
 msgid "Send files to device…"
 msgstr "Dateien an Gerät senden …"
 
-#: src/Application.vala:259
+#: src/Application.vala:266
 msgid "Rejected file"
 msgstr "Zurückgewiesene Datei"
 
-#: src/Application.vala:261
+#: src/Application.vala:268
 #, c-format
 msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
 msgstr "<b>Datei:</b> %s <b>Größe: </b>%s bereits vorhanden"
 
-#: src/Application.vala:276
+#: src/Application.vala:284
 msgid "Incoming file"
 msgstr "Ankommende Datei"
 
-#: src/Application.vala:278
+#: src/Application.vala:286
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
 msgstr "<b>%s</b> ist bereit zum Senden einer Datei: %s Größe: %s"
 
-#: src/Application.vala:285
+#: src/Application.vala:293
 msgid "Accept"
 msgstr "Annehmen"
 
 #. /Translators response to refuse a file transfer
-#: src/Application.vala:290
+#: src/Application.vala:298
 msgid "Decline"
 msgstr "Ablehnen"
 
-#: src/Application.vala:294
+#: src/Application.vala:302
 msgid "Receiving file"
 msgstr "Datei empfangen"
 
-#: src/Application.vala:295
+#: src/Application.vala:303
 #, c-format
 msgid "%s is sending file: %s size: %s"
 msgstr "%s sendet eine Datei: %s Größe: %s"
 
-#: src/Application.vala:311 src/Dialog/DeviceRow.vala:127
+#: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
 msgstr "Lautsprecher"
 
-#: src/Application.vala:313 src/Dialog/DeviceRow.vala:129
+#: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
 msgstr "Controller"
 
-#: src/Application.vala:315 src/Dialog/DeviceRow.vala:131
+#: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
 msgstr "Tastatur"
 
-#: src/Application.vala:317 src/Dialog/DeviceRow.vala:133
+#: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
 msgstr "Maus"
 
-#: src/Application.vala:319 src/Dialog/DeviceRow.vala:135
+#: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
 msgstr "Grafiktablett"
 
-#: src/Application.vala:321 src/Dialog/DeviceRow.vala:137
+#: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
 msgstr "Tastfeld"
 
-#: src/Application.vala:323 src/Dialog/DeviceRow.vala:139
+#: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
 msgstr "Mobiltelefon"
 
@@ -92,7 +102,7 @@ msgid "<b>Transfer rate:</b>"
 msgstr "<b>Übertragungsgeschwindigkeit:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
-#: src/Dialog/BtSender.vala:117
+#: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Schließen"
 
@@ -100,19 +110,19 @@ msgstr "Schließen"
 msgid "Reject"
 msgstr "Ablehnen"
 
-#: src/Dialog/BtReceiver.vala:137 src/Dialog/BtSender.vala:225
-#: src/Dialog/BtSender.vala:285
+#: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
+#: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
 msgstr "<b>Von</b>: %s"
 
-#: src/Dialog/BtReceiver.vala:138 src/Dialog/BtSender.vala:226
-#: src/Dialog/BtSender.vala:286
+#: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
+#: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
 msgstr "<b>An</b>: %s"
 
-#: src/Dialog/BtReceiver.vala:148 src/Dialog/BtSender.vala:295
+#: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
 msgstr "<b>Dateiname</b>: %s"
@@ -126,7 +136,7 @@ msgstr "Dateiübertragung fehlgeschlagen"
 msgid "%s <b>File:</b> %s not received"
 msgstr "%s <b>Datei:</b> %s nicht empfangen"
 
-#: src/Dialog/BtReceiver.vala:186 src/Dialog/BtSender.vala:358
+#: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
 msgstr "Dateiübertragung erfolgreich"
 
@@ -140,7 +150,7 @@ msgstr "%s <b>Speicherungsort:</b> %s"
 msgid "Receiving…  %s of %s"
 msgstr "Empfangen … %s von %s"
 
-#: src/Dialog/BtReceiver.vala:225 src/Dialog/BtSender.vala:377
+#: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
 msgstr "<b>Übertragungsgeschwindigkeit</b>: %s"
@@ -150,28 +160,28 @@ msgstr "<b>Übertragungsgeschwindigkeit</b>: %s"
 msgid "%s of %s received, time remaining %s"
 msgstr "%s von %s empfangen, verbleibende Zeit %s"
 
-#: src/Dialog/BtReceiver.vala:236 src/Dialog/BtSender.vala:388
+#: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d Sekunde"
 msgstr[1] "%d Sekunden"
 
-#: src/Dialog/BtReceiver.vala:242 src/Dialog/BtSender.vala:394
+#: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
 msgstr[0] "%d Minute"
 msgstr[1] "%d Minuten"
 
-#: src/Dialog/BtReceiver.vala:248 src/Dialog/BtSender.vala:400
+#: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
 msgstr[0] "%u Stunde"
 msgstr[1] "%u Stunden"
 
-#: src/Dialog/BtReceiver.vala:249 src/Dialog/BtSender.vala:401
+#: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
@@ -179,12 +189,12 @@ msgstr[0] "%u Minute"
 msgstr[1] "%u Minuten"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
-#: src/Dialog/BtReceiver.vala:251 src/Dialog/BtSender.vala:403
+#: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
 msgstr "%s, %s"
 
-#: src/Dialog/BtReceiver.vala:254 src/Dialog/BtSender.vala:406
+#: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
@@ -211,75 +221,75 @@ msgstr "Sicherstellen, dass die Geräte sichtbar und bereit zur Koppelung sind."
 msgid "Discovering"
 msgstr "Suchen"
 
-#: src/Dialog/BtScan.vala:189
+#: src/Dialog/BtScan.vala:191
 msgid "Available Devices"
 msgstr "Verfügbare Geräte"
 
-#: src/Dialog/BtSender.vala:67
+#: src/Dialog/SenderDialog.vala:56
 msgid "From"
 msgstr "Von"
 
-#: src/Dialog/BtSender.vala:75
+#: src/Dialog/SenderDialog.vala:64
 msgid "To"
 msgstr "An"
 
-#: src/Dialog/BtSender.vala:81
+#: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
 msgstr "Dateiname"
 
-#: src/Dialog/BtSender.vala:87
+#: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
 msgstr "Übertragungsgeschwindigkeit"
 
-#: src/Dialog/BtSender.vala:118 src/Dialog/BtSender.vala:258
-#: src/Dialog/BtSender.vala:322
+#: src/Dialog/SenderDialog.vala:114 src/Dialog/SenderDialog.vala:257
+#: src/Dialog/SenderDialog.vala:323
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/Dialog/BtSender.vala:228
+#: src/Dialog/SenderDialog.vala:227
 #, c-format
 msgid "Trying to connect to %s…"
 msgstr "Verbindung zu %s aufbauen …"
 
-#: src/Dialog/BtSender.vala:246
+#: src/Dialog/SenderDialog.vala:245
 #, c-format
 msgid "Connecting to '%s' failed."
 msgstr "Aufbau einer Verbindung zu »%s« ist fehlgeschlagen."
 
-#: src/Dialog/BtSender.vala:248 src/Dialog/BtSender.vala:310
+#: src/Dialog/SenderDialog.vala:247 src/Dialog/SenderDialog.vala:311
 #, c-format
 msgid "The transfer of '%s' failed."
 msgstr "Die Übertragung von »%s« ist fehlgeschlagen."
 
-#: src/Dialog/BtSender.vala:251 src/Dialog/BtSender.vala:315
+#: src/Dialog/SenderDialog.vala:250 src/Dialog/SenderDialog.vala:316
 msgid "The file has not been transferred"
 msgstr "Die Datei wurde nicht übertragen"
 
-#: src/Dialog/BtSender.vala:259 src/Dialog/BtSender.vala:323
+#: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
 msgstr "Erneut versuchen"
 
-#: src/Dialog/BtSender.vala:288
+#: src/Dialog/SenderDialog.vala:289
 #, c-format
 msgid "Waiting for acceptance on %s…"
 msgstr "Warten auf Annahme von %s …"
 
-#: src/Dialog/BtSender.vala:312
+#: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
 msgstr "Die Übertragung wurde abgebrochen oder sie wurde von %s abgelehnt."
 
-#: src/Dialog/BtSender.vala:359
+#: src/Dialog/SenderDialog.vala:361
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
 msgstr "<b>Von:</b> %s <b>Senden an:</b> %s"
 
-#: src/Dialog/BtSender.vala:379
+#: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
 msgstr "(%i/%i) %s von %s gesendet, verbleibende Zeit %s"
 
-#: src/Dialog/DeviceRow.vala:74
+#: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Senden"
 

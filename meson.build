@@ -1,7 +1,7 @@
 project(
     'io.elementary.bluetooth',
     'vala', 'c',
-    version: '1.0.1',
+    version: '1.1.0',
     meson_version : '>= 0.57'
 )
 
@@ -12,6 +12,7 @@ i18n = import('i18n')
 
 granite_dep = dependency ('granite')
 gtk_dep = dependency ('gtk+-3.0')
+posix_dep = meson.get_compiler('vala').find_library('posix')
 
 subdir('data')
 subdir('po')
