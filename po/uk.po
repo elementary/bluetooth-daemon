@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2025-06-11 07:55+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/desktop/"
@@ -100,7 +100,7 @@ msgstr "Телефон"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Швидкість передавання:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Закрити"
@@ -205,29 +205,25 @@ msgstr[0] "приблизно %d година"
 msgstr[1] "приблизно %d години"
 msgstr[2] "приблизно %d годин"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Передавання файлів через Bluetooth"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Виберіть нижче пристрій Bluetooth для надсилання файлів"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Пристроїв не знайдено"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Переконайтеся, що ваші пристрої видно і вони готові до сполучення."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Виявлення"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Доступні пристрої"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -296,6 +292,9 @@ msgstr "(%i/%i) %s з %s надіслано, залишилося до заве�
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Надіслати"
+
+#~ msgid "Available Devices"
+#~ msgstr "Доступні пристрої"
 
 #~ msgid "Not Connected"
 #~ msgstr "Не під’єднаний"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2025-07-26 19:55+0000\n"
 "Last-Translator: lenify <lenify@tutanota.com>\n"
 "Language-Team: Belarusian <https://l10n.elementaryos.org/projects/desktop/"
@@ -100,7 +100,7 @@ msgstr "Тэлефон"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Хуткасць перадачы:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Закрыць"
@@ -205,29 +205,25 @@ msgstr[0] "прыблізна %d гадзіна"
 msgstr[1] "прыблізна %d гадзіны"
 msgstr[2] "прыблізна %d гадзін"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Перадача файлаў праз Bluetooth"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Выберыце прыладу Bluetooth ніжэй для перадачы файлаў"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Прылад не знойдзена"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Пераканайцеся, што вашы прылады бачныя і гатовыя да спалучэння."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Выяўленне"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Даступныя прылады"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -296,3 +292,6 @@ msgstr "(%i/%i) адпраўлена %s з %s, засталося %s"
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Адправіць"
+
+#~ msgid "Available Devices"
+#~ msgstr "Даступныя прылады"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2023-02-14 14:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -102,7 +102,7 @@ msgstr "Telefon"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Overføringshastighet:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Lukk"
@@ -203,33 +203,29 @@ msgid_plural "approximately %d hours"
 msgstr[0] "ca. %d time"
 msgstr[1] "ca. %d timer"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 #, fuzzy
 msgid "Bluetooth File Transfer"
 msgstr "Blåtann påslått"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 #, fuzzy
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Velg en Blåtannsenhet nedenfor for å sende filer"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Fant ingen enheter"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 #, fuzzy
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Forsikre deg om at enhetene dine er synlige og klar for sammenkobling."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 #, fuzzy
 msgid "Discovering"
 msgstr "Kobler fra…"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Tilgjengelige enheter"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -298,6 +294,9 @@ msgstr "(%i/%i) %s av %s sendt. %s til fullføring."
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Send"
+
+#~ msgid "Available Devices"
+#~ msgstr "Tilgjengelige enheter"
 
 #~ msgid "Not Connected"
 #~ msgstr "Ikke tilkoblet"

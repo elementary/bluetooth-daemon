@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2026-03-22 15:55+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementaryos.org/projects/desktop/"
@@ -99,7 +99,7 @@ msgstr "Puhelin"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Siirtonopeus:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Sulje"
@@ -199,29 +199,25 @@ msgid_plural "approximately %d hours"
 msgstr[0] "noin %d tunti"
 msgstr[1] "noin %d tuntia"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Bluetooth-tiedostonsiirto"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Valitse Bluetooth-laite alapuolelta lähettääksesi tiedostoja"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Laitteita ei löytynyt"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr "Varmista, että laitteet ovat näkyvissä ja valmiit pariliitosta varten."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Tutkitaan"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Käytettävissä olevat laitteet"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -290,6 +286,9 @@ msgstr "(%i/%i) %s/%s lähetetty, aikaa jäljellä %s"
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Lähetä"
+
+#~ msgid "Available Devices"
+#~ msgstr "Käytettävissä olevat laitteet"
 
 #~ msgid "Not Connected"
 #~ msgstr "Ei yhdistetty"

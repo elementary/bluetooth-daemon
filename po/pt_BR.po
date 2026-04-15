@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-03 21:15+0000\n"
+"POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2025-07-28 23:55+0000\n"
 "Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
@@ -99,7 +99,7 @@ msgstr "Telefone"
 msgid "<b>Transfer rate:</b>"
 msgstr "<b>Taxa de transferência:</b>"
 
-#: src/Dialog/BtReceiver.vala:112 src/Dialog/BtScan.vala:109
+#: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
 msgstr "Fechar"
@@ -199,31 +199,27 @@ msgid_plural "approximately %d hours"
 msgstr[0] "aproximadamente %d hora"
 msgstr[1] "aproximadamente %d horas"
 
-#: src/Dialog/BtScan.vala:41
+#: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
 msgstr "Transferência de arquivos por Bluetooth"
 
-#: src/Dialog/BtScan.vala:49
+#: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
 msgstr "Selecione um dispositivo Bluetooth para enviar arquivos"
 
-#: src/Dialog/BtScan.vala:57
+#: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
 msgstr "Nenhum dispositivo encontrado"
 
-#: src/Dialog/BtScan.vala:58
+#: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
 msgstr ""
 "Certifique-se de que os seus dispositivos estão visíveis e prontos para "
 "emparelhar."
 
-#: src/Dialog/BtScan.vala:79
+#: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
 msgstr "Procurando"
-
-#: src/Dialog/BtScan.vala:191
-msgid "Available Devices"
-msgstr "Dispositivos disponíveis"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
@@ -292,6 +288,9 @@ msgstr "(%i/%i) %s de %s enviado, tempo restante %s"
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
 msgstr "Enviar"
+
+#~ msgid "Available Devices"
+#~ msgstr "Dispositivos disponíveis"
 
 #~ msgid "Not Connected"
 #~ msgstr "Desconectado"
