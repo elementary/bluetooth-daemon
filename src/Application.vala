@@ -26,7 +26,7 @@ public class BluetoothApp : Gtk.Application {
     public Bluetooth.Obex.Transfer transfer;
     public BtReceiver bt_receiver;
     public SenderDialog bt_sender;
-    public BtScan bt_scan = null;
+    public ScanDialog bt_scan = null;
     public GLib.List<BtReceiver> bt_receivers;
     public GLib.List<SenderDialog> bt_senders;
     private bool is_silent = false; // Running in background. Only access by primary instance
@@ -47,7 +47,7 @@ public class BluetoothApp : Gtk.Application {
             }
 
             if (bt_scan == null) {
-                bt_scan = new BtScan (this, object_manager);
+                bt_scan = new ScanDialog (this, object_manager);
                 bt_scan.destroy.connect (() => {
                     bt_scan = null;
                 });
