@@ -57,7 +57,7 @@ public class BluetoothApp : Gtk.Application {
                         bt_sender = new SenderDialog (this);
                         bt_sender.add_files (files, device);
                         bt_senders.append (bt_sender);
-                        bt_sender.show_all ();
+                        bt_sender.present ();
                         bt_sender.destroy.connect (() => {
                             bt_senders.foreach ((sender) => {
                                 if (sender.device == bt_sender.device) {
@@ -199,12 +199,12 @@ public class BluetoothApp : Gtk.Application {
     private void dialog_active (string session_path) {
         bt_receivers.foreach ((receiver) => {
             if (receiver.transfer.session == session_path) {
-                receiver.show_all ();
+                receiver.present ();
             }
         });
         bt_senders.foreach ((sender) => {
             if (sender.transfer.session == session_path) {
-                sender.show_all ();
+                sender.present ();
             }
         });
     }
