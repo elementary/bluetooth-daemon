@@ -119,11 +119,11 @@ public class ReceiverDialog : Granite.Dialog {
                 }
                 destroy ();
             } else {
-                hide_on_delete ();
+                hide ();
             }
         });
 
-        delete_event.connect (() => {
+        close_request.connect (() => {
             if (transfer.status == "active") {
                 return hide_on_delete ();
             } else {

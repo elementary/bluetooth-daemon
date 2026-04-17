@@ -40,7 +40,7 @@ public class DeviceRow : Gtk.ListBoxRow {
         var state_label = new Gtk.Label (null) {
             xalign = 0
         };
-        state_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        state_label.add_css_class (Granite.CssClass.SMALL);
 
         var overlay = new Gtk.Overlay () {
             child = image,

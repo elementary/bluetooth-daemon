@@ -45,7 +45,7 @@ public class ScanDialog : Granite.Dialog {
         };
 
         var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
-            secondary_text = _("Please ensure that your devices are visible and ready for pairing.")
+            description = _("Please ensure that your devices are visible and ready for pairing.")
         };
 
         list_box = new Gtk.ListBox () {
