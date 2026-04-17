@@ -107,6 +107,7 @@ public class SenderDialog : Granite.Dialog {
         message_grid.attach (rate_label, 1, 3);
         message_grid.attach (progressbar, 1, 4);
         message_grid.attach (progress_label, 1, 5);
+        message_grid.show_all ();
 
         get_content_area ().append (message_grid);
 
@@ -269,7 +270,8 @@ public class SenderDialog : Granite.Dialog {
 
                 bt_retry.destroy ();
             });
-            bt_retry.show_all ();
+            bt_retry.present ();
+
             progress_label.label = e.message.split ("org.bluez.obex.Error.Failed:")[1];
             GLib.warning (e.message);
         }
@@ -335,7 +337,8 @@ public class SenderDialog : Granite.Dialog {
 
                     bt_retry.destroy ();
                 });
-                bt_retry.show_all ();
+                bt_retry.present ();
+
                 progressbar.fraction = 0.0;
                 remove_session.begin ();
                 break;

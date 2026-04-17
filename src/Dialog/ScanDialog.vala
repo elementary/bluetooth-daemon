@@ -110,7 +110,7 @@ public class ScanDialog : Granite.Dialog {
             add_device (device);
         }
         manager.start_discovery.begin (() => {
-            show_all ();
+            present ();
         });
     }
 
