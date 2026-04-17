@@ -7,8 +7,8 @@ Send and receive files via Bluetooth
 
 You'll need the following dependencies:
 
-    libgranite-dev >= 6.0.0
-    libgtk3-dev
+    libgranite-7-dev
+    libgtk4-dev
     meson
     valac
 

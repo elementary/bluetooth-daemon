@@ -28,9 +28,11 @@ public class DeviceRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth", DND);
+        var image = new Gtk.Image.from_icon_name (device.icon ?? "bluetooth") {
+            icon_size = LARGE
+        };
 
-        state = new Gtk.Image.from_icon_name ("emblem-disabled", MENU) {
+        state = new Gtk.Image.from_icon_name ("emblem-disabled") {
             halign = END,
             valign = END
         };
@@ -38,7 +40,7 @@ public class DeviceRow : Gtk.ListBoxRow {
         var state_label = new Gtk.Label (null) {
             xalign = 0
         };
-        state_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        state_label.add_css_class (Granite.CssClass.SMALL);
 
         var overlay = new Gtk.Overlay () {
             child = image,
@@ -81,7 +83,6 @@ public class DeviceRow : Gtk.ListBoxRow {
         grid.attach (send_button, 4, 0, 1, 2);
 
         child = grid;
-        show_all ();
 
         set_sensitive (adapter.powered);
         set_status (device.connected);
@@ -114,7 +115,7 @@ public class DeviceRow : Gtk.ListBoxRow {
 
         send_button.clicked.connect (() => {
             send_file (device);
-            get_toplevel ().destroy ();
+            get_root ().destroy ();
         });
     }
 

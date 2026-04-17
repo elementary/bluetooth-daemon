@@ -37,7 +37,8 @@ public class SenderDialog : Granite.Dialog {
     construct {
         liststore = new Gtk.ListStore (1, typeof (File));
 
-        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
+        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth") {
+            pixel_size = 48,
             valign = END,
             halign = END
         };
@@ -59,7 +60,7 @@ public class SenderDialog : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
-        path_label.get_style_context ().add_class ("primary");
+        path_label.add_css_class ("primary");
 
         device_label = new Gtk.Label (GLib.Markup.printf_escaped ("<b>%s</b>:", _("To"))) {
             max_width_chars = 45,
@@ -106,14 +107,13 @@ public class SenderDialog : Granite.Dialog {
         message_grid.attach (rate_label, 1, 3);
         message_grid.attach (progressbar, 1, 4);
         message_grid.attach (progress_label, 1, 5);
-        message_grid.show_all ();
 
-        get_content_area ().add (message_grid);
+        get_content_area ().append (message_grid);
 
         add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
         var reject_transfer = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
-        reject_transfer.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        reject_transfer.add_css_class (Granite.CssClass.DESTRUCTIVE);
 
         response.connect ((response_id) => {
             if (response_id == Gtk.ResponseType.CANCEL) {
@@ -127,17 +127,17 @@ public class SenderDialog : Granite.Dialog {
                         remove_session.begin ();
                     }
                 }
-                destroy ();
+
             } else {
                 if (transfer.status == "active") {
-                    hide_on_delete ();
+                    hide ();
                 } else {
                     destroy ();
                 }
             }
         });
 
-        delete_event.connect (() => {
+        close_request.connect (() => {
             if (transfer.status == "active") {
                 return hide_on_delete ();
             } else {
@@ -241,7 +241,7 @@ public class SenderDialog : Granite.Dialog {
             );
             send_file.begin ();
         } catch (Error e) {
-            hide_on_delete ();
+            hide ();
             var bt_retry = new Granite.MessageDialog (
                 _("Connecting to '%s' failed.").printf (device.alias),
                 "%s\n%s".printf (
@@ -257,7 +257,7 @@ public class SenderDialog : Granite.Dialog {
             };
             bt_retry.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
             var suggested_button = bt_retry.add_button (_("Retry"), Gtk.ResponseType.ACCEPT);
-            suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            suggested_button.add_css_class (Granite.CssClass.SUGGESTED);
 
             bt_retry.response.connect ((response_id) => {
                 if (response_id == Gtk.ResponseType.ACCEPT) {
@@ -308,7 +308,7 @@ public class SenderDialog : Granite.Dialog {
     private void tranfer_progress () {
         switch (transfer.status) {
             case "error":
-                hide_on_delete ();
+                hide ();
                 var bt_retry = new Granite.MessageDialog (
                     _("The transfer of '%s' failed.").printf (file_path.get_basename ()),
                     "%s\n%s".printf (
@@ -324,7 +324,7 @@ public class SenderDialog : Granite.Dialog {
                 };
                 bt_retry.add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
                 var suggested_button = bt_retry.add_button (_("Retry"), Gtk.ResponseType.ACCEPT);
-                suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+                suggested_button.add_css_class (Granite.CssClass.SUGGESTED);
 
                 bt_retry.response.connect ((response_id) => {
                     if (response_id == Gtk.ResponseType.ACCEPT) {

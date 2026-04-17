@@ -23,7 +23,8 @@ public class ScanDialog : Granite.Dialog {
     }
 
     construct {
-        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
+        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth") {
+            pixel_size = 48,
             valign = CENTER,
             halign = CENTER
         };
@@ -34,7 +35,7 @@ public class ScanDialog : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
-        title_label.get_style_context ().add_class ("primary");
+        title_label.add_css_class ("primary");
 
         var info_label = new Gtk.Label (_("Select a Bluetooth Device Below to Send Files")) {
             max_width_chars = 45,
@@ -43,12 +44,9 @@ public class ScanDialog : Granite.Dialog {
             xalign = 0
         };
 
-        var empty_alert = new Granite.Widgets.AlertView (
-            _("No Devices Found"),
-            _("Please ensure that your devices are visible and ready for pairing."),
-            ""
-        );
-        empty_alert.show_all ();
+        var empty_alert = new Granite.Placeholder (_("No Devices Found")) {
+            description = _("Please ensure that your devices are visible and ready for pairing.")
+        };
 
         list_box = new Gtk.ListBox () {
             activate_on_single_click = true,
@@ -57,8 +55,9 @@ public class ScanDialog : Granite.Dialog {
         list_box.set_sort_func ((Gtk.ListBoxSortFunc) compare_rows);
         list_box.set_placeholder (empty_alert);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = list_box,
+            has_frame = true,
             hexpand = true,
             vexpand = true,
             hscrollbar_policy = NEVER,
@@ -67,13 +66,12 @@ public class ScanDialog : Granite.Dialog {
             max_content_height = 350,
             propagate_natural_height = true
         };
-        scrolled.get_style_context ().add_class (Gtk.STYLE_CLASS_FRAME);
 
         var overlay = new Gtk.Overlay () {
             child = scrolled
         };
 
-        var overlaybar = new Granite.Widgets.OverlayBar (overlay) {
+        var overlaybar = new Granite.OverlayBar (overlay) {
             label = _("Discovering")
         };
 
@@ -87,10 +85,10 @@ public class ScanDialog : Granite.Dialog {
         var content_box = new Gtk.Box (VERTICAL, 0) {
             valign = CENTER
         };
-        content_box.add (image_grid);
-        content_box.add (overlay);
+        content_box.append (image_grid);
+        content_box.append (overlay);
 
-        get_content_area ().add (content_box);
+        get_content_area ().append (content_box);
 
         manager.device_added.connect (add_device);
         manager.device_removed.connect (device_removed);
@@ -124,7 +122,7 @@ public class ScanDialog : Granite.Dialog {
         }
 
         var row = new DeviceRow (device, manager.get_adapter_from_path (device.adapter));
-        list_box.add (row);
+        list_box.append (row);
 
         if (list_box.get_selected_row () == null) {
             list_box.select_row (row);
