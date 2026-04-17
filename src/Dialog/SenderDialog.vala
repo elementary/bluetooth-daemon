@@ -107,7 +107,6 @@ public class SenderDialog : Granite.Dialog {
         message_grid.attach (rate_label, 1, 3);
         message_grid.attach (progressbar, 1, 4);
         message_grid.attach (progress_label, 1, 5);
-        message_grid.show_all ();
 
         get_content_area ().append (message_grid);
 
