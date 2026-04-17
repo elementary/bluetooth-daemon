@@ -8,7 +8,7 @@ executable(
     'Services' / 'RFKill.vala',
     'Services' / 'Session.vala',
     'Services' / 'Transfer.vala',
-    'Dialog' / 'BtReceiver.vala',
+    'Dialog' / 'ReceiverDialog.vala',
     'Dialog' / 'SenderDialog.vala',
     'Dialog' / 'ScanDialog.vala',
     'Dialog' / 'DeviceRow.vala',

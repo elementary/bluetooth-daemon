@@ -24,10 +24,10 @@ public class BluetoothApp : Gtk.Application {
     public Bluetooth.ObjectManager object_manager;
     public Bluetooth.Obex.Agent agent_obex;
     public Bluetooth.Obex.Transfer transfer;
-    public BtReceiver bt_receiver;
+    public ReceiverDialog bt_receiver;
     public SenderDialog bt_sender;
     public ScanDialog bt_scan = null;
-    public GLib.List<BtReceiver> bt_receivers;
+    public GLib.List<ReceiverDialog> bt_receivers;
     public GLib.List<SenderDialog> bt_senders;
     private bool is_silent = false; // Running in background. Only access by primary instance
     private bool active_once = false; // Bluetooth.Obex.Agent created. Only access by primary instance
@@ -141,7 +141,7 @@ public class BluetoothApp : Gtk.Application {
 
     private void ensure_object_manager () {
         if (object_manager == null) {
-            bt_receivers = new GLib.List<BtReceiver> ();
+            bt_receivers = new GLib.List<ReceiverDialog> ();
             bt_senders = new GLib.List<SenderDialog> ();
             object_manager = new Bluetooth.ObjectManager ();
             object_manager.notify["has-adapter"].connect (() => {
@@ -232,7 +232,7 @@ public class BluetoothApp : Gtk.Application {
             return;
         }
 
-        bt_receiver = new BtReceiver (this);
+        bt_receiver = new ReceiverDialog (this);
         bt_receivers.append (bt_receiver);
         bt_receiver.destroy.connect (() => {
             bt_receivers.foreach ((receiver) => {
