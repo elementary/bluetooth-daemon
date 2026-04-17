@@ -1,27 +1,13 @@
 /*
- * Copyright 2021 elementary, Inc. (https://elementary.io)
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * General Public License for more details.
- *
- * You should have received a copy of the GNU General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2021-2025 elementary, Inc. (https://elementary.io)
  *
  * Authored by: Torikulhabib <torik.habib@gamail.com>
- *
  */
 
-public class BtReceiver : Granite.Dialog {
+public class ReceiverDialog : Granite.Dialog {
     public Bluetooth.Obex.Transfer transfer;
+
     private Gtk.ProgressBar progressbar;
     private Gtk.Label device_label;
     private Gtk.Label directory_label;
@@ -35,9 +21,10 @@ public class BtReceiver : Granite.Dialog {
     private int start_time = 0;
     private uint64 total_size = 0;
 
-    public BtReceiver (Gtk.Application application) {
-        Object (application: application,
-                resizable :false
+    public ReceiverDialog (Gtk.Application application) {
+        Object (
+            application: application,
+            resizable :false
         );
     }
 
@@ -46,17 +33,19 @@ public class BtReceiver : Granite.Dialog {
         notification.set_priority (NotificationPriority.NORMAL);
 
         var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
-            valign = Gtk.Align.END,
-            halign = Gtk.Align.END
+            valign = END,
+            halign = END
         };
 
         device_image = new Gtk.Image () {
-            halign = Gtk.Align.END,
-            valign = Gtk.Align.END
+            halign = END,
+            valign = END,
+            pixel_size = 24
         };
 
-        var overlay = new Gtk.Overlay ();
-        overlay.add (icon_image);
+        var overlay = new Gtk.Overlay () {
+            child = icon_image
+        };
         overlay.add_overlay (device_image);
 
         device_label = new Gtk.Label (null) {
@@ -73,27 +62,32 @@ public class BtReceiver : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
+
         filename_label = new Gtk.Label (null) {
             max_width_chars = 45,
             use_markup = true,
             wrap = true,
             xalign = 0
         };
+
         rate_label = new Gtk.Label (_("<b>Transfer rate:</b>")) {
             max_width_chars = 45,
             use_markup = true,
             wrap = true,
             xalign = 0
         };
+
         progressbar = new Gtk.ProgressBar () {
             hexpand = true
         };
+
         progress_label = new Gtk.Label (null) {
             max_width_chars = 45,
             hexpand = false,
             wrap = true,
             xalign = 0
         };
+
         var message_grid = new Gtk.Grid () {
             column_spacing = 0,
             width_request = 450,
@@ -101,17 +95,20 @@ public class BtReceiver : Granite.Dialog {
             margin_start = 10
         };
         message_grid.attach (overlay, 0, 0, 1, 3);
-        message_grid.attach (device_label, 1, 0, 1, 1);
-        message_grid.attach (directory_label, 1, 1, 1, 1);
-        message_grid.attach (filename_label, 1, 2, 1, 1);
-        message_grid.attach (rate_label, 1, 3, 1, 1);
-        message_grid.attach (progressbar, 1, 4, 1, 1);
-        message_grid.attach (progress_label, 1, 5, 1, 1);
+        message_grid.attach (device_label, 1, 0);
+        message_grid.attach (directory_label, 1, 1);
+        message_grid.attach (filename_label, 1, 2);
+        message_grid.attach (rate_label, 1, 3);
+        message_grid.attach (progressbar, 1, 4);
+        message_grid.attach (progress_label, 1, 5);
+
         get_content_area ().add (message_grid);
 
         add_button (_("Close"), Gtk.ResponseType.CLOSE);
+
         var suggested_button = add_button (_("Reject"), Gtk.ResponseType.ACCEPT);
         suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+
         response.connect ((response_id) => {
             if (response_id == Gtk.ResponseType.ACCEPT) {
                 try {
@@ -124,6 +121,7 @@ public class BtReceiver : Granite.Dialog {
                 hide_on_delete ();
             }
         });
+
         delete_event.connect (() => {
             if (transfer.status == "active") {
                 return hide_on_delete ();
@@ -136,7 +134,8 @@ public class BtReceiver : Granite.Dialog {
     public void set_transfer (string devicename, string deviceicon, string objectpath) {
         device_label.set_markup (GLib.Markup.printf_escaped (_("<b>From</b>: %s"), devicename));
         directory_label.label = GLib.Markup.printf_escaped (_("<b>To</b>: %s"), GLib.Environment.get_user_special_dir (UserDirectory.DOWNLOAD));
-        device_image.set_from_gicon (new ThemedIcon (deviceicon == null? "bluetooth" : deviceicon), Gtk.IconSize.LARGE_TOOLBAR);
+        device_image.gicon = new ThemedIcon (deviceicon == null ? "bluetooth" : deviceicon);
+
         start_time = (int) get_real_time ();
         try {
             transfer = Bus.get_proxy_sync (BusType.SESSION, "org.bluez.obex", objectpath);
@@ -150,6 +149,7 @@ public class BtReceiver : Granite.Dialog {
             GLib.warning (e.message);
         }
     }
+
     private void tranfer_progress () {
         try {
             switch (transfer.status) {
@@ -178,6 +178,7 @@ public class BtReceiver : Granite.Dialog {
             critical (e.message);
         }
     }
+
     private void move_to_folder (string file) throws GLib.Error {
         var src = File.new_for_path (file);
         var dest = change_name (Path.build_filename (GLib.Environment.get_user_special_dir (UserDirectory.DOWNLOAD), src.get_basename ()));
