@@ -48,7 +48,7 @@ public class BluetoothApp : Gtk.Application {
 
             if (bt_scan == null) {
                 bt_scan = new ScanDialog (this, object_manager);
-                bt_scan.destroy.connect (() => {
+                ((Gtk.Widget) bt_scan).destroy.connect (() => {
                     bt_scan = null;
                 });
 
@@ -58,7 +58,7 @@ public class BluetoothApp : Gtk.Application {
                         bt_sender.add_files (files, device);
                         bt_senders.append (bt_sender);
                         bt_sender.present ();
-                        bt_sender.destroy.connect (() => {
+                        ((Gtk.Widget) bt_sender).destroy.connect (() => {
                             bt_senders.foreach ((sender) => {
                                 if (sender.device == bt_sender.device) {
                                     bt_senders.remove_link (bt_senders.find (sender));
@@ -234,7 +234,7 @@ public class BluetoothApp : Gtk.Application {
 
         bt_receiver = new ReceiverDialog (this);
         bt_receivers.append (bt_receiver);
-        bt_receiver.destroy.connect (() => {
+        ((Gtk.Widget) bt_receiver).destroy.connect (() => {
             bt_receivers.foreach ((receiver) => {
                 if (receiver.transfer.session == bt_receiver.session) {
                     bt_receivers.remove_link (bt_receivers.find (receiver));

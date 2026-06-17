@@ -32,7 +32,8 @@ public class ReceiverDialog : Granite.Dialog {
         notification = new GLib.Notification ("bluetooth");
         notification.set_priority (NotificationPriority.NORMAL);
 
-        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth", Gtk.IconSize.DIALOG) {
+        var icon_image = new Gtk.Image.from_icon_name ("io.elementary.bluetooth") {
+            pixel_size = 48,
             valign = END,
             halign = END
         };
@@ -54,7 +55,7 @@ public class ReceiverDialog : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
-        device_label.get_style_context ().add_class ("primary");
+        device_label.add_css_class ("primary");
 
         directory_label = new Gtk.Label (null) {
             max_width_chars = 45,
@@ -101,14 +102,13 @@ public class ReceiverDialog : Granite.Dialog {
         message_grid.attach (rate_label, 1, 3);
         message_grid.attach (progressbar, 1, 4);
         message_grid.attach (progress_label, 1, 5);
-        message_grid.show_all ();
 
-        get_content_area ().add (message_grid);
+        get_content_area ().append (message_grid);
 
         add_button (_("Close"), Gtk.ResponseType.CLOSE);
 
         var suggested_button = add_button (_("Reject"), Gtk.ResponseType.ACCEPT);
-        suggested_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        suggested_button.add_css_class (Granite.CssClass.DESTRUCTIVE);
 
         response.connect ((response_id) => {
             if (response_id == Gtk.ResponseType.ACCEPT) {
@@ -119,11 +119,11 @@ public class ReceiverDialog : Granite.Dialog {
                 }
                 destroy ();
             } else {
-                hide_on_delete ();
+                hide ();
             }
         });
 
-        delete_event.connect (() => {
+        close_request.connect (() => {
             if (transfer.status == "active") {
                 return hide_on_delete ();
             } else {
