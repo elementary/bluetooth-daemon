@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
 "PO-Revision-Date: 2026-06-29 13:56+0000\n"
-"Last-Translator: kalligator <kalligator+github@gmail.com>\n"
+"Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon-extra/el/>\n"
 "Language: el\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: data/bluetooth.desktop:2
 msgid "Bluetooth File Transfer"
-msgstr ""
+msgstr "Μεταφορά αρχείων μέσω Bluetooth"
 
 #: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
@@ -34,7 +34,7 @@ msgstr "Υπηρεσία παρασκηνίου Bluetooth"
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
 msgstr ""
-"Διαχειρίζεται τις ρυθμίσεις Bluetooth και παρέχει λειτουργίες μεταφοράς "
+"Διαχειρίζεται τις ρυθμίσεις Bluetooth και παρέχει λειτουργίες μεταφοράς μέσω "
 "Bluetooth."
 
 #: data/bluetooth-daemon.metainfo.xml:29
@@ -43,7 +43,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Άλλες βελτιώσεις:"
 
 #: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
@@ -51,4 +51,4 @@ msgstr "Ενημερωμένες μεταφράσεις"
 
 #: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Αρχική έκδοση 🎉️"
