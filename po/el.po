@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-06-29 13:56+0000\n"
+"PO-Revision-Date: 2026-07-10 08:09+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/el/>\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: src/Application.vala:284
 msgid "Incoming file"
-msgstr ""
+msgstr "Εισερχόμενο αρχείο"
 
 #: src/Application.vala:286
 #, c-format
@@ -51,12 +51,12 @@ msgstr ""
 
 #: src/Application.vala:293
 msgid "Accept"
-msgstr ""
+msgstr "Αποδοχή"
 
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:298
 msgid "Decline"
-msgstr ""
+msgstr "Απόρριψη"
 
 #: src/Application.vala:302
 msgid "Receiving file"
@@ -69,35 +69,35 @@ msgstr ""
 
 #: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
-msgstr ""
+msgstr "Ηχείο"
 
 #: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
-msgstr ""
+msgstr "Χειριστήριο"
 
 #: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
-msgstr ""
+msgstr "Πληκτρολόγιο"
 
 #: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
-msgstr ""
+msgstr "Ποντίκι"
 
 #: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
-msgstr ""
+msgstr "Επιφάνεια αφής"
 
 #: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
-msgstr ""
+msgstr "Τηλέφωνο"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Ρυθμός μεταφοράς:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
@@ -106,24 +106,24 @@ msgstr "Κλείσιμο"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Απόρριψη"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
 #: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>Από</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
 #: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Προς</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Όνομα αρχείου</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
@@ -162,42 +162,42 @@ msgstr ""
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d δευτερόλεπτο"
+msgstr[1] "%d δευτερόλεπτα"
 
 #: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d λεπτό"
+msgstr[1] "%d λεπτά"
 
 #: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u ώρα"
+msgstr[1] "%u ώρες"
 
 #: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u λεπτό"
+msgstr[1] "%u λεπτά"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
 #: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "περίπου %d ώρα"
+msgstr[1] "περίπου %d ώρες"
 
 #: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
@@ -221,15 +221,15 @@ msgstr "Ανακάλυψη"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
-msgstr ""
+msgstr "Από"
 
 #: src/Dialog/SenderDialog.vala:64
 msgid "To"
-msgstr ""
+msgstr "Προς"
 
 #: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
-msgstr ""
+msgstr "Όνομα αρχείου"
 
 #: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
@@ -261,7 +261,7 @@ msgstr ""
 
 #: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
-msgstr ""
+msgstr "Επανάληψη"
 
 #: src/Dialog/SenderDialog.vala:289
 #, c-format
@@ -285,7 +285,7 @@ msgstr ""
 
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
-msgstr ""
+msgstr "Αποστολή"
 
 #~ msgid "Not Connected"
 #~ msgstr "Μη Συνδεδεμένη"
