@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-07-10 08:09+0000\n"
+"PO-Revision-Date: 2026-07-25 22:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/el/>\n"
@@ -25,11 +25,11 @@ msgstr ""
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
-msgstr ""
+msgstr "Αποστολή αρχείων μέσω Bluetooth"
 
 #: src/Application.vala:176
 msgid "Send files to device…"
-msgstr ""
+msgstr "Αποστολή αρχείων σε συσκευή…"
 
 #: src/Application.vala:266
 msgid "Rejected file"
@@ -141,17 +141,17 @@ msgstr ""
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s <b>Αποθήκευση σε:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr ""
+msgstr "Λήψη…  %s από %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Ρυθμός μεταφοράς:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
@@ -209,7 +209,7 @@ msgstr ""
 
 #: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Δεν βρέθηκαν συσκευές"
 
 #: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
