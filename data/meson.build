@@ -13,6 +13,7 @@ foreach i : icon_sizes
     )
 endforeach
 
+systemd_user_unit_dir = get_option('systemduserunitdir')
 if systemd_user_unit_dir != 'no'
     systemd_dep = dependency ('systemd')
 
