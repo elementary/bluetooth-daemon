@@ -9,6 +9,7 @@ You'll need the following dependencies:
 
     libgranite-dev >= 6.0.0
     libgtk3-dev
+    systemd-dev
     meson
     valac
 

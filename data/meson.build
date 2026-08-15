@@ -13,11 +13,23 @@ foreach i : icon_sizes
     )
 endforeach
 
-install_data(
-    'bluetooth-daemon.desktop',
-    rename: meson.project_name() + '.desktop',
-    install_dir: get_option('sysconfdir') / 'xdg' / 'autostart'
-)
+if systemd_user_unit_dir != 'no'
+    systemd_dep = dependency ('systemd')
+
+    if systemd_user_unit_dir == ''
+        systemd_user_unit_dir = systemd_dep.get_variable('systemduserunitdir', pkgconfig_define: ['prefix', prefix])
+    endif
+
+    service_config = configuration_data()
+    service_config.set('bindir', bindir)
+
+    configure_file(
+        input: 'bluetooth.service.in',
+        output: meson.project_name() + '.service',
+        configuration: service_config,
+        install_dir: systemd_user_unit_dir
+    )
+endif
 
 i18n.merge_file(
     input: 'bluetooth.desktop',
