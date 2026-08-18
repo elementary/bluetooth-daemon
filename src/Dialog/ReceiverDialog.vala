@@ -123,13 +123,7 @@ public class ReceiverDialog : Granite.Dialog {
             }
         });
 
-        close_request.connect (() => {
-            if (transfer.status == "active") {
-                return hide_on_delete ();
-            } else {
-                return false;
-            }
-        });
+        transfer.bind_property ("status", this, "hide-on-close",SYNC_CREATE);
     }
 
     public void set_transfer (string devicename, string deviceicon, string objectpath) {

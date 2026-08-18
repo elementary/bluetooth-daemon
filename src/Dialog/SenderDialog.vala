@@ -137,13 +137,7 @@ public class SenderDialog : Granite.Dialog {
             }
         });
 
-        close_request.connect (() => {
-            if (transfer.status == "active") {
-                return hide_on_delete ();
-            } else {
-                return false;
-            }
-        });
+        transfer.bind_property ("status", this, "hide-on-close",SYNC_CREATE);
     }
 
     public void add_files (Gee.ArrayList<File> files, Bluetooth.Device device) {

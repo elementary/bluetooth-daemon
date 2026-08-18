@@ -1,0 +1,12 @@
+[Unit]
+Description=Bluetooth Daemon
+After=gnome-session-initialized.target
+
+[Install]
+WantedBy=gnome-session-initialized.target
+
+[Service]
+Type=exec
+ExecStart=@bindir@/io.elementary.bluetooth -s
+Restart=on-failure
+Slice=session.slice
