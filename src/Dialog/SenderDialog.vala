@@ -251,7 +251,7 @@ public class SenderDialog : Granite.Dialog {
                     create_session.begin ();
                     present ();
                 } else {
-                    destroy ();
+                    close ();
                 }
 
                 bt_retry.destroy ();
@@ -339,7 +339,7 @@ public class SenderDialog : Granite.Dialog {
                 send_notify ();
                 if (!next_file ()) {
                     remove_session.begin ();
-                    destroy ();
+                    close ();
                 }
                 break;
         }

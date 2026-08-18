@@ -152,7 +152,7 @@ public class ReceiverDialog : Granite.Dialog {
                     notification.set_title (_("File transfer failed"));
                     notification.set_body (GLib.Markup.printf_escaped (_("%s <b>File:</b> %s not received"), device_label.get_label (), transfer.name));
                     Application.get_default ().send_notification ("io.elementary.bluetooth", notification);
-                    destroy ();
+                    close ();
                     break;
                 case "queued":
                     break;
@@ -165,7 +165,7 @@ public class ReceiverDialog : Granite.Dialog {
                     break;
                 case "complete":
                     move_to_folder (path_folder);
-                    destroy ();
+                    close ();
                     break;
             }
         } catch (Error e) {
