@@ -66,58 +66,55 @@ public class Bluetooth.ObjectManager : Object {
     }
 
     private static void init_for_display (Gdk.Display display) {
-        foreach (unowned var seat in display.list_seats ()) {
-            init_seat (seat);
+        var seat = display.get_default_seat ();
+
+        foreach (unowned var device in seat.get_devices (ALL)) {
+            add_capabilities_for_device (device);
         }
 
-        display.seat_added.connect (init_seat);
-        display.seat_removed.connect (() => {
-            critical ("seat removed");
-        });
-    }
-
-    private static void init_seat (Gdk.Seat seat) {
-        set_capabilities_for_seat (seat);
         identify_missing_capabilities ();
 
-        seat.device_added.connect (() => {
-            critical ("device added");
-            set_capabilities_for_seat (seat);
-        });
-
-        seat.device_removed.connect (() => {
-            critical ("device removed");
-            set_capabilities_for_seat (seat);
-            identify_missing_capabilities ();
-        });
+        seat.device_added.connect (add_capabilities_for_device);
+        seat.device_removed.connect (remove_capabilities_for_device);
     }
 
 
-    private static void set_capabilities_for_seat (Gdk.Seat seat) {
-        var seat_capabilities = seat.get_capabilities ();
-
-        if (POINTER in seat_capabilities && seat.get_pointer () != null) {
-            critical ("pointer %s added", seat.get_pointer ().name);
-            capabilities |= POINTER;
-        } else {
-            critical ("pointer removed");
-            capabilities -= POINTER;
-        }
-
-        if (TOUCH in seat_capabilities) {
-            capabilities |= TOUCH;
-        } else {
-            capabilities -= TOUCH;
-        }
-
-        if (KEYBOARD in seat_capabilities) {
-            critical ("keyboard added");
-            capabilities |= KEYBOARD;
-        } else {
-            critical ("keyboard removed");
-            capabilities -= KEYBOARD;
+    private static void add_capabilities_for_device (Gdk.Device device) {
+        switch (device.source) {
+            case KEYBOARD:
+                capabilities += KEYBOARD;
+                break;
+            case MOUSE:
+                capabilities += POINTER;
+                break;
+            case PEN:
+            case TABLET_PAD:
+            case TOUCHPAD:
+            case TOUCHSCREEN:
+            case TRACKPOINT:
+                break;
         }
     }
+
+    private static void remove_capabilities_for_device (Gdk.Device device) {
+        critical ("device removed");
+        switch (device.source) {
+            case KEYBOARD:
+                capabilities -= KEYBOARD;
+                break;
+            case MOUSE:
+                capabilities -= POINTER;
+                break;
+            case PEN:
+            case TABLET_PAD:
+            case TOUCHPAD:
+            case TOUCHSCREEN:
+            case TRACKPOINT:
+                break;
+        }
+        identify_missing_capabilities ();
+    }
+
 
     private static void identify_missing_capabilities () {
         if (!(KEYBOARD in capabilities) && !(TOUCH in capabilities)) {
