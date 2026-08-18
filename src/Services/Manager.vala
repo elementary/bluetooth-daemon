@@ -28,6 +28,8 @@ public class Bluetooth.ObjectManager : Object {
     private GLib.DBusObjectManagerClient object_manager;
     private RFKillManager rfkill;
 
+    private static Gdk.SeatCapabilities capabilities;
+
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
 
@@ -54,6 +56,70 @@ public class Bluetooth.ObjectManager : Object {
         });
 
         register_agent ();
+
+        unowned var display_manager = Gdk.DisplayManager.@get ();
+        display_manager.display_opened.connect (init_for_display);
+
+        foreach (unowned var display in display_manager.list_displays ()) {
+            init_for_display (display);
+        }
+    }
+
+    private static void init_for_display (Gdk.Display display) {
+        var seat = display.get_default_seat ();
+        if (seat == null) {
+            return;
+        }
+
+        set_capabilities_for_seat (seat);
+        identify_missing_capabilities ();
+
+        seat.device_added.connect (() => {
+            critical ("device added");
+            set_capabilities_for_seat (seat);
+        });
+
+        seat.device_removed.connect (() => {
+            critical ("device removed");
+            set_capabilities_for_seat (seat);
+            identify_missing_capabilities ();
+        });
+    }
+
+    private static void set_capabilities_for_seat (Gdk.Seat seat) {
+        var seat_capabilities = seat.get_capabilities ();
+
+        if (POINTER in seat_capabilities && seat.get_pointer () != null) {
+            critical ("pointer %s added", seat.get_pointer ().name);
+            capabilities |= POINTER;
+        } else {
+            critical ("pointer removed");
+            capabilities -= POINTER;
+        }
+
+        if (TOUCH in seat_capabilities) {
+            capabilities |= TOUCH;
+        } else {
+            capabilities -= TOUCH;
+        }
+
+        if (KEYBOARD in seat_capabilities) {
+            critical ("keyboard added");
+            capabilities |= KEYBOARD;
+        } else {
+            critical ("keyboard removed");
+            capabilities -= KEYBOARD;
+        }
+    }
+
+    private static void identify_missing_capabilities () {
+        if (!(KEYBOARD in capabilities) && !(TOUCH in capabilities)) {
+            critical ("we need a keyboard");
+        }
+
+        if (!(POINTER in capabilities) && !(TOUCH in capabilities)) {
+            critical ("we need a mouse");
+        }
     }
 
     public async void create_manager () {
