@@ -82,7 +82,7 @@ public class Bluetooth.ObjectManager : Object {
         return Gdk.SeatCapabilities.NONE;
     }
 
-    private static void init_for_display (Gdk.Display display) {
+    private void init_for_display (Gdk.Display display) {
         var seat = display.get_default_seat ();
 
         // set.get_capabilities is unreliable, so we track them ourselves
@@ -102,7 +102,7 @@ public class Bluetooth.ObjectManager : Object {
         });
     }
 
-    private static void identify_missing_capabilities (Gdk.Seat seat) {
+    private void identify_missing_capabilities (Gdk.Seat seat) {
         // OSK and touch is viable
         if (TOUCH in capabilities) {
             return;
@@ -113,8 +113,58 @@ public class Bluetooth.ObjectManager : Object {
         }
 
         if (!(POINTER in capabilities) && !(TABLET_STYLUS in capabilities)) {
-            critical ("we need a mouse");
+            find_pairing_mice ();
         }
+    }
+
+    private async void find_pairing_mice () {
+        yield start_discovery();
+
+        var devices = get_devices ();
+        foreach (var device in devices) {
+            var connected = yield connect_mouse (device);
+            if (connected) {
+                return;
+            };
+        }
+
+        // FIXME: disconnect this if we get paired
+        device_added.connect ((device) => {
+            connect_mouse (device);
+        });
+    }
+
+    private async bool connect_mouse (Device device) {
+        if (device.paired) {
+            return false;
+        }
+
+        if (device.name == null) {
+            return false;
+        }
+
+        if (device.icon == "input-mouse") {
+            try {
+                device.pair ();
+                // If pairing is successful, mark devices as trusted so they autoconnect
+                device.trusted = device.paired;
+                stop_discovery ();
+
+                var notification = new Notification (_("Automatically paired “%s”").printf (device.name));
+                notification.set_body (_("A nearby device in pairing mode was automatically connected"));
+                notification.set_category ("device.added");
+                notification.set_icon (new ThemedIcon (device.icon));
+
+                var application = GLib.Application.get_default ();
+                application.send_notification (null, notification);
+
+                return true;
+            } catch (Error e) {
+                critical (e.message);
+            }
+        }
+
+        return false;
     }
 
     public async void create_manager () {
