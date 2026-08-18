@@ -127,17 +127,10 @@ public class SenderDialog : Granite.Dialog {
                         remove_session.begin ();
                     }
                 }
-
             } else {
-                if (transfer.status == "active") {
-                    hide ();
-                } else {
-                    destroy ();
-                }
+                close ();
             }
         });
-
-        transfer.bind_property ("status", this, "hide-on-close",SYNC_CREATE);
     }
 
     public void add_files (Gee.ArrayList<File> files, Bluetooth.Device device) {
@@ -300,6 +293,8 @@ public class SenderDialog : Granite.Dialog {
     }
 
     private void tranfer_progress () {
+        hide_on_close = transfer.status == "active";
+
         switch (transfer.status) {
             case "error":
                 hide ();

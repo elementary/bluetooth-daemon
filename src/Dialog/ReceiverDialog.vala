@@ -117,13 +117,10 @@ public class ReceiverDialog : Granite.Dialog {
                 } catch (Error e) {
                     GLib.warning (e.message);
                 }
-                destroy ();
-            } else {
-                hide ();
             }
-        });
 
-        transfer.bind_property ("status", this, "hide-on-close",SYNC_CREATE);
+            close ();
+        });
     }
 
     public void set_transfer (string devicename, string deviceicon, string objectpath) {
@@ -146,6 +143,8 @@ public class ReceiverDialog : Granite.Dialog {
     }
 
     private void tranfer_progress () {
+        hide_on_close = transfer.status == "active";
+
         try {
             switch (transfer.status) {
                 case "error":
