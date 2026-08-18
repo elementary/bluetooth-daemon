@@ -28,6 +28,8 @@ public class Bluetooth.ObjectManager : Object {
     private GLib.DBusObjectManagerClient object_manager;
     private RFKillManager rfkill;
 
+    private static Gdk.SeatCapabilities capabilities;
+
     construct {
         settings = new Settings ("io.elementary.desktop.bluetooth");
 
@@ -54,6 +56,115 @@ public class Bluetooth.ObjectManager : Object {
         });
 
         register_agent ();
+
+        unowned var display_manager = Gdk.DisplayManager.@get ();
+        display_manager.display_opened.connect (init_for_display);
+
+        foreach (unowned var display in display_manager.list_displays ()) {
+            init_for_display (display);
+        }
+    }
+
+    private static Gdk.SeatCapabilities get_capabilities_for_device (Gdk.Device device) {
+        switch (device.source) {
+            case KEYBOARD:
+                return Gdk.SeatCapabilities.KEYBOARD;
+            case MOUSE:
+            case TOUCHPAD:
+            case TRACKPOINT:
+                return Gdk.SeatCapabilities.POINTER;
+            case PEN:
+                return Gdk.SeatCapabilities.TABLET_STYLUS;
+            case TOUCHSCREEN:
+                return Gdk.SeatCapabilities.TOUCH;
+        }
+
+        return Gdk.SeatCapabilities.NONE;
+    }
+
+    private void init_for_display (Gdk.Display display) {
+        var seat = display.get_default_seat ();
+
+        // set.get_capabilities is unreliable, so we track them ourselves
+        foreach (unowned var device in seat.get_devices (ALL)) {
+            capabilities += get_capabilities_for_device (device);
+        }
+
+        identify_missing_capabilities (seat);
+
+        seat.device_added.connect ((device) => {
+            capabilities += get_capabilities_for_device (device);
+        });
+
+        seat.device_removed.connect ((seat, device) => {
+            capabilities -= get_capabilities_for_device (device);
+            identify_missing_capabilities (seat);
+        });
+    }
+
+    private void identify_missing_capabilities (Gdk.Seat seat) {
+        // OSK and touch is viable
+        if (TOUCH in capabilities) {
+            return;
+        }
+
+        if (!(KEYBOARD in capabilities)) {
+            critical ("we need a keyboard");
+        }
+
+        if (!(POINTER in capabilities) && !(TABLET_STYLUS in capabilities)) {
+            find_pairing_mice ();
+        }
+    }
+
+    private async void find_pairing_mice () {
+        yield start_discovery();
+
+        var devices = get_devices ();
+        foreach (var device in devices) {
+            var connected = yield connect_mouse (device);
+            if (connected) {
+                return;
+            };
+        }
+
+        // FIXME: disconnect this if we get paired
+        device_added.connect ((device) => {
+            connect_mouse (device);
+        });
+    }
+
+    private async bool connect_mouse (Device device) {
+        if (device.paired) {
+            return false;
+        }
+
+        if (device.name == null) {
+            return false;
+        }
+
+        if (device.icon == "input-mouse") {
+            try {
+                device.pair ();
+                // If pairing is successful, mark devices as trusted so they autoconnect
+                device.trusted = device.paired;
+                stop_discovery ();
+
+                var notification = new Notification (_("Automatically paired “%s”").printf (device.name));
+                notification.set_body (_("A nearby device in pairing mode was automatically connected"));
+                notification.set_category ("device.added");
+                notification.set_icon (new ThemedIcon (device.icon));
+
+                var application = GLib.Application.get_default ();
+                application.send_notification (null, notification);
+
+                return true;
+            } catch (Error e) {
+                critical (e.message);
+            }
+        }
+
+        return false;
     }
 
     public async void create_manager () {
