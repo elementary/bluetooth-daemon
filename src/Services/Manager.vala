@@ -66,11 +66,17 @@ public class Bluetooth.ObjectManager : Object {
     }
 
     private static void init_for_display (Gdk.Display display) {
-        var seat = display.get_default_seat ();
-        if (seat == null) {
-            return;
+        foreach (unowned var seat in display.list_seats ()) {
+            init_seat (seat);
         }
 
+        display.seat_added.connect (init_seat);
+        display.seat_removed.connect (() => {
+            critical ("seat removed");
+        });
+    }
+
+    private static void init_seat (Gdk.Seat seat) {
         set_capabilities_for_seat (seat);
         identify_missing_capabilities ();
 
@@ -85,6 +91,7 @@ public class Bluetooth.ObjectManager : Object {
             identify_missing_capabilities ();
         });
     }
+
 
     private static void set_capabilities_for_seat (Gdk.Seat seat) {
         var seat_capabilities = seat.get_capabilities ();
