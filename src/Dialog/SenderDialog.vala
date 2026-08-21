@@ -127,8 +127,6 @@ public class SenderDialog : Granite.Dialog {
                         remove_session.begin ();
                     }
                 }
-
-
             }
 
             close ();
