@@ -100,7 +100,7 @@ public class ScanDialog : Granite.Dialog {
 
         response.connect ((response_id) => {
             manager.stop_discovery.begin ();
-            destroy ();
+            close ();
         });
     }
 

@@ -48,8 +48,9 @@ public class BluetoothApp : Gtk.Application {
 
             if (bt_scan == null) {
                 bt_scan = new ScanDialog (this, object_manager);
-                ((Gtk.Widget) bt_scan).destroy.connect (() => {
+                bt_scan.close_request.connect (() => {
                     bt_scan = null;
+                    return Gdk.EVENT_PROPAGATE;
                 });
 
                 bt_scan.send_file.connect ((device) => {
