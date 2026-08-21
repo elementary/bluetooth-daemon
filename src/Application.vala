@@ -59,12 +59,13 @@ public class BluetoothApp : Gtk.Application {
                         bt_sender.add_files (files, device);
                         bt_senders.append (bt_sender);
                         bt_sender.present ();
-                        ((Gtk.Widget) bt_sender).destroy.connect (() => {
+                        bt_sender.close_request.connect (() => {
                             bt_senders.foreach ((sender) => {
                                 if (sender.device == bt_sender.device) {
                                     bt_senders.remove_link (bt_senders.find (sender));
                                 }
                             });
+                            return Gdk.EVENT_PROPAGATE;
                         });
                     }
                 });
