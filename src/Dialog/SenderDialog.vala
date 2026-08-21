@@ -117,15 +117,13 @@ public class SenderDialog : Granite.Dialog {
 
         response.connect ((response_id) => {
             if (response_id == Gtk.ResponseType.CANCEL) {
-                if (transfer != null) {
-                    if (transfer.status == "active") {
-                        try {
-                            transfer.cancel ();
-                        } catch (Error e) {
-                            GLib.warning (e.message);
-                        }
-                        remove_session.begin ();
+                if (transfer != null && transfer.status == "active") {
+                    try {
+                        transfer.cancel ();
+                    } catch (Error e) {
+                        GLib.warning (e.message);
                     }
+                    remove_session.begin ();
                 }
             }
 
