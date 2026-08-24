@@ -13,7 +13,7 @@ i18n = import('i18n')
 prefix = get_option('prefix')
 bindir = prefix / get_option('bindir')
 
-granite_dep = dependency ('granite-7')
+granite_dep = dependency ('granite-7', version: '>=7.7.0')
 gtk_dep = dependency ('gtk4')
 posix_dep = meson.get_compiler('vala').find_library('posix')
 
