@@ -8,32 +8,33 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2024-12-12 05:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Indonesian <https://l10n.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2026-09-07 10:02+0000\n"
+"Last-Translator: Chairul Akmal <chairulakmal@protonmail.com>\n"
+"Language-Team: Indonesian <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon-extra/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.4\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: data/bluetooth.desktop:2
 msgid "Bluetooth File Transfer"
-msgstr ""
+msgstr "Transfer Berkas Bluetooth"
 
 #: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
-msgstr ""
+msgstr "Kirim dan terima berkas melalui Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:10
 msgid "Bluetooth Daemon"
-msgstr ""
+msgstr "Daemon Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
 msgstr ""
+"Mengelola pengaturan Bluetooth dan menyediakan fitur transfer Bluetooth."
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
@@ -41,12 +42,12 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Peningkatan Lainnya:"
 
 #: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
-msgstr "Terjemahan yang diperbarui"
+msgstr "Terjemahan diperbarui"
 
 #: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Rilis Awal 🎉️"
