@@ -3,101 +3,101 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2024-08-07 17:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Indonesian <https://l10n.elementary.io/projects/desktop/"
+"PO-Revision-Date: 2026-09-07 10:02+0000\n"
+"Last-Translator: Chairul Akmal <chairulakmal@protonmail.com>\n"
+"Language-Team: Indonesian <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
 #: src/Application.vala:39
 msgid "Run the Application in the background"
-msgstr ""
+msgstr "Jalankan aplikasi di latar belakang"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
-msgstr ""
+msgstr "Transfer berkas ke perangkat Bluetooth"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
-msgstr ""
+msgstr "Kirim Berkas melalui Bluetooth"
 
 #: src/Application.vala:176
 msgid "Send files to device…"
-msgstr ""
+msgstr "Kirim berkas ke perangkat…"
 
 #: src/Application.vala:266
 msgid "Rejected file"
-msgstr ""
+msgstr "Berkas ditolak"
 
 #: src/Application.vala:268
 #, c-format
 msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
-msgstr ""
+msgstr "<b>Berkas:</b> %s <b>Ukuran: </b>%s sudah ada"
 
 #: src/Application.vala:284
 msgid "Incoming file"
-msgstr ""
+msgstr "Berkas masuk"
 
 #: src/Application.vala:286
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
-msgstr ""
+msgstr "<b>%s</b> siap mengirim berkas: %s ukuran: %s"
 
 #: src/Application.vala:293
 msgid "Accept"
-msgstr ""
+msgstr "Terima"
 
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:298
 msgid "Decline"
-msgstr ""
+msgstr "Tolak"
 
 #: src/Application.vala:302
 msgid "Receiving file"
-msgstr ""
+msgstr "Menerima berkas"
 
 #: src/Application.vala:303
 #, c-format
 msgid "%s is sending file: %s size: %s"
-msgstr ""
+msgstr "%s sedang mengirim berkas: %s ukuran: %s"
 
 #: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
-msgstr ""
+msgstr "Pengeras Suara"
 
 #: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
-msgstr ""
+msgstr "Pengontrol"
 
 #: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
-msgstr ""
+msgstr "Papan Ketik"
 
 #: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
-msgstr ""
+msgstr "Tetikus"
 
 #: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
-msgstr ""
+msgstr "Panel Sentuh"
 
 #: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
-msgstr ""
+msgstr "Telepon"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Laju transfer:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
@@ -106,130 +106,129 @@ msgstr "Tutup"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Tolak"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
 #: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>Dari</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
 #: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Ke</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Nama berkas</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
-msgstr ""
+msgstr "Transfer berkas gagal"
 
 #: src/Dialog/BtReceiver.vala:159
 #, c-format
 msgid "%s <b>File:</b> %s not received"
-msgstr ""
+msgstr "%s <b>Berkas:</b> %s tidak diterima"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
-msgstr ""
+msgstr "Berkas berhasil ditransfer"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s <b>Simpan ke:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr ""
+msgstr "Menerima…  %s dari %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Laju transfer:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
 msgid "%s of %s received, time remaining %s"
-msgstr ""
+msgstr "%s dari %s diterima, sisa waktu %s"
 
 #: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
+msgstr[0] "%d detik"
 
 #: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
+msgstr[0] "%d menit"
 
 #: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
-msgstr[0] ""
+msgstr[0] "%u jam"
 
 #: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
-msgstr[0] ""
+msgstr[0] "%u menit"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
 #: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
-msgstr[0] ""
+msgstr[0] "sekitar %d jam"
 
 #: src/Dialog/ScanDialog.vala:31
-#, fuzzy
 msgid "Bluetooth File Transfer"
-msgstr "Bluetooth"
+msgstr "Transfer Berkas Bluetooth"
 
 #: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
-msgstr ""
+msgstr "Pilih Perangkat Bluetooth di Bawah untuk Mengirim Berkas"
 
 #: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Tidak Ada Perangkat Ditemukan"
 
 #: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Pastikan perangkat Anda terlihat dan siap untuk dipasangkan."
 
 #: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
-msgstr "Menemukan"
+msgstr "Mencari"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
-msgstr ""
+msgstr "Dari"
 
 #: src/Dialog/SenderDialog.vala:64
 msgid "To"
-msgstr ""
+msgstr "Ke"
 
 #: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
-msgstr ""
+msgstr "Nama berkas"
 
 #: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
-msgstr ""
+msgstr "Laju transfer"
 
 #: src/Dialog/SenderDialog.vala:114 src/Dialog/SenderDialog.vala:257
 #: src/Dialog/SenderDialog.vala:323
@@ -239,49 +238,49 @@ msgstr "Batal"
 #: src/Dialog/SenderDialog.vala:227
 #, c-format
 msgid "Trying to connect to %s…"
-msgstr ""
+msgstr "Mencoba menyambung ke %s…"
 
 #: src/Dialog/SenderDialog.vala:245
 #, c-format
 msgid "Connecting to '%s' failed."
-msgstr ""
+msgstr "Penyambungan ke '%s' gagal."
 
 #: src/Dialog/SenderDialog.vala:247 src/Dialog/SenderDialog.vala:311
 #, c-format
 msgid "The transfer of '%s' failed."
-msgstr ""
+msgstr "Transfer '%s' gagal."
 
 #: src/Dialog/SenderDialog.vala:250 src/Dialog/SenderDialog.vala:316
 msgid "The file has not been transferred"
-msgstr ""
+msgstr "Berkas belum ditransfer"
 
 #: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
-msgstr ""
+msgstr "Coba Lagi"
 
 #: src/Dialog/SenderDialog.vala:289
 #, c-format
 msgid "Waiting for acceptance on %s…"
-msgstr ""
+msgstr "Menunggu penerimaan di %s…"
 
 #: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
-msgstr ""
+msgstr "Transfer terputus atau ditolak oleh %s."
 
 #: src/Dialog/SenderDialog.vala:361
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
-msgstr ""
+msgstr "<b>Dari:</b> %s <b>Kirim ke:</b> %s"
 
 #: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
-msgstr ""
+msgstr "(%i/%i) %s dari %s terkirim, sisa waktu %s"
 
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
-msgstr ""
+msgstr "Kirim"
 
 #~ msgid "Not Connected"
 #~ msgstr "Tidak Tersambung"
