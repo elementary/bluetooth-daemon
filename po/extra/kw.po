@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-09-15 13:03+0000\n"
+"PO-Revision-Date: 2026-10-03 18:04+0000\n"
 "Last-Translator: Flynn <flynn@users.noreply.l10n.elementaryos.org>\n"
 "Language-Team: Cornish <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon-extra/kw/>\n"
@@ -35,24 +35,24 @@ msgstr "Danvon ha degemeres restrennow dre Vluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:10
 msgid "Bluetooth Daemon"
-msgstr ""
+msgstr "Daemon Bluetooth"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
-msgstr ""
+msgstr "Dyghtya settyansow Bluetooth ha provia nasyow treusporth Bluetooth."
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Gwellheansow Erel:"
 
 #: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
-msgstr ""
+msgstr "Treylyansow nowedhys"
 
 #: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Dyllans Kynsa 🎉️"
