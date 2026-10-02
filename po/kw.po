@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: bluetooth-indicator\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-09-15 13:03+0000\n"
+"PO-Revision-Date: 2026-10-03 18:04+0000\n"
 "Last-Translator: Flynn <flynn@users.noreply.l10n.elementaryos.org>\n"
 "Language-Team: Cornish <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/kw/>\n"
@@ -31,183 +31,203 @@ msgstr "Eksekutya an App y'n gilva"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
-msgstr ""
+msgstr "Treusperthi trestrennow dhe dhevis Bluetooth"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
-msgstr ""
+msgstr "Danvon Restrennow dre Vluetooth"
 
 #: src/Application.vala:176
 msgid "Send files to device…"
-msgstr ""
+msgstr "Danvon restrennow dhe dhevis…"
 
 #: src/Application.vala:266
 msgid "Rejected file"
-msgstr ""
+msgstr "Restren dhenaghys"
 
 #: src/Application.vala:268
 #, c-format
 msgid "<b>File:</b> %s <b>Size: </b>%s already exists"
-msgstr ""
+msgstr "Yma seulabrys <b>Restren:</b> %s <b>Braster: </b>%s"
 
 #: src/Application.vala:284
 msgid "Incoming file"
-msgstr ""
+msgstr "Restren dhegemerys"
 
 #: src/Application.vala:286
 #, c-format
 msgid "<b>%s</b> is ready to send file: %s size: %s"
-msgstr ""
+msgstr "<b>%s</b> yw parys danvon restren: %s braster %s"
 
 #: src/Application.vala:293
 msgid "Accept"
-msgstr ""
+msgstr "Degemeres"
 
 #. /Translators response to refuse a file transfer
 #: src/Application.vala:298
 msgid "Decline"
-msgstr ""
+msgstr "Denagha"
 
 #: src/Application.vala:302
 msgid "Receiving file"
-msgstr ""
+msgstr "Ow tegemeres restren"
 
 #: src/Application.vala:303
 #, c-format
 msgid "%s is sending file: %s size: %s"
-msgstr ""
+msgstr "Yma %s ow tanvon restren: %s braster: %s"
 
 #: src/Application.vala:319 src/Dialog/DeviceRow.vala:124
 msgid "Speaker"
-msgstr ""
+msgstr "Ughelgowser"
 
 #: src/Application.vala:321 src/Dialog/DeviceRow.vala:126
 msgid "Controller"
-msgstr ""
+msgstr "Kontrolyell"
 
 #: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
-msgstr ""
+msgstr "Bysowek"
 
 #: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
-msgstr ""
+msgstr "Resell"
 
 #: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
-msgstr ""
+msgstr "Leghen"
 
 #: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
-msgstr ""
+msgstr "Tochpad"
 
 #: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
-msgstr ""
+msgstr "Klapkodh"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Kevradh treusporth:</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
 msgid "Close"
-msgstr ""
+msgstr "Degea"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Denagha"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
 #: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>Dhyworth</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
 #: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Dhe</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Hanow an restren</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
-msgstr ""
+msgstr "Treusporth restren fyllys"
 
 #: src/Dialog/BtReceiver.vala:159
 #, c-format
 msgid "%s <b>File:</b> %s not received"
-msgstr ""
+msgstr "%s <b>Restren:</b> %s andhegemerys"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
-msgstr ""
+msgstr "Restren treusperthys yn sewen"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s <b>Gwitha dhe:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr ""
+msgstr "Ow tegemeres…  %s a %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Kevradh treusporth:</b> %s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
 msgid "%s of %s received, time remaining %s"
-msgstr ""
+msgstr "%s a %s degemerys, termyn remenant %s"
 
 #: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d eylennow"
+msgstr[1] "%d eylen"
+msgstr[2] "%d eylennow"
+msgstr[3] "%d eylennow"
+msgstr[4] "%d eylennow"
+msgstr[5] "%d eylennow"
 
 #: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d mynysennow"
+msgstr[1] "%d mynysen"
+msgstr[2] "%d mynysennow"
+msgstr[3] "%d mynysennow"
+msgstr[4] "%d mynysennow"
+msgstr[5] "%d mynysennow"
 
 #: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u euryow"
+msgstr[1] "%u eur"
+msgstr[2] "%u euryow"
+msgstr[3] "%u euryow"
+msgstr[4] "%u euryow"
+msgstr[5] "%u euryow"
 
 #: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u mynysennow"
+msgstr[1] "%u mynysen"
+msgstr[2] "%u mynysennow"
+msgstr[3] "%u mynysennow"
+msgstr[4] "%u mynysennow"
+msgstr[5] "%u mynysennow"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
 #: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ogas ha %d euryow"
+msgstr[1] "ogas ha %d eur"
+msgstr[2] "ogas ha %d euryow"
+msgstr[3] "ogas ha %d euryow"
+msgstr[4] "ogas ha %d euryow"
+msgstr[5] "ogas ha %d euryow"
 
 #: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
@@ -215,84 +235,84 @@ msgstr "Treusporth Restren Bluetooth"
 
 #: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
-msgstr ""
+msgstr "Dewisewgh devis Bluetooth a-woles rag danvon restrennow"
 
 #: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Nyns eus Devisyow Kevys"
 
 #: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Surhewgh yma agas devisyow gweladow ha parys rag paryans mar pleg."
 
 #: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
-msgstr ""
+msgstr "Ow Trovya"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
-msgstr ""
+msgstr "Dhyworth"
 
 #: src/Dialog/SenderDialog.vala:64
 msgid "To"
-msgstr ""
+msgstr "Dhe"
 
 #: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
-msgstr ""
+msgstr "Hanow an restren"
 
 #: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
-msgstr ""
+msgstr "Kevradh treusporth"
 
 #: src/Dialog/SenderDialog.vala:114 src/Dialog/SenderDialog.vala:257
 #: src/Dialog/SenderDialog.vala:323
 msgid "Cancel"
-msgstr ""
+msgstr "Hedhi"
 
 #: src/Dialog/SenderDialog.vala:227
 #, c-format
 msgid "Trying to connect to %s…"
-msgstr ""
+msgstr "Owth assaya junya orth %s…"
 
 #: src/Dialog/SenderDialog.vala:245
 #, c-format
 msgid "Connecting to '%s' failed."
-msgstr ""
+msgstr "Junyans orth '%s' fyllys."
 
 #: src/Dialog/SenderDialog.vala:247 src/Dialog/SenderDialog.vala:311
 #, c-format
 msgid "The transfer of '%s' failed."
-msgstr ""
+msgstr "An treusporth '%s' fyllys."
 
 #: src/Dialog/SenderDialog.vala:250 src/Dialog/SenderDialog.vala:316
 msgid "The file has not been transferred"
-msgstr ""
+msgstr "Ny vydh an restren treusperthys"
 
 #: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
-msgstr ""
+msgstr "Assaya Arta"
 
 #: src/Dialog/SenderDialog.vala:289
 #, c-format
 msgid "Waiting for acceptance on %s…"
-msgstr ""
+msgstr "Ow kortos rag amyttyans war %s…"
 
 #: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
-msgstr ""
+msgstr "An treusporth o goderrys po yth esa ev denaghys gans %s."
 
 #: src/Dialog/SenderDialog.vala:361
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
-msgstr ""
+msgstr "<b>Dhyworth:</b> %s <b>Danvon dhe:</b> %s"
 
 #: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
-msgstr ""
+msgstr "(%i/%i) %s a %s danvenys, termyn remenant %s"
 
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
-msgstr ""
+msgstr "Danvon"
