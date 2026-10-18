@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2025-10-30 09:55+0000\n"
+"PO-Revision-Date: 2026-10-19 08:03+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/sv/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:48+0000\n"
 
 #: src/Application.vala:39
@@ -112,13 +112,13 @@ msgstr "Avvisa"
 #: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr "<b>Från:</b> %s"
+msgstr "<b>Från</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
 #: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr "<b>Till:</b> %s"
+msgstr "<b>Till</b>: %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
@@ -146,7 +146,7 @@ msgstr "%s <b>Spara till:</b> %s"
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr "Tar emot...  %s av %s"
+msgstr "Tar emot … %s av %s"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
