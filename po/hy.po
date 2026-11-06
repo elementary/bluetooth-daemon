@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-11-06 14:04+0000\n"
+"PO-Revision-Date: 2026-11-07 15:06+0000\n"
 "Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
 "Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon/hy/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 
 #: src/Application.vala:39
 msgid "Run the Application in the background"
-msgstr ""
+msgstr "Գործարկել հավելվածը ֆոնային ռեժիմում"
 
 #: src/Application.vala:40
 msgid "Transfer files to a Bluetooth device"
-msgstr ""
+msgstr "Փոխանցել ֆայլեր Bluetooth սարքին"
 
 #: src/Application.vala:174
 msgid "Send Files via Bluetooth"
@@ -77,27 +77,27 @@ msgstr "Կառավարիչ"
 
 #: src/Application.vala:323 src/Dialog/DeviceRow.vala:128
 msgid "Keyboard"
-msgstr ""
+msgstr "Ստեղնաշար"
 
 #: src/Application.vala:325 src/Dialog/DeviceRow.vala:130
 msgid "Mouse"
-msgstr ""
+msgstr "Մկնիկ"
 
 #: src/Application.vala:327 src/Dialog/DeviceRow.vala:132
 msgid "Tablet"
-msgstr ""
+msgstr "Պլանշետ"
 
 #: src/Application.vala:329 src/Dialog/DeviceRow.vala:134
 msgid "Touchpad"
-msgstr ""
+msgstr "Հպահարթակ"
 
 #: src/Application.vala:331 src/Dialog/DeviceRow.vala:136
 msgid "Phone"
-msgstr ""
+msgstr "Հեռախոս"
 
 #: src/Dialog/BtReceiver.vala:82
 msgid "<b>Transfer rate:</b>"
-msgstr ""
+msgstr "<b>Փոխանցման արագություն՝</b>"
 
 #: src/Dialog/BtReceiver.vala:112 src/Dialog/ScanDialog.vala:101
 #: src/Dialog/SenderDialog.vala:112
@@ -106,134 +106,134 @@ msgstr "Փակել"
 
 #: src/Dialog/BtReceiver.vala:113
 msgid "Reject"
-msgstr ""
+msgstr "Մերժել"
 
 #: src/Dialog/BtReceiver.vala:137 src/Dialog/SenderDialog.vala:224
 #: src/Dialog/SenderDialog.vala:286
 #, c-format
 msgid "<b>From</b>: %s"
-msgstr ""
+msgstr "<b>Ուղարկող</b>՝ %s"
 
 #: src/Dialog/BtReceiver.vala:138 src/Dialog/SenderDialog.vala:225
 #: src/Dialog/SenderDialog.vala:287
 #, c-format
 msgid "<b>To</b>: %s"
-msgstr ""
+msgstr "<b>Ստացող</b>՝ %s"
 
 #: src/Dialog/BtReceiver.vala:148 src/Dialog/SenderDialog.vala:296
 #, c-format
 msgid "<b>Filename</b>: %s"
-msgstr ""
+msgstr "<b>Ֆայլի անուն</b>՝ %s"
 
 #: src/Dialog/BtReceiver.vala:158
 msgid "File transfer failed"
-msgstr ""
+msgstr "Ֆայլի փոխանցումը ձախողվեց"
 
 #: src/Dialog/BtReceiver.vala:159
 #, c-format
 msgid "%s <b>File:</b> %s not received"
-msgstr ""
+msgstr "%s <b>Ֆայլ՝</b> %s չի ստացվել"
 
 #: src/Dialog/BtReceiver.vala:186 src/Dialog/SenderDialog.vala:360
 msgid "File transferred successfully"
-msgstr ""
+msgstr "Ֆայլը հաջողությամբ փոխանցվեց"
 
 #: src/Dialog/BtReceiver.vala:187
 #, c-format
 msgid "%s <b>Save to:</b> %s"
-msgstr ""
+msgstr "%s <b>Պահպանել՝</b> %s"
 
 #: src/Dialog/BtReceiver.vala:211
 #, c-format
 msgid "Receiving…  %s of %s"
-msgstr ""
+msgstr "Ստացվում է…  %s %s-ից"
 
 #: src/Dialog/BtReceiver.vala:225 src/Dialog/SenderDialog.vala:379
 #, c-format
 msgid "<b>Transfer rate:</b> %s"
-msgstr ""
+msgstr "<b>Փոխանցման արագություն՝</b> %s"
 
 #: src/Dialog/BtReceiver.vala:227
 #, c-format
 msgid "%s of %s received, time remaining %s"
-msgstr ""
+msgstr "Ստացվել է %s %s-ից, մնացել է %s"
 
 #: src/Dialog/BtReceiver.vala:236 src/Dialog/SenderDialog.vala:390
 #, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d վայրկյան"
+msgstr[1] "%d վայրկյան"
 
 #: src/Dialog/BtReceiver.vala:242 src/Dialog/SenderDialog.vala:396
 #, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d րոպե"
+msgstr[1] "%d րոպե"
 
 #: src/Dialog/BtReceiver.vala:248 src/Dialog/SenderDialog.vala:402
 #, c-format
 msgid "%u hour"
 msgid_plural "%u hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u ժամ"
+msgstr[1] "%u ժամ"
 
 #: src/Dialog/BtReceiver.vala:249 src/Dialog/SenderDialog.vala:403
 #, c-format
 msgid "%u minute"
 msgid_plural "%u minutes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%u րոպե"
+msgstr[1] "%u րոպե"
 
 #. /TRANSLATORS: For example "1 hour, 8 minutes".
 #: src/Dialog/BtReceiver.vala:251 src/Dialog/SenderDialog.vala:405
 #, c-format
 msgid "%s, %s"
-msgstr ""
+msgstr "%s, %s"
 
 #: src/Dialog/BtReceiver.vala:254 src/Dialog/SenderDialog.vala:408
 #, c-format
 msgid "approximately %d hour"
 msgid_plural "approximately %d hours"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "մոտավորապես %d ժամ"
+msgstr[1] "մոտավորապես %d ժամ"
 
 #: src/Dialog/ScanDialog.vala:31
 msgid "Bluetooth File Transfer"
-msgstr ""
+msgstr "Bluetooth ֆայլերի փոխանցում"
 
 #: src/Dialog/ScanDialog.vala:39
 msgid "Select a Bluetooth Device Below to Send Files"
-msgstr ""
+msgstr "Ընտրեք Bluetooth սարք ստորև՝ ֆայլեր ուղարկելու համար"
 
 #: src/Dialog/ScanDialog.vala:47
 msgid "No Devices Found"
-msgstr ""
+msgstr "Սարքեր չեն գտնվել"
 
 #: src/Dialog/ScanDialog.vala:48
 msgid "Please ensure that your devices are visible and ready for pairing."
-msgstr ""
+msgstr "Համոզվեք, որ Ձեր սարքերը տեսանելի են և պատրաստ զուգակցման։"
 
 #: src/Dialog/ScanDialog.vala:77
 msgid "Discovering"
-msgstr ""
+msgstr "Որոնում"
 
 #: src/Dialog/SenderDialog.vala:56
 msgid "From"
-msgstr ""
+msgstr "Ուղարկող"
 
 #: src/Dialog/SenderDialog.vala:64
 msgid "To"
-msgstr ""
+msgstr "Ստացող"
 
 #: src/Dialog/SenderDialog.vala:71
 msgid "Filename"
-msgstr ""
+msgstr "Ֆայլի անուն"
 
 #: src/Dialog/SenderDialog.vala:78
 msgid "Transfer rate"
-msgstr ""
+msgstr "Փոխանցման արագություն"
 
 #: src/Dialog/SenderDialog.vala:114 src/Dialog/SenderDialog.vala:257
 #: src/Dialog/SenderDialog.vala:323
@@ -243,46 +243,46 @@ msgstr "Չեղարկել"
 #: src/Dialog/SenderDialog.vala:227
 #, c-format
 msgid "Trying to connect to %s…"
-msgstr ""
+msgstr "Փորձ է արվում միանալ %s-ին…"
 
 #: src/Dialog/SenderDialog.vala:245
 #, c-format
 msgid "Connecting to '%s' failed."
-msgstr ""
+msgstr "«%s»-ին միանալը ձախողվեց։"
 
 #: src/Dialog/SenderDialog.vala:247 src/Dialog/SenderDialog.vala:311
 #, c-format
 msgid "The transfer of '%s' failed."
-msgstr ""
+msgstr "«%s»-ի փոխանցումը ձախողվեց։"
 
 #: src/Dialog/SenderDialog.vala:250 src/Dialog/SenderDialog.vala:316
 msgid "The file has not been transferred"
-msgstr ""
+msgstr "Ֆայլը չի փոխանցվել"
 
 #: src/Dialog/SenderDialog.vala:258 src/Dialog/SenderDialog.vala:324
 msgid "Retry"
-msgstr ""
+msgstr "Կրկին փորձել"
 
 #: src/Dialog/SenderDialog.vala:289
 #, c-format
 msgid "Waiting for acceptance on %s…"
-msgstr ""
+msgstr "Սպասվում է հաստատում %s-ում…"
 
 #: src/Dialog/SenderDialog.vala:313
 #, c-format
 msgid "The transfer was interrupted or it was declined by %s."
-msgstr ""
+msgstr "Փոխանցումը ընդհատվեց կամ մերժվեց %s-ի կողմից։"
 
 #: src/Dialog/SenderDialog.vala:361
 #, c-format
 msgid "<b>From:</b> %s <b>Send to:</b> %s"
-msgstr ""
+msgstr "<b>Ուղարկող՝</b> %s <b>Ստացող՝</b> %s"
 
 #: src/Dialog/SenderDialog.vala:381
 #, c-format
 msgid "(%i/%i) %s of %s sent, time remaining %s"
-msgstr ""
+msgstr "(%i/%i) Ուղարկվել է %s %s-ից, մնացել է %s"
 
 #: src/Dialog/DeviceRow.vala:66
 msgid "Send"
-msgstr ""
+msgstr "Ուղարկել"
