@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-11-07 15:06+0000\n"
+"PO-Revision-Date: 2026-11-09 21:04+0000\n"
 "Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
 "Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon-extra/hy/>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
-msgstr ""
+msgstr "Թարմացված թարգմանություններ"
 
 #: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
