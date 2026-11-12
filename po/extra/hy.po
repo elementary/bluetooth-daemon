@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-15 16:23+0000\n"
-"PO-Revision-Date: 2026-11-09 21:04+0000\n"
+"PO-Revision-Date: 2026-11-13 20:04+0000\n"
 "Last-Translator: Davit Yedigaryan <davit.yedigaryan.1993@gmail.com>\n"
 "Language-Team: Armenian <https://l10n.elementaryos.org/projects/desktop/"
 "bluetooth-daemon-extra/hy/>\n"
@@ -25,15 +25,17 @@ msgstr "Bluetooth ֆայլերի փոխանցում"
 
 #: data/bluetooth.desktop:3 data/bluetooth-daemon.metainfo.xml:11
 msgid "Send and receive files via Bluetooth"
-msgstr ""
+msgstr "Ուղարկել և ստանալ ֆայլեր Bluetooth-ով"
 
 #: data/bluetooth-daemon.metainfo.xml:10
 msgid "Bluetooth Daemon"
-msgstr ""
+msgstr "Bluetooth-ի ֆոնային ծառայություն"
 
 #: data/bluetooth-daemon.metainfo.xml:13
 msgid "Manages Bluetooth settings and provides Bluetooth transfer features."
 msgstr ""
+"Կառավարում է Bluetooth-ի կարգավորումները և տրամադրում Bluetooth-ով փոխանցման "
+"հնարավորություններ։"
 
 #: data/bluetooth-daemon.metainfo.xml:29
 msgid "elementary, Inc."
@@ -41,7 +43,7 @@ msgstr "elementary, Inc."
 
 #: data/bluetooth-daemon.metainfo.xml:37 data/bluetooth-daemon.metainfo.xml:51
 msgid "Other Improvements:"
-msgstr ""
+msgstr "Այլ բարելավումներ՝"
 
 #: data/bluetooth-daemon.metainfo.xml:39 data/bluetooth-daemon.metainfo.xml:53
 msgid "Updated translations"
@@ -49,4 +51,4 @@ msgstr "Թարմացված թարգմանություններ"
 
 #: data/bluetooth-daemon.metainfo.xml:60
 msgid "Initial Release 🎉️"
-msgstr ""
+msgstr "Առաջին թողարկում 🎉️"
